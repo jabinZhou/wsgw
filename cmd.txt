@@ -1,0 +1,50 @@
+cd D:\baiduyunpan\nexus-2.14.2-01-bundle\nexus-2.14.2-01\bin
+
+
+c.然后运行nexus.bat install命令安装nexus
+
+d.然后运行nexus.bat start命令启动nexus
+
+其他命令有nexus.bat stop停止 nexus.bat restart重启 nexus.bat uninstall卸载
+
+http://127.0.0.1:8081/nexus/#welcome   admin admin123
+
+
+path=D:/maven/eclipse-maven-svn/myplugins/maven
+//E:\apache-maven-3.1.1
+
+cd C:\Program Files\MySQL\MySQL Server 5.6\bin
+
+mysql -uroot -p kd-vip<E:\apache\gaga.sql
+
+
+cd E:\nexus-3.2.0-01-win64\nexus-3.2.0-01\bin
+nexus.exe/run
+
+自动生成mybatis
+
+windos下cmd然后cd到你放置解压文件的位置执行命令：
+java -jar mybatis-generator-core-1.3.2.jar -configfile generatorConfig.xml -overwrite
+
+
+com.kfit.*.mapper
+
+redis
+cd C:\Users\Administrator\Desktop\utils\redis-2.4.5-win32-win64\64bit
+redis-server.exe redis.conf
+客户端
+redis-cli.exe -h 127.0.0.1 -p 6379 
+
+set key01 'Hello World~'
+
+get key01
+
+windows 关闭端口
+端口8008
+netstat -ano|findstr 8008
+Listening
+tasklist|findstr "5896"  
+杀掉
+taskkill /pid 5896 -t -f
+
+
