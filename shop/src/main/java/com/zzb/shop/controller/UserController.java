@@ -41,15 +41,14 @@ public class UserController extends BaseController{
 				pd.put("keywords", keywords.trim());
 			}*/
 			page.setPd(pd);
-			page.setCurrentPage(1);
-			page.setShowCount(2);
-			System.out.println("userList-22222--");
-			System.out.println("userList--1-"+page.getLimit());
-			List<PageData>	userList=userService.listUsers(page);//列出会员列表
-			System.out.println("userList-33333--"+userList.size());
+			List<PageData>	userList=userService.listUsers(page);//列出用户列表
+			int total=userService.listUsersCount();
+			page.setTotalResult(total);
+			page.setTotalPage(page.getTotalPage());
 			model.addAttribute("userList", userList);
+			model.addAttribute("page", page);
 		} catch(Exception e){
-			
+			e.printStackTrace();
 		}
         return "userList";
     }

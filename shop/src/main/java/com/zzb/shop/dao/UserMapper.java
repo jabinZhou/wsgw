@@ -2,6 +2,8 @@ package com.zzb.shop.dao;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.zzb.shop.domain.Page;
 import com.zzb.shop.domain.User;
 import com.zzb.shop.util.PageData;
@@ -19,5 +21,7 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
     
-    List<PageData> userslistPage(Page page);
+    List<PageData> userslistPage(@Param("page")Page page);
+    
+    int listUsersCount();
 }

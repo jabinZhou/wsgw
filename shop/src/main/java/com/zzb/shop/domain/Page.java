@@ -24,7 +24,7 @@ public class Page {
 
 	
 	public String getLimit() {
-		this.limit=" limit "+this.getCurrentResult()+","+this.getShowCount();
+		this.limit=" limit "+((this.currentPage<1?1:this.currentPage)-1)*this.showCount+","+this.showCount;
 		return limit;
 	}
 

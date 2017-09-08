@@ -21,4 +21,6 @@ public interface UserService {
     int updateByPrimaryKey(User record);
     
     List<PageData> listUsers(Page page);
+    
+    int listUsersCount();
 }

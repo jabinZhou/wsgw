@@ -152,14 +152,17 @@
   </update>
 	
 	<!-- 用户列表(弹窗选择用) -->
-	<select id="userslistPage" parameterType="page" resultType="java.util.HashMap" >
+	<select id="userslistPage" resultType="java.util.HashMap" >
 		select 
     <include refid="Base_Column_List" />
     from user 
-    <if test="page != null" >
-       limit 0,2
-     </if>
-    
+    <if test="page.limit!= null" >
+       ${page.limit}
+    </if>
 	</select>
   
+    
+    <select id="listUsersCount" resultType="Integer">
+    select count(1) from user 
+    </select>
 </mapper>
