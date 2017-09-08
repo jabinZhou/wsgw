@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzb.shop.dao.ShopCarMapper" >
+  <resultMap id="BaseResultMap" type="com.zzb.shop.domain.ShopCar" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="user_id" property="userId" jdbcType="BIGINT" />
+    <result column="good_id" property="goodId" jdbcType="BIGINT" />
+    <result column="good_detail_id" property="goodDetailId" jdbcType="BIGINT" />
+    <result column="good_num" property="goodNum" jdbcType="INTEGER" />
+    <result column="total_price" property="totalPrice" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, user_id, good_id, good_detail_id, good_num, total_price
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from shop_car
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from shop_car
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.zzb.shop.domain.ShopCar" >
+    insert into shop_car (id, user_id, good_id, 
+      good_detail_id, good_num, total_price
+      )
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{goodId,jdbcType=BIGINT}, 
+      #{goodDetailId,jdbcType=BIGINT}, #{goodNum,jdbcType=INTEGER}, #{totalPrice,jdbcType=DECIMAL}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.zzb.shop.domain.ShopCar" >
+    insert into shop_car
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="goodId != null" >
+        good_id,
+      </if>
+      <if test="goodDetailId != null" >
+        good_detail_id,
+      </if>
+      <if test="goodNum != null" >
+        good_num,
+      </if>
+      <if test="totalPrice != null" >
+        total_price,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="goodId != null" >
+        #{goodId,jdbcType=BIGINT},
+      </if>
+      <if test="goodDetailId != null" >
+        #{goodDetailId,jdbcType=BIGINT},
+      </if>
+      <if test="goodNum != null" >
+        #{goodNum,jdbcType=INTEGER},
+      </if>
+      <if test="totalPrice != null" >
+        #{totalPrice,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zzb.shop.domain.ShopCar" >
+    update shop_car
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="goodId != null" >
+        good_id = #{goodId,jdbcType=BIGINT},
+      </if>
+      <if test="goodDetailId != null" >
+        good_detail_id = #{goodDetailId,jdbcType=BIGINT},
+      </if>
+      <if test="goodNum != null" >
+        good_num = #{goodNum,jdbcType=INTEGER},
+      </if>
+      <if test="totalPrice != null" >
+        total_price = #{totalPrice,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zzb.shop.domain.ShopCar" >
+    update shop_car
+    set user_id = #{userId,jdbcType=BIGINT},
+      good_id = #{goodId,jdbcType=BIGINT},
+      good_detail_id = #{goodDetailId,jdbcType=BIGINT},
+      good_num = #{goodNum,jdbcType=INTEGER},
+      total_price = #{totalPrice,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -33,7 +33,6 @@ public class UserController extends BaseController{
     @RequestMapping(value = "/all", method = RequestMethod.GET)
     public String getUserList(Model model,Page page) {
     	PageData pd = new PageData();
-    	System.out.println("userList-1111--");
 		try{
 			pd = this.getPageData();
 			/*String keywords = pd.getString("keywords");							//检索条件 关键词
@@ -43,6 +42,7 @@ public class UserController extends BaseController{
 			page.setPd(pd);
 			List<PageData>	userList=userService.listUsers(page);//列出用户列表
 			int total=userService.listUsersCount();
+			page.setCurrentResult(userList.size());
 			page.setTotalResult(total);
 			page.setTotalPage(page.getTotalPage());
 			model.addAttribute("userList", userList);

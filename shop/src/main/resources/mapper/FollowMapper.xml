@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzb.shop.dao.FollowMapper" >
+  <resultMap id="BaseResultMap" type="com.zzb.shop.domain.Follow" >
+    <result column="user_id" property="userId" jdbcType="BIGINT" />
+    <result column="good_detail_id" property="goodDetailId" jdbcType="BIGINT" />
+  </resultMap>
+  <insert id="insert" parameterType="com.zzb.shop.domain.Follow" >
+    insert into follow (user_id, good_detail_id)
+    values (#{userId,jdbcType=BIGINT}, #{goodDetailId,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zzb.shop.domain.Follow" >
+    insert into follow
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="goodDetailId != null" >
+        good_detail_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="goodDetailId != null" >
+        #{goodDetailId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+</mapper>

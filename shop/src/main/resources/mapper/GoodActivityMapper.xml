@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzb.shop.dao.GoodActivityMapper" >
+  <resultMap id="BaseResultMap" type="com.zzb.shop.domain.GoodActivity" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="good_id" property="goodId" jdbcType="BIGINT" />
+    <result column="activity_title" property="activityTitle" jdbcType="VARCHAR" />
+    <result column="activity_price" property="activityPrice" jdbcType="DECIMAL" />
+    <result column="activity_begin_date" property="activityBeginDate" jdbcType="TIMESTAMP" />
+    <result column="activity_end_date" property="activityEndDate" jdbcType="TIMESTAMP" />
+    <result column="activity_status" property="activityStatus" jdbcType="VARCHAR" />
+    <result column="activity_flag" property="activityFlag" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, good_id, activity_title, activity_price, activity_begin_date, activity_end_date, 
+    activity_status, activity_flag
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from good_activity
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from good_activity
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.zzb.shop.domain.GoodActivity" >
+    insert into good_activity (id, good_id, activity_title, 
+      activity_price, activity_begin_date, activity_end_date, 
+      activity_status, activity_flag)
+    values (#{id,jdbcType=BIGINT}, #{goodId,jdbcType=BIGINT}, #{activityTitle,jdbcType=VARCHAR}, 
+      #{activityPrice,jdbcType=DECIMAL}, #{activityBeginDate,jdbcType=TIMESTAMP}, #{activityEndDate,jdbcType=TIMESTAMP}, 
+      #{activityStatus,jdbcType=VARCHAR}, #{activityFlag,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zzb.shop.domain.GoodActivity" >
+    insert into good_activity
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="goodId != null" >
+        good_id,
+      </if>
+      <if test="activityTitle != null" >
+        activity_title,
+      </if>
+      <if test="activityPrice != null" >
+        activity_price,
+      </if>
+      <if test="activityBeginDate != null" >
+        activity_begin_date,
+      </if>
+      <if test="activityEndDate != null" >
+        activity_end_date,
+      </if>
+      <if test="activityStatus != null" >
+        activity_status,
+      </if>
+      <if test="activityFlag != null" >
+        activity_flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="goodId != null" >
+        #{goodId,jdbcType=BIGINT},
+      </if>
+      <if test="activityTitle != null" >
+        #{activityTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="activityPrice != null" >
+        #{activityPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="activityBeginDate != null" >
+        #{activityBeginDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="activityEndDate != null" >
+        #{activityEndDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="activityStatus != null" >
+        #{activityStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="activityFlag != null" >
+        #{activityFlag,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zzb.shop.domain.GoodActivity" >
+    update good_activity
+    <set >
+      <if test="goodId != null" >
+        good_id = #{goodId,jdbcType=BIGINT},
+      </if>
+      <if test="activityTitle != null" >
+        activity_title = #{activityTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="activityPrice != null" >
+        activity_price = #{activityPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="activityBeginDate != null" >
+        activity_begin_date = #{activityBeginDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="activityEndDate != null" >
+        activity_end_date = #{activityEndDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="activityStatus != null" >
+        activity_status = #{activityStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="activityFlag != null" >
+        activity_flag = #{activityFlag,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zzb.shop.domain.GoodActivity" >
+    update good_activity
+    set good_id = #{goodId,jdbcType=BIGINT},
+      activity_title = #{activityTitle,jdbcType=VARCHAR},
+      activity_price = #{activityPrice,jdbcType=DECIMAL},
+      activity_begin_date = #{activityBeginDate,jdbcType=TIMESTAMP},
+      activity_end_date = #{activityEndDate,jdbcType=TIMESTAMP},
+      activity_status = #{activityStatus,jdbcType=VARCHAR},
+      activity_flag = #{activityFlag,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

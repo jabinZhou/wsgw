@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zzb.shop.dao.GoodDetailMapper" >
+  <resultMap id="BaseResultMap" type="com.zzb.shop.domain.GoodDetail" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="good_id" property="goodId" jdbcType="BIGINT" />
+    <result column="user_id" property="userId" jdbcType="BIGINT" />
+    <result column="good_images" property="goodImages" jdbcType="VARCHAR" />
+    <result column="good_activity_id" property="goodActivityId" jdbcType="BIGINT" />
+    <result column="good_detail" property="goodDetail" jdbcType="VARCHAR" />
+    <result column="good_tag_price" property="goodTagPrice" jdbcType="DECIMAL" />
+    <result column="good_market_price" property="goodMarketPrice" jdbcType="DECIMAL" />
+    <result column="market_status" property="marketStatus" jdbcType="VARCHAR" />
+    <result column="market_flag" property="marketFlag" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, good_id, user_id, good_images, good_activity_id, good_detail, good_tag_price, 
+    good_market_price, market_status, market_flag
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from good_detail
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from good_detail
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.zzb.shop.domain.GoodDetail" >
+    insert into good_detail (id, good_id, user_id, 
+      good_images, good_activity_id, good_detail, 
+      good_tag_price, good_market_price, market_status, 
+      market_flag)
+    values (#{id,jdbcType=BIGINT}, #{goodId,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, 
+      #{goodImages,jdbcType=VARCHAR}, #{goodActivityId,jdbcType=BIGINT}, #{goodDetail,jdbcType=VARCHAR}, 
+      #{goodTagPrice,jdbcType=DECIMAL}, #{goodMarketPrice,jdbcType=DECIMAL}, #{marketStatus,jdbcType=VARCHAR}, 
+      #{marketFlag,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zzb.shop.domain.GoodDetail" >
+    insert into good_detail
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="goodId != null" >
+        good_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="goodImages != null" >
+        good_images,
+      </if>
+      <if test="goodActivityId != null" >
+        good_activity_id,
+      </if>
+      <if test="goodDetail != null" >
+        good_detail,
+      </if>
+      <if test="goodTagPrice != null" >
+        good_tag_price,
+      </if>
+      <if test="goodMarketPrice != null" >
+        good_market_price,
+      </if>
+      <if test="marketStatus != null" >
+        market_status,
+      </if>
+      <if test="marketFlag != null" >
+        market_flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="goodId != null" >
+        #{goodId,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="goodImages != null" >
+        #{goodImages,jdbcType=VARCHAR},
+      </if>
+      <if test="goodActivityId != null" >
+        #{goodActivityId,jdbcType=BIGINT},
+      </if>
+      <if test="goodDetail != null" >
+        #{goodDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="goodTagPrice != null" >
+        #{goodTagPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodMarketPrice != null" >
+        #{goodMarketPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="marketStatus != null" >
+        #{marketStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="marketFlag != null" >
+        #{marketFlag,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zzb.shop.domain.GoodDetail" >
+    update good_detail
+    <set >
+      <if test="goodId != null" >
+        good_id = #{goodId,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="goodImages != null" >
+        good_images = #{goodImages,jdbcType=VARCHAR},
+      </if>
+      <if test="goodActivityId != null" >
+        good_activity_id = #{goodActivityId,jdbcType=BIGINT},
+      </if>
+      <if test="goodDetail != null" >
+        good_detail = #{goodDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="goodTagPrice != null" >
+        good_tag_price = #{goodTagPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodMarketPrice != null" >
+        good_market_price = #{goodMarketPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="marketStatus != null" >
+        market_status = #{marketStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="marketFlag != null" >
+        market_flag = #{marketFlag,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zzb.shop.domain.GoodDetail" >
+    update good_detail
+    set good_id = #{goodId,jdbcType=BIGINT},
+      user_id = #{userId,jdbcType=BIGINT},
+      good_images = #{goodImages,jdbcType=VARCHAR},
+      good_activity_id = #{goodActivityId,jdbcType=BIGINT},
+      good_detail = #{goodDetail,jdbcType=VARCHAR},
+      good_tag_price = #{goodTagPrice,jdbcType=DECIMAL},
+      good_market_price = #{goodMarketPrice,jdbcType=DECIMAL},
+      market_status = #{marketStatus,jdbcType=VARCHAR},
+      market_flag = #{marketFlag,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
