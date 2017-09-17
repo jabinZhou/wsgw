@@ -1,0 +1,13 @@
+﻿[
+	{id: "buy", text: "买家管理"},
+		
+	{id: "advertiseCategory", text: "我的购买", pid: "buy" },
+	
+	{id: "advertise", text: "我的关注", pid: "buy" },
+	
+	{id: "bannerCategory", text: "我的订单", pid: "buy" }
+	
+			
+]
+
+

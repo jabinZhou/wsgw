@@ -65,4 +65,10 @@ public class UserServiceImpl implements UserService{
 		return userMapper.listUsersCount();
 	}
 
+	@Override
+	public User selectUser(User record) {
+		// TODO Auto-generated method stub
+		return userMapper.selectUser(record);
+	}
+
 }

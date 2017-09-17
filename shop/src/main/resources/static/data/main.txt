@@ -13,7 +13,7 @@
 			
 	{id: "user", text: "人员管理"},
 		
-	{id: "sysUser", text: "系统人员管理", pid: "user" },
+	{id: "sysUser/sysUser", text: "系统人员管理", pid: "user" },
 	
 	{id: "shopUser", text: "用户管理", pid: "user" },
 	

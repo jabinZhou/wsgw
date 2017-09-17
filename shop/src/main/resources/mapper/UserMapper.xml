@@ -151,6 +151,13 @@
     where id = #{id,jdbcType=BIGINT}
   </update>
 	
+	 <select id="selectUser" resultMap="BaseResultMap" parameterType="com.zzb.shop.domain.User" >
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where phone = #{phone,jdbcType=VARCHAR} and password = #{password,jdbcType=VARCHAR}
+  </select>
+	
 	<!-- 用户列表(弹窗选择用) -->
 	<select id="listUsers" resultType="java.util.HashMap" >
 		select 

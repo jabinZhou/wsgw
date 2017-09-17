@@ -23,7 +23,7 @@ function login(){
 			if(info.code=="2"){
 				alert(info.info);
 			}else{
-				location.href = "${basePath}/admin/main";
+				location.href = "${basePath}/backend/sysUser/main";
 			}
 		} else {
 			alert(info.info);
@@ -43,6 +43,7 @@ function varifyPassword(){
 <title>Hello world Example</title>
 </head>
 	 <body>
+	     <h1>admin</h1>
 	     <div class="content" style="width:350px;height:165px;margin-left: 400;
     margin-top: 500;">
 	     <h1>用户登录</h1>
