@@ -71,4 +71,29 @@ public class UserController extends BaseController{
 	     res.addObject("user", "jabin");
 	     return res;
     }
+	
+	
+	@RequestMapping(value = "/show23", method = RequestMethod.GET)
+    public String  addUser(Model model,Page page) {
+		PageData pd = new PageData();
+		try{
+			pd = this.getPageData();
+			/*String keywords = pd.getString("keywords");							//检索条件 关键词
+			if(null != keywords && !"".equals(keywords)){
+				pd.put("keywords", keywords.trim());
+			}*/
+			page.setPd(pd);
+			List<PageData>	userList=userService.listUsers(page);//列出用户列表
+			int total=userService.listUsersCount();
+			page.setCurrentResult(userList.size());
+			page.setTotalResult(total);
+			page.setTotalPage(page.getTotalPage());
+			model.addAttribute("userList", userList);
+			model.addAttribute("page", page);
+		} catch(Exception e){
+			e.printStackTrace();
+		}
+        model.addAttribute("user", "jabin");
+        return "user";
+    }
 }

@@ -21,7 +21,7 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
     
-    List<PageData> userslistPage(@Param("page")Page page);
+    List<PageData> listUsers(@Param("page")Page page);
     
     int listUsersCount();
 }

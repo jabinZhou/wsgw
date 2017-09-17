@@ -1,11 +1,10 @@
 package com.zzb.shop.util;
 
 import java.security.MessageDigest;
-/** 
- * 说明：MD5处理
- * 创建人：FH Q313596790
- * 修改时间：2014年9月20日
- * @version
+/**
+ * 
+ * @author Administrator
+ *
  */
 public class MD5 {
 

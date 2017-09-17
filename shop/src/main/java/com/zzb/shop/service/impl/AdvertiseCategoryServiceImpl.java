@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import com.zzb.shop.dao.AdvertiseCategoryMapper;
 import com.zzb.shop.domain.AdvertiseCategory;
 import com.zzb.shop.service.AdvertiseCategoryService;
-import com.zzb.shop.service.SysUserService;
 
 @Service
 public class AdvertiseCategoryServiceImpl implements AdvertiseCategoryService{

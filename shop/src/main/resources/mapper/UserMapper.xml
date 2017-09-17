@@ -152,7 +152,7 @@
   </update>
 	
 	<!-- 用户列表(弹窗选择用) -->
-	<select id="userslistPage" resultType="java.util.HashMap" >
+	<select id="listUsers" resultType="java.util.HashMap" >
 		select 
     <include refid="Base_Column_List" />
     from user 

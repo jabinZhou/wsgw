@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public List<PageData> listUsers(Page page) {
 		// TODO Auto-generated method stub
-		return userMapper.userslistPage(page);
+		return userMapper.listUsers(page);
 	}
 
 	@Override
