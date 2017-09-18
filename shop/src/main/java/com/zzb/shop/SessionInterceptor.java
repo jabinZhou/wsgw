@@ -15,8 +15,9 @@ public class SessionInterceptor implements HandlerInterceptor{
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		String path=request.getContextPath();
+		String url=request.getRequestURI();
 		//登录不做拦截
-		if(request.getRequestURI().contains("/admin")||request.getRequestURI().contains("/index")){
+		if(url.contains("/admin")||("/").equals(url)||url.contains("/login")||url.contains("/ajaxLogin")){
 			return true;
 		}
 		if(request.getRequestURI().contains("/frontend")){
@@ -25,10 +26,10 @@ public class SessionInterceptor implements HandlerInterceptor{
 				request.getSession().setAttribute("user", user);
 				return true;
 			}else{
-				response.sendRedirect(path+"/index/login");  
+				response.sendRedirect(path+"/login");  
 				return false;
 			}
-		}else if(request.getRequestURI().contains("/backend")){
+		}else{
 			SysUser sysUser=(SysUser) request.getSession().getAttribute("sysUser");
 			if(sysUser!=null){
 				request.getSession().setAttribute("sysUser", sysUser);
@@ -38,9 +39,6 @@ public class SessionInterceptor implements HandlerInterceptor{
 				response.sendRedirect(path+"/admin");  
 				return false;
 			}
-		}else{
-			response.sendRedirect(path+"/index");  
-			return false;
 		}
 		
 		

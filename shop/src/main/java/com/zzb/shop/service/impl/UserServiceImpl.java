@@ -60,9 +60,9 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public int listUsersCount() {
+	public int listUsersCount(Page page) {
 		// TODO Auto-generated method stub
-		return userMapper.listUsersCount();
+		return userMapper.listUsersCount(page);
 	}
 
 	@Override

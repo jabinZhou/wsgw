@@ -24,5 +24,5 @@ public interface SysUserService {
     
     List<PageData> listUsers(Page page);
     
-    int listUsersCount();
+    int listUsersCount(Page page);
 }

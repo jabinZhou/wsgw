@@ -26,5 +26,5 @@ public interface UserMapper {
     
     List<PageData> listUsers(@Param("page")Page page);
     
-    int listUsersCount();
+    int listUsersCount(@Param("page")Page page);
 }

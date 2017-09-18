@@ -1,0 +1,429 @@
+2017-9-19 00:00:32 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id limit 0,10 
+2017-9-19 00:00:32 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-9-19 00:00:32 http-nio-8080-exec-4 DEBUG <==      Total: 4
+2017-9-19 00:01:07 http-nio-8080-exec-4 DEBUG ==>  Preparing: select count(1) from user 
+2017-9-19 00:01:07 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-9-19 00:01:07 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-9-19 00:02:01 main INFO Starting ShopApplication on IE361.COM-30530 with PID 7836 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:02:01 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:02:01 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:02:05 main INFO Started ShopApplication in 3.789 seconds (JVM running for 4.306)
+2017-9-19 00:02:34 http-nio-8080-exec-8 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:02:34 http-nio-8080-exec-8 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:02:34 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-9-19 00:02:37 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id ORDER BY create_date desc limit 0,10 
+2017-9-19 00:02:37 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-9-19 00:02:37 http-nio-8080-exec-2 DEBUG <==      Total: 4
+2017-9-19 00:02:37 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) from user 
+2017-9-19 00:02:37 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-9-19 00:02:37 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:02:40 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id and name LIKE concat('%',?,'%') ORDER BY create_date desc limit 0,10 
+2017-9-19 00:02:40 http-nio-8080-exec-3 DEBUG ==> Parameters: 的(String)
+2017-9-19 00:02:42 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id and name LIKE concat('%',?,'%') ORDER BY create_date desc limit 0,10 
+2017-9-19 00:02:42 http-nio-8080-exec-4 DEBUG ==> Parameters: 的(String)
+2017-9-19 00:03:08 main INFO Starting ShopApplication on IE361.COM-30530 with PID 9100 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:03:08 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:03:08 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:03:13 main INFO Started ShopApplication in 4.826 seconds (JVM running for 5.611)
+2017-9-19 00:03:25 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:03:25 http-nio-8080-exec-3 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:03:25 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-9-19 00:03:42 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id ORDER BY create_date desc limit 0,10 
+2017-9-19 00:03:42 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-9-19 00:03:42 http-nio-8080-exec-9 DEBUG <==      Total: 4
+2017-9-19 00:04:00 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) from user 
+2017-9-19 00:04:00 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-9-19 00:04:00 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-9-19 00:04:06 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id and name LIKE concat('%',?,'%') ORDER BY create_date desc limit 0,10 
+2017-9-19 00:04:06 http-nio-8080-exec-10 DEBUG ==> Parameters: 的(String)
+2017-9-19 00:06:48 main INFO Starting ShopApplication on IE361.COM-30530 with PID 8684 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:06:48 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:06:48 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:06:52 main INFO Started ShopApplication in 4.066 seconds (JVM running for 4.566)
+2017-9-19 00:06:59 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:06:59 http-nio-8080-exec-3 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:06:59 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-9-19 00:07:01 http-nio-8080-exec-6 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:07:01 http-nio-8080-exec-6 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:07:01 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-9-19 00:07:05 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:07:05 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-9-19 00:08:28 main INFO Starting ShopApplication on IE361.COM-30530 with PID 8216 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:08:28 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:08:28 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:08:32 main INFO Started ShopApplication in 4.117 seconds (JVM running for 4.63)
+2017-9-19 00:08:39 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:08:39 http-nio-8080-exec-2 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:08:39 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:08:42 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY a.create_date desc limit 0,10 
+2017-9-19 00:08:42 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-19 00:08:42 http-nio-8080-exec-6 DEBUG <==      Total: 3
+2017-9-19 00:09:35 main INFO Starting ShopApplication on IE361.COM-30530 with PID 8972 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:09:35 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:09:35 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:09:40 main INFO Started ShopApplication in 4.928 seconds (JVM running for 5.512)
+2017-9-19 00:09:54 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:09:54 http-nio-8080-exec-2 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:09:54 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:12:02 main INFO Starting ShopApplication on IE361.COM-30530 with PID 2816 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:12:02 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:12:02 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:12:07 main INFO Started ShopApplication in 4.978 seconds (JVM running for 5.669)
+2017-9-19 00:12:18 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:12:18 http-nio-8080-exec-3 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:12:18 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-9-19 00:12:21 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:12:21 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-9-19 00:12:21 http-nio-8080-exec-7 DEBUG <==      Total: 5
+2017-9-19 00:12:47 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:12:47 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-9-19 00:12:47 http-nio-8080-exec-9 DEBUG <==      Total: 3
+2017-9-19 00:13:18 http-nio-8080-exec-4 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:13:18 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-9-19 00:13:18 http-nio-8080-exec-4 DEBUG <==      Total: 5
+2017-9-19 00:13:36 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:13:36 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-9-19 00:13:36 http-nio-8080-exec-2 DEBUG <==      Total: 3
+2017-9-19 00:14:43 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:14:43 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-9-19 00:14:43 http-nio-8080-exec-7 DEBUG <==      Total: 5
+2017-9-19 00:16:29 main INFO Starting ShopApplication on IE361.COM-30530 with PID 1168 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:16:29 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:16:29 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:16:34 main INFO Started ShopApplication in 5.299 seconds (JVM running for 5.996)
+2017-9-19 00:16:56 main INFO Starting ShopApplication on IE361.COM-30530 with PID 8952 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:16:56 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:16:56 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:17:01 main INFO Started ShopApplication in 5.295 seconds (JVM running for 5.991)
+2017-9-19 00:17:19 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:17:20 http-nio-8080-exec-3 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:17:20 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-9-19 00:17:26 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:17:26 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-9-19 00:17:26 http-nio-8080-exec-9 DEBUG <==      Total: 3
+2017-9-19 00:17:27 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:17:27 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-9-19 00:17:27 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-9-19 00:17:34 http-nio-8080-exec-10 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:17:34 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-9-19 00:17:34 http-nio-8080-exec-10 DEBUG <==      Total: 5
+2017-9-19 00:17:34 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 
+2017-9-19 00:17:34 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-9-19 00:17:34 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-9-19 00:17:38 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 and name LIKE concat('%',?,'%') ORDER BY create_date desc limit 0,10 
+2017-9-19 00:17:38 http-nio-8080-exec-7 DEBUG ==> Parameters: 的(String)
+2017-9-19 00:17:38 http-nio-8080-exec-7 DEBUG <==      Total: 4
+2017-9-19 00:17:38 http-nio-8080-exec-7 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:38 http-nio-8080-exec-7 DEBUG ==> Parameters: 的(String)
+2017-9-19 00:17:38 http-nio-8080-exec-7 DEBUG <==      Total: 1
+2017-9-19 00:17:41 http-nio-8080-exec-1 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 and name LIKE concat('%',?,'%') ORDER BY create_date desc limit 0,10 
+2017-9-19 00:17:41 http-nio-8080-exec-1 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:41 http-nio-8080-exec-1 DEBUG <==      Total: 5
+2017-9-19 00:17:41 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:41 http-nio-8080-exec-1 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:41 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-9-19 00:17:42 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 and name LIKE concat('%',?,'%') ORDER BY status asc limit 0,10 
+2017-9-19 00:17:42 http-nio-8080-exec-2 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:42 http-nio-8080-exec-2 DEBUG <==      Total: 5
+2017-9-19 00:17:42 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:42 http-nio-8080-exec-2 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:42 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:17:42 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 and name LIKE concat('%',?,'%') ORDER BY phone asc limit 0,10 
+2017-9-19 00:17:42 http-nio-8080-exec-3 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:42 http-nio-8080-exec-3 DEBUG <==      Total: 5
+2017-9-19 00:17:42 http-nio-8080-exec-3 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:42 http-nio-8080-exec-3 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:42 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-9-19 00:17:43 http-nio-8080-exec-4 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 and name LIKE concat('%',?,'%') ORDER BY user_type asc limit 0,10 
+2017-9-19 00:17:43 http-nio-8080-exec-4 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:43 http-nio-8080-exec-4 DEBUG <==      Total: 5
+2017-9-19 00:17:43 http-nio-8080-exec-4 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:43 http-nio-8080-exec-4 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:43 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-9-19 00:17:43 http-nio-8080-exec-5 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 and name LIKE concat('%',?,'%') ORDER BY name asc limit 0,10 
+2017-9-19 00:17:43 http-nio-8080-exec-5 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:43 http-nio-8080-exec-5 DEBUG <==      Total: 5
+2017-9-19 00:17:43 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:43 http-nio-8080-exec-5 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:43 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-9-19 00:17:53 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY create_date desc limit 0,10 
+2017-9-19 00:17:53 http-nio-8080-exec-6 DEBUG ==> Parameters: 的(String)
+2017-9-19 00:17:53 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-9-19 00:17:53 http-nio-8080-exec-6 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:53 http-nio-8080-exec-6 DEBUG ==> Parameters: 的(String)
+2017-9-19 00:17:53 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-9-19 00:17:56 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY create_date desc limit 0,10 
+2017-9-19 00:17:56 http-nio-8080-exec-9 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:56 http-nio-8080-exec-9 DEBUG <==      Total: 3
+2017-9-19 00:17:56 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:56 http-nio-8080-exec-9 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:56 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-9-19 00:17:58 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY type_name asc limit 0,10 
+2017-9-19 00:17:58 http-nio-8080-exec-8 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:58 http-nio-8080-exec-8 DEBUG <==      Total: 3
+2017-9-19 00:17:58 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:58 http-nio-8080-exec-8 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:58 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-9-19 00:17:58 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY user_type asc limit 0,10 
+2017-9-19 00:17:58 http-nio-8080-exec-10 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:58 http-nio-8080-exec-10 DEBUG <==      Total: 3
+2017-9-19 00:17:58 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:58 http-nio-8080-exec-10 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:58 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-9-19 00:17:59 http-nio-8080-exec-7 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY name asc limit 0,10 
+2017-9-19 00:17:59 http-nio-8080-exec-7 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:59 http-nio-8080-exec-7 DEBUG <==      Total: 3
+2017-9-19 00:17:59 http-nio-8080-exec-7 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:17:59 http-nio-8080-exec-7 DEBUG ==> Parameters: (String)
+2017-9-19 00:17:59 http-nio-8080-exec-7 DEBUG <==      Total: 1
+2017-9-19 00:18:00 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY name desc limit 0,10 
+2017-9-19 00:18:00 http-nio-8080-exec-1 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:00 http-nio-8080-exec-1 DEBUG <==      Total: 3
+2017-9-19 00:18:00 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:18:00 http-nio-8080-exec-1 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:00 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-9-19 00:18:01 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY type_name asc limit 0,10 
+2017-9-19 00:18:01 http-nio-8080-exec-2 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:01 http-nio-8080-exec-2 DEBUG <==      Total: 3
+2017-9-19 00:18:01 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:18:01 http-nio-8080-exec-2 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:01 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:18:01 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY phone asc limit 0,10 
+2017-9-19 00:18:01 http-nio-8080-exec-3 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:01 http-nio-8080-exec-3 DEBUG <==      Total: 3
+2017-9-19 00:18:01 http-nio-8080-exec-3 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:18:01 http-nio-8080-exec-3 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:01 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-9-19 00:18:02 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY status asc limit 0,10 
+2017-9-19 00:18:02 http-nio-8080-exec-4 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:02 http-nio-8080-exec-4 DEBUG <==      Total: 3
+2017-9-19 00:18:02 http-nio-8080-exec-4 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:18:02 http-nio-8080-exec-4 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:02 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-9-19 00:18:03 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY create_date asc limit 0,10 
+2017-9-19 00:18:03 http-nio-8080-exec-5 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:03 http-nio-8080-exec-5 DEBUG <==      Total: 3
+2017-9-19 00:18:03 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:18:03 http-nio-8080-exec-5 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:03 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-9-19 00:18:04 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY update_date asc limit 0,10 
+2017-9-19 00:18:04 http-nio-8080-exec-6 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:04 http-nio-8080-exec-6 DEBUG <==      Total: 3
+2017-9-19 00:18:04 http-nio-8080-exec-6 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:18:04 http-nio-8080-exec-6 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:04 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-9-19 00:18:06 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY status asc limit 0,10 
+2017-9-19 00:18:06 http-nio-8080-exec-9 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:06 http-nio-8080-exec-9 DEBUG <==      Total: 3
+2017-9-19 00:18:06 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:18:06 http-nio-8080-exec-9 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:06 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-9-19 00:18:07 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY status desc limit 0,10 
+2017-9-19 00:18:07 http-nio-8080-exec-8 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:07 http-nio-8080-exec-8 DEBUG <==      Total: 3
+2017-9-19 00:18:07 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:18:07 http-nio-8080-exec-8 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:07 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-9-19 00:18:23 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY status desc limit 0,10 
+2017-9-19 00:18:23 http-nio-8080-exec-10 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:23 http-nio-8080-exec-10 DEBUG <==      Total: 4
+2017-9-19 00:18:23 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:18:23 http-nio-8080-exec-10 DEBUG ==> Parameters: (String)
+2017-9-19 00:18:23 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-9-19 00:18:30 http-nio-8080-exec-1 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:18:30 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-19 00:18:30 http-nio-8080-exec-1 DEBUG <==      Total: 2
+2017-9-19 00:18:30 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:18:30 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-19 00:18:30 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-9-19 00:18:30 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:18:30 http-nio-8080-exec-2 DEBUG ==> Parameters: 4(Long)
+2017-9-19 00:18:30 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:26:10 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY status desc limit 0,10 
+2017-9-19 00:26:10 http-nio-8080-exec-4 DEBUG ==> Parameters: (String)
+2017-9-19 00:26:10 http-nio-8080-exec-4 DEBUG <==      Total: 4
+2017-9-19 00:26:10 http-nio-8080-exec-4 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:26:10 http-nio-8080-exec-4 DEBUG ==> Parameters: (String)
+2017-9-19 00:26:10 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-9-19 00:26:11 http-nio-8080-exec-6 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:26:11 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-19 00:26:11 http-nio-8080-exec-6 DEBUG <==      Total: 2
+2017-9-19 00:26:11 http-nio-8080-exec-6 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:26:11 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-19 00:26:11 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-9-19 00:26:11 http-nio-8080-exec-9 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:26:11 http-nio-8080-exec-9 DEBUG ==> Parameters: 3(Long)
+2017-9-19 00:26:11 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-9-19 00:26:25 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY status desc limit 0,10 
+2017-9-19 00:26:25 http-nio-8080-exec-8 DEBUG ==> Parameters: (String)
+2017-9-19 00:26:25 http-nio-8080-exec-8 DEBUG <==      Total: 4
+2017-9-19 00:26:25 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:26:25 http-nio-8080-exec-8 DEBUG ==> Parameters: (String)
+2017-9-19 00:26:25 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-9-19 00:26:32 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:26:32 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-9-19 00:26:32 http-nio-8080-exec-7 DEBUG <==      Total: 2
+2017-9-19 00:26:32 http-nio-8080-exec-7 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:26:32 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-9-19 00:26:32 http-nio-8080-exec-7 DEBUG <==      Total: 1
+2017-9-19 00:26:32 http-nio-8080-exec-1 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:26:32 http-nio-8080-exec-1 DEBUG ==> Parameters: 3(Long)
+2017-9-19 00:26:32 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-9-19 00:27:54 main INFO Starting ShopApplication on IE361.COM-30530 with PID 8280 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:27:54 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:27:54 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:27:58 main INFO Started ShopApplication in 3.841 seconds (JVM running for 4.378)
+2017-9-19 00:28:23 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:28:23 http-nio-8080-exec-2 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:28:23 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:28:26 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:28:26 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-19 00:28:26 http-nio-8080-exec-6 DEBUG <==      Total: 4
+2017-9-19 00:28:26 http-nio-8080-exec-6 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:28:26 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-19 00:28:26 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-9-19 00:28:30 http-nio-8080-exec-8 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:28:30 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-9-19 00:28:30 http-nio-8080-exec-8 DEBUG <==      Total: 2
+2017-9-19 00:28:30 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:28:30 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-9-19 00:28:30 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-9-19 00:28:30 http-nio-8080-exec-9 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:28:30 http-nio-8080-exec-9 DEBUG ==> Parameters: 3(Long)
+2017-9-19 00:28:30 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-9-19 00:28:40 http-nio-8080-exec-10 DEBUG ==>  Preparing: update user SET name = ?, user_type = ?, phone = ?, password = ?, status = ?, update_date = ? where id = ? 
+2017-9-19 00:28:40 http-nio-8080-exec-10 DEBUG ==> Parameters: 百1(String), 1(String), 18825113547(String), 123456(String), 1(String), 2017-09-19 00:28:40.285(Timestamp), 3(Long)
+2017-9-19 00:28:40 http-nio-8080-exec-10 DEBUG <==    Updates: 1
+2017-9-19 00:28:40 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:28:40 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-19 00:28:40 http-nio-8080-exec-1 DEBUG <==      Total: 4
+2017-9-19 00:28:40 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:28:40 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-19 00:28:40 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-9-19 00:28:43 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY create_date desc limit 0,10 
+2017-9-19 00:28:43 http-nio-8080-exec-2 DEBUG ==> Parameters: (String)
+2017-9-19 00:28:43 http-nio-8080-exec-2 DEBUG <==      Total: 4
+2017-9-19 00:28:43 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:28:43 http-nio-8080-exec-2 DEBUG ==> Parameters: (String)
+2017-9-19 00:28:43 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:28:45 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 and a.name LIKE concat('%',?,'%') ORDER BY create_date desc limit 0,10 
+2017-9-19 00:28:45 http-nio-8080-exec-3 DEBUG ==> Parameters: (String)
+2017-9-19 00:28:45 http-nio-8080-exec-3 DEBUG <==      Total: 4
+2017-9-19 00:28:45 http-nio-8080-exec-3 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 and name LIKE concat('%',?,'%') 
+2017-9-19 00:28:45 http-nio-8080-exec-3 DEBUG ==> Parameters: (String)
+2017-9-19 00:28:45 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-9-19 00:28:55 main INFO Starting ShopApplication on IE361.COM-30530 with PID 4240 (E:\workspace\shop\target\classes started by Administrator in E:\workspace\shop)
+2017-9-19 00:28:55 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-9-19 00:28:55 main INFO No active profile set, falling back to default profiles: default
+2017-9-19 00:29:00 main INFO Started ShopApplication in 5.06 seconds (JVM running for 5.765)
+2017-9-19 00:29:21 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-9-19 00:29:21 http-nio-8080-exec-7 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-9-19 00:29:21 http-nio-8080-exec-7 DEBUG <==      Total: 1
+2017-9-19 00:37:04 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:37:04 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-9-19 00:37:04 http-nio-8080-exec-4 DEBUG <==      Total: 4
+2017-9-19 00:37:04 http-nio-8080-exec-4 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:37:04 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-9-19 00:37:04 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-9-19 00:37:08 http-nio-8080-exec-6 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:37:08 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-19 00:37:08 http-nio-8080-exec-6 DEBUG <==      Total: 2
+2017-9-19 00:37:08 http-nio-8080-exec-6 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:37:08 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-19 00:37:08 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-9-19 00:37:08 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:37:08 http-nio-8080-exec-7 DEBUG ==> Parameters: 3(Long)
+2017-9-19 00:37:08 http-nio-8080-exec-7 DEBUG <==      Total: 1
+2017-9-19 00:37:17 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:37:17 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-9-19 00:37:17 http-nio-8080-exec-8 DEBUG <==      Total: 4
+2017-9-19 00:37:17 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:37:17 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-9-19 00:37:17 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-9-19 00:37:19 http-nio-8080-exec-10 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:37:19 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-9-19 00:37:19 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-9-19 00:37:19 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:37:19 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-9-19 00:37:19 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-9-19 00:37:19 http-nio-8080-exec-1 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:37:19 http-nio-8080-exec-1 DEBUG ==> Parameters: 4(Long)
+2017-9-19 00:37:19 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-9-19 00:37:23 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:37:23 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-9-19 00:37:23 http-nio-8080-exec-2 DEBUG <==      Total: 4
+2017-9-19 00:37:23 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:37:23 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-9-19 00:37:23 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:37:31 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:37:31 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-19 00:37:31 http-nio-8080-exec-6 DEBUG <==      Total: 4
+2017-9-19 00:37:31 http-nio-8080-exec-6 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:37:31 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-19 00:37:31 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-9-19 00:37:34 http-nio-8080-exec-8 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:37:34 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-9-19 00:37:34 http-nio-8080-exec-8 DEBUG <==      Total: 2
+2017-9-19 00:37:34 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:37:34 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-9-19 00:37:34 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-9-19 00:37:34 http-nio-8080-exec-9 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:37:34 http-nio-8080-exec-9 DEBUG ==> Parameters: 3(Long)
+2017-9-19 00:37:34 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-9-19 00:45:37 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:45:37 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-19 00:45:37 http-nio-8080-exec-1 DEBUG <==      Total: 4
+2017-9-19 00:45:37 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:45:37 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-19 00:45:37 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-9-19 00:45:40 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:45:40 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-9-19 00:45:40 http-nio-8080-exec-3 DEBUG <==      Total: 2
+2017-9-19 00:45:40 http-nio-8080-exec-3 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:45:40 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-9-19 00:45:40 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-9-19 00:45:41 http-nio-8080-exec-4 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:45:41 http-nio-8080-exec-4 DEBUG ==> Parameters: 3(Long)
+2017-9-19 00:45:41 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-9-19 00:53:29 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:53:29 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-9-19 00:53:29 http-nio-8080-exec-9 DEBUG <==      Total: 4
+2017-9-19 00:53:29 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:53:29 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-9-19 00:53:29 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-9-19 00:53:31 http-nio-8080-exec-1 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:53:31 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-19 00:53:31 http-nio-8080-exec-1 DEBUG <==      Total: 2
+2017-9-19 00:53:31 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:53:31 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-19 00:53:31 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-9-19 00:53:31 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:53:31 http-nio-8080-exec-2 DEBUG ==> Parameters: 3(Long)
+2017-9-19 00:53:31 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-9-19 00:53:42 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:53:42 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-9-19 00:53:42 http-nio-8080-exec-3 DEBUG <==      Total: 4
+2017-9-19 00:53:42 http-nio-8080-exec-3 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:53:42 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-9-19 00:53:42 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-9-19 00:56:13 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:56:13 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-9-19 00:56:13 http-nio-8080-exec-8 DEBUG <==      Total: 4
+2017-9-19 00:56:13 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:56:13 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-9-19 00:56:13 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-9-19 00:56:17 http-nio-8080-exec-10 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 limit 0,10 
+2017-9-19 00:56:17 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-9-19 00:56:17 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-9-19 00:56:17 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) from good_category where del_flag=0 
+2017-9-19 00:56:17 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-9-19 00:56:17 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-9-19 00:56:17 http-nio-8080-exec-1 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where id = ? 
+2017-9-19 00:56:17 http-nio-8080-exec-1 DEBUG ==> Parameters: 4(Long)
+2017-9-19 00:56:17 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-9-19 00:56:30 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-19 00:56:30 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-9-19 00:56:30 http-nio-8080-exec-2 DEBUG <==      Total: 4
+2017-9-19 00:56:30 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-9-19 00:56:30 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-9-19 00:56:30 http-nio-8080-exec-2 DEBUG <==      Total: 1

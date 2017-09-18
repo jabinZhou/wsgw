@@ -66,9 +66,9 @@ public class SysUserServiceImpl implements SysUserService {
 	}
 
 	@Override
-	public int listUsersCount() {
+	public int listUsersCount(Page page) {
 		// TODO Auto-generated method stub
-		return sysUserMapper.listUsersCount();
+		return sysUserMapper.listUsersCount(page);
 	}
 	
 	

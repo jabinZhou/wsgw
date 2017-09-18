@@ -15,7 +15,7 @@
 		
 	{id: "sysUser/sysUser", text: "系统人员管理", pid: "user" },
 	
-	{id: "shopUser", text: "用户管理", pid: "user" },
+	{id: "user/user", text: "用户管理", pid: "user" },
 	
 	{id: "good", text: "商品管理"},
 		

@@ -25,5 +25,5 @@ public interface UserService {
     
     List<PageData> listUsers(Page page);
     
-    int listUsersCount();
+    int listUsersCount(Page page);
 }

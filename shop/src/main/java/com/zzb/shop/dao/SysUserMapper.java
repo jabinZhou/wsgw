@@ -25,5 +25,5 @@ public interface SysUserMapper {
     
     List<PageData> listUsers(@Param("page")Page page);
     
-    int listUsersCount();
+    int listUsersCount(@Param("page")Page page);
 }

@@ -1,6 +1,12 @@
 package com.zzb.shop.dao;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.zzb.shop.domain.GoodCategory;
+import com.zzb.shop.domain.Page;
+import com.zzb.shop.util.PageData;
 
 public interface GoodCategoryMapper {
     int deleteByPrimaryKey(Long id);
@@ -14,4 +20,9 @@ public interface GoodCategoryMapper {
     int updateByPrimaryKeySelective(GoodCategory record);
 
     int updateByPrimaryKey(GoodCategory record);
+    
+    
+    List<PageData> listGoodCategorys(@Param("page")Page page);
+    
+    int listGoodCategorysCount();
 }

@@ -18,7 +18,7 @@
 <script type="text/javascript">
 function login(){
 	console.log("login");
-	$.post("${basePath}/index/ajaxLogin", $("#loginForm").serialize(), function(info) {
+	$.post("${basePath}/ajaxLogin", $("#loginForm").serialize(), function(info) {
 		if (info.status) {
 			if(info.code=="2"){
 				alert(info.info);

@@ -1,4 +1,9 @@
-package com.zzb.shop.controller;
+package com.zzb.shop.controller.backend;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,35 +14,33 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.zzb.shop.controller.BaseController;
+import com.zzb.shop.domain.Page;
 import com.zzb.shop.domain.PushMsg;
 import com.zzb.shop.domain.SysUser;
-import com.zzb.shop.domain.User;
-import com.zzb.shop.service.UserService;
+import com.zzb.shop.service.SysUserService;
+import com.zzb.shop.util.JSON;
+import com.zzb.shop.util.PageData;
+import com.zzb.shop.util.StringUtil;
 /**
  * 
  * @author zhouzb
  *
  */
 @Controller
-public class IndexController {
+@RequestMapping(value = "/admin")
+public class AdminController extends BaseController{
 
 	@Autowired
-	private UserService userService;
-	/**
-	 * 首页
-	 */
-	@RequestMapping(value = "")
-	public String index(Model model) {
-		return "index";
-	}
-	
+	private SysUserService sysUserService;
 	/**
 	 * 登录页
 	 */
-	@RequestMapping(value = "/login")
-	public String login(Model model) {
-		return "index/login";
+	@RequestMapping(value = "")
+	public String index(Model model) {
+		return "admin/login";
 	}
+	
 	
 	/**
 	 * 登录
@@ -49,23 +52,17 @@ public class IndexController {
 	 */
 	@RequestMapping(value = "/ajaxLogin")
 	@ResponseBody
-	public Object ajaxLogin(Model model,User user,HttpServletRequest request,HttpServletResponse response) {
+	public Object ajaxLogin(Model model,SysUser sysUser,HttpServletRequest request,HttpServletResponse response) {
 		//登录成功标志
 		PushMsg pushMsg=new PushMsg("登录成功！",true);
 		pushMsg.setCode("1");
 		try{			
-			User u=userService.selectUser(user);
-			if(u==null){
+			SysUser sys=sysUserService.selectUser(sysUser);
+			if(sys==null){
 				pushMsg.setCode("2");	
 				pushMsg.setInfo("没有此用户或密码错误！");
 			}else{
-				request.getSession().setAttribute("user", u);
-				//用户类型 0买家 1卖家
-				if(u.getUserType().equals("0")){
-					pushMsg.setArg1(0);
-				}else{
-					pushMsg.setArg1(1);
-				}
+				request.getSession().setAttribute("sysUser", sys);
 			}
 		}catch(Exception ex){
 			ex.printStackTrace();
@@ -75,4 +72,5 @@ public class IndexController {
 		}
 		return pushMsg;
 	}
+	
 }
