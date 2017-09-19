@@ -35,7 +35,7 @@
                 <tr>
                     <td >用户名称：</td>
                     <td >    
-                        <input name="name" class="mini-textbox" required="true" emptyText="请输入用户名称"/>
+                        <input name="name" class="mini-textbox" required="true" emptyText="请输入用户名称" vtype="rangeChar:1,20"/>
                     </td>
                     <td style="width:70px;">类型：</td>
 	                <td >                        
@@ -49,11 +49,11 @@
                 <tr>
                     <td >账户：</td>
                     <td >    
-                        <input name="phone" class="mini-textbox" required="true" vtype="minLength:11" vtype="int" emptyText="请输入账户" requiredErrorText="账户不能为空"/>
+                        <input name="phone" class="mini-textbox" required="true" onvalidation="onPhone" emptyText="请输入账户" requiredErrorText="账户不能为空"/>
                     </td>
                     <td >密码：</td>
                     <td >    
-                        <input name="password" class="mini-textbox" required="true" minValue="6"/>
+                        <input name="password" class="mini-textbox" required="true" vtype="rangeChar:6,32"/>
                     </td>
                 </tr>  
                 <tr>
@@ -73,6 +73,17 @@
         </div>        
     </form>
     <script type="text/javascript">
+    function onPhone(e) {
+    	if (e.isValid) {
+            var pattern = /\d*/;
+            if (e.value.length !=11 || pattern.test(e.value) == false) {
+                e.errorText = "必须输入11位数字";
+                e.isValid = false;
+            }
+        }
+    }
+    
+    
         mini.parse();
 
         var form = new mini.Form("form1");
@@ -81,7 +92,12 @@
             var o = form.getData();            
 
             form.validate();
-            if (form.isValid() == false) return;
+            if (form.isValid() == false){ 
+           	 var errors =  form.getErrorTexts();
+                var t = errors[0]
+                mini.alert(t)	
+           		return;
+           }
 
             var json = mini.encode([o]);
             $.post("${basePath}/backend/sysUser/saveSysUser", $("#form1").serialize(), function(info) {

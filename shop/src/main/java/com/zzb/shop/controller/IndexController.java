@@ -75,4 +75,20 @@ public class IndexController {
 		}
 		return pushMsg;
 	}
+	
+	@RequestMapping(value = "/ajaxCommon")
+	@ResponseBody
+	public Object ajaxCommon(HttpServletRequest request) {
+		PushMsg pushMsg=new PushMsg("请求成功！",true);
+		User user=(User) request.getSession().getAttribute("user");
+		pushMsg.setCode("1");
+		if(user!=null){
+			
+		}else{
+			pushMsg.setStatus(false);
+			pushMsg.setCode("0");
+			pushMsg.setInfo("请求失败,session过期!");
+		}
+		return pushMsg;
+	}
 }

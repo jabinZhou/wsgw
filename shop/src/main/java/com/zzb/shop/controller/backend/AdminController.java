@@ -33,6 +33,23 @@ public class AdminController extends BaseController{
 
 	@Autowired
 	private SysUserService sysUserService;
+	
+	@RequestMapping(value = "/ajaxCommon")
+	@ResponseBody
+	public Object ajaxCommon(HttpServletRequest request) {
+		PushMsg pushMsg=new PushMsg("请求成功！",true);
+		SysUser sysUser=(SysUser) request.getSession().getAttribute("sysUser");
+		pushMsg.setCode("1");
+		if(sysUser!=null){
+			
+		}else{
+			pushMsg.setStatus(false);
+			pushMsg.setCode("0");
+			pushMsg.setInfo("请求失败,session过期!");
+		}
+		return pushMsg;
+	}
+	
 	/**
 	 * 登录页
 	 */

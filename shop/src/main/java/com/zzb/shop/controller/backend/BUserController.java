@@ -142,11 +142,17 @@ public class BUserController extends BaseController{
 		try {
 			Date date=new Date();
 			if (StringUtil.isNullOrEmpty(user.getId())){
+				if(("0").equals(user.getUserType())){
+					user.setGoodCategoryType(0L);
+				}
 				user.setCreateDate(date);
 				user.setUpdateDate(date);
 				user.setDelFlag("0");
 				userService.insert(user);
 			}else{
+				if(("0").equals(user.getUserType())){
+					user.setGoodCategoryType(0L);
+				}
 				user.setUpdateDate(date);
 				userService.updateByPrimaryKeySelective(user);
 			}

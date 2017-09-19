@@ -86,15 +86,13 @@
             var id = "tab$" + node.id;
             var tab = tabs.getTab(id);
             if (!tab) {
-                tab = {};
+            	tab = {};
                 tab._nodeid = node.id;
                 tab.name = id;
                 tab.title = node.text;
                 tab.showCloseButton = true;
-
                 //这里拼接了url，实际项目，应该从后台直接获得完整的url地址
-                tab.url = "<%=basePath%>/frontend/" + node.id + "";
-
+                 tab.url = "<%=basePath%>/backend/" + node.id + "";
                 tabs.addTab(tab);
             }
             tabs.activeTab(tab);
@@ -105,7 +103,13 @@
             var isLeaf = e.isLeaf;
 
             if (isLeaf) {
-                showTab(node);
+            	$.post("<%=basePath%>/ajaxCommon","",function(data){
+            		if(data.status){
+                		showTab(node);
+            		}else{
+            			location.href = "${basePath}/login";
+            		}
+            	});
             }
         }
 

@@ -77,25 +77,22 @@
 
     <script type="text/javascript">
         mini.parse();
-
         var tree = mini.get("leftTree");
 
         function showTab(node) {
             var tabs = mini.get("mainTabs");
-
             var id = "tab$" + node.id;
             var tab = tabs.getTab(id);
             if (!tab) {
-                tab = {};
+            	tab = {};
                 tab._nodeid = node.id;
                 tab.name = id;
                 tab.title = node.text;
                 tab.showCloseButton = true;
-
                 //这里拼接了url，实际项目，应该从后台直接获得完整的url地址
                 tab.url = "<%=basePath%>/backend/" + node.id + "";
-
                 tabs.addTab(tab);
+            		
             }
             tabs.activeTab(tab);
         }
@@ -103,9 +100,14 @@
         function onNodeSelect(e) {
             var node = e.node;
             var isLeaf = e.isLeaf;
-
             if (isLeaf) {
-                showTab(node);
+            	$.post("<%=basePath%>/admin/ajaxCommon","",function(data){
+            		if(data.status){
+                		showTab(node);
+            		}else{
+            			location.href = "${basePath}/admin";
+            		}
+            	});
             }
         }
 
