@@ -5,14 +5,14 @@
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="title" property="title" jdbcType="VARCHAR" />
     <result column="name" property="name" jdbcType="VARCHAR" />
-    <result column="advertise_ category _id" property="advertiseCategoryId" jdbcType="BIGINT" />
+    <result column="advertise_category_id" property="advertiseCategoryId" jdbcType="BIGINT" />
     <result column="url" property="url" jdbcType="VARCHAR" />
     <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
     <result column="update_date" property="updateDate" jdbcType="TIMESTAMP" />
     <result column="del_flag" property="delFlag" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, title, name, "advertise_ category _id", url, create_date, update_date, del_flag
+    id, title, name, advertise_category_id, url, create_date, update_date, del_flag
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
@@ -21,12 +21,12 @@
     where id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
-    delete from advertise
-    where id = #{id,jdbcType=BIGINT}
+    UPDATE `advertise` SET `del_flag` = '1' 
+	WHERE id = #{id}
   </delete>
   <insert id="insert" parameterType="com.zzb.shop.domain.Advertise" >
     insert into advertise (id, title, name, 
-      "advertise_ category _id", url, create_date, 
+      advertise_category_id, url, create_date, 
       update_date, del_flag)
     values (#{id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
       #{advertiseCategoryId,jdbcType=BIGINT}, #{url,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
@@ -45,7 +45,7 @@
         name,
       </if>
       <if test="advertiseCategoryId != null" >
-        "advertise_ category _id",
+        advertise_category_id,
       </if>
       <if test="url != null" >
         url,
@@ -97,7 +97,7 @@
         name = #{name,jdbcType=VARCHAR},
       </if>
       <if test="advertiseCategoryId != null" >
-        "advertise_ category _id" = #{advertiseCategoryId,jdbcType=BIGINT},
+        advertise_category_id = #{advertiseCategoryId,jdbcType=BIGINT},
       </if>
       <if test="url != null" >
         url = #{url,jdbcType=VARCHAR},
@@ -118,11 +118,38 @@
     update advertise
     set title = #{title,jdbcType=VARCHAR},
       name = #{name,jdbcType=VARCHAR},
-      "advertise_ category _id" = #{advertiseCategoryId,jdbcType=BIGINT},
+      advertise_category_id = #{advertiseCategoryId,jdbcType=BIGINT},
       url = #{url,jdbcType=VARCHAR},
       create_date = #{createDate,jdbcType=TIMESTAMP},
       update_date = #{updateDate,jdbcType=TIMESTAMP},
       del_flag = #{delFlag,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
+  
+  <!-- 用户列表(弹窗选择用) -->
+	<select id="list" resultType="java.util.HashMap" >
+		select 
+    <include refid="select_Base_Column_List" />
+    from advertise 
+    where del_flag=0
+    <if test="page.pd.key!= null" >
+       and title LIKE concat('%',#{page.pd.key},'%')
+    </if> 
+    <if test="page.sortField!= null and page.sortOrder!= null" >
+       ORDER BY ${page.sortField}  ${page.sortOrder}
+    </if>
+    <if test="page.limit!= null" >
+       ${page.limit}
+    </if>
+	</select>
+  
+    
+    <select id="listCount" resultType="Integer">
+    select count(1) from advertise 
+    where  del_flag=0
+    <if test="page.pd.key!= null" >
+       and name LIKE concat('%',#{page.pd.key},'%')
+    </if> 
+    </select>
 </mapper>

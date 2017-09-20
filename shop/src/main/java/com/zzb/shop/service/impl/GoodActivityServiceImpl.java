@@ -1,11 +1,15 @@
 package com.zzb.shop.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.zzb.shop.dao.GoodActivityMapper;
 import com.zzb.shop.domain.GoodActivity;
+import com.zzb.shop.domain.Page;
 import com.zzb.shop.service.GoodActivityService;
+import com.zzb.shop.util.PageData;
 
 @Service
 public class GoodActivityServiceImpl implements GoodActivityService{
@@ -47,5 +51,17 @@ public class GoodActivityServiceImpl implements GoodActivityService{
 	public int updateByPrimaryKey(GoodActivity record) {
 		// TODO Auto-generated method stub
 		return goodActivityMapper.updateByPrimaryKey(record);
+	}
+
+	@Override
+	public List<PageData> list(Page page) {
+		// TODO Auto-generated method stub
+		return goodActivityMapper.list(page);
+	}
+
+	@Override
+	public int listCount(Page page) {
+		// TODO Auto-generated method stub
+		return goodActivityMapper.listCount(page);
 	}
 }

@@ -1,11 +1,15 @@
 package com.zzb.shop.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.zzb.shop.dao.BannerCategoryMapper;
 import com.zzb.shop.domain.BannerCategory;
+import com.zzb.shop.domain.Page;
 import com.zzb.shop.service.BannerCategoryService;
+import com.zzb.shop.util.PageData;
 
 @Service
 public class BannerCategoryServiceImpl implements BannerCategoryService{
@@ -47,5 +51,17 @@ public class BannerCategoryServiceImpl implements BannerCategoryService{
 	public int updateByPrimaryKey(BannerCategory record) {
 		// TODO Auto-generated method stub
 		return bannerCategoryMapper.updateByPrimaryKey(record);
+	}
+
+	@Override
+	public List<PageData> list(Page page) {
+		// TODO Auto-generated method stub
+		return bannerCategoryMapper.list(page);
+	}
+
+	@Override
+	public int listCount(Page page) {
+		// TODO Auto-generated method stub
+		return bannerCategoryMapper.listCount(page);
 	}
 }

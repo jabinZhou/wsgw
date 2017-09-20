@@ -12,25 +12,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.zzb.shop.controller.BaseController;
-import com.zzb.shop.domain.GoodCategory;
+import com.zzb.shop.domain.BannerCategory;
 import com.zzb.shop.domain.Page;
 import com.zzb.shop.domain.PushMsg;
-import com.zzb.shop.service.GoodCategoryService;
+import com.zzb.shop.service.BannerCategoryService;
 import com.zzb.shop.util.JSON;
 import com.zzb.shop.util.PageData;
 import com.zzb.shop.util.StringUtil;
-
 /**
  * 
  * @author zhouzb
  *
  */
 @Controller
-@RequestMapping(value = "/backend/goodCategory")
-public class BGoodCategoryController extends BaseController{
+@RequestMapping(value = "/backend/bannerCategory")
+public class BBannerCategoryController extends BaseController{
 
 	@Autowired
-	private GoodCategoryService goodCategoryService;
+	private BannerCategoryService bannerCategoryService;
 	
 	
 	/**
@@ -38,9 +37,9 @@ public class BGoodCategoryController extends BaseController{
 	 * @param model
 	 * @return
 	 */
-	@RequestMapping(value = "goodCategory")
+	@RequestMapping(value = "bannerCategory")
 	public String sysUser(Model model) {
-		return "backend/goodCategory/goodCategory";
+		return "backend/bannerCategory/bannerCategory";
 	}
 	/**
 	 * 列表数据页
@@ -48,7 +47,7 @@ public class BGoodCategoryController extends BaseController{
 	 * @param page
 	 * @return
 	 */
-	@RequestMapping(value = "/goodCategoryList")
+	@RequestMapping(value = "/bannerCategoryList")
 	@ResponseBody
 	public Object sysUserList(Model model,Page page) {
 		PageData pd = new PageData();
@@ -60,15 +59,15 @@ public class BGoodCategoryController extends BaseController{
 		}
 		pd.put("sortField","a."+pd.get("sortField"));
 		page.setPd(pd);
-		List<PageData> list = goodCategoryService.list(page);// 列出用户列表
-		int total = goodCategoryService.listCount(page);
+		List<PageData> list = bannerCategoryService.list(page);// 列出用户列表
+		int total = bannerCategoryService.listCount(page);
 		result.put("data", list);
 		result.put("total", total);
 		String json = JSON.Encode(result);
 		return json;
 		
 	}
-	@RequestMapping(value = "/delGoodCategory")
+	@RequestMapping(value = "/delBannerCategory")
 	@ResponseBody
 	public Object delSysUser(Page page){
 		PushMsg pushMsg = new PushMsg("删除成功！", true);
@@ -82,7 +81,7 @@ public class BGoodCategoryController extends BaseController{
 			String[] ids = idStr.split(",");
 			for (int i = 0, l = ids.length; i < l; i++) {
 				String id = ids[i];
-				goodCategoryService.deleteByPrimaryKey(Long.parseLong(id));
+				bannerCategoryService.deleteByPrimaryKey(Long.parseLong(id));
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -98,16 +97,16 @@ public class BGoodCategoryController extends BaseController{
 	 * @param model
 	 * @return
 	 */
-	@RequestMapping(value = "editGoodCategory")
+	@RequestMapping(value = "editBannerCategory")
 	public String editSysUser(Model model) {
-		return "backend/goodCategory/editGoodCategory";
+		return "backend/bannerCategory/editBannerCategory";
 	}
 	/**
 	 * 获取用户
 	 * @param page
 	 * @return
 	 */
-	@RequestMapping(value = "/getGoodCategory")
+	@RequestMapping(value = "/getBannerCategory")
 	@ResponseBody
 	public Object getSysUser(Page page){
 		PushMsg pushMsg = new PushMsg("获取成功！", true);
@@ -116,7 +115,7 @@ public class BGoodCategoryController extends BaseController{
 			PageData pd = new PageData();
 			pd = this.getPageData();
 			String id = pd.getString("id");
-			GoodCategory domain = goodCategoryService.selectByPrimaryKey(Long.parseLong(id));
+			BannerCategory domain = bannerCategoryService.selectByPrimaryKey(Long.parseLong(id));
 			String json = JSON.Encode(domain);
 			Map<String,Object>attr=new HashMap<String,Object>();
 			attr.put("data", json);
@@ -136,9 +135,9 @@ public class BGoodCategoryController extends BaseController{
 	 * @param page
 	 * @return
 	 */
-	@RequestMapping(value = "/saveGoodCategory")
+	@RequestMapping(value = "/savebannerCategory")
 	@ResponseBody
-	public Object saveSysUser(GoodCategory domain){
+	public Object saveSysUser(BannerCategory domain){
 		PushMsg pushMsg = new PushMsg("保存成功！", true);
 		pushMsg.setCode("1");
 		try {
@@ -148,11 +147,11 @@ public class BGoodCategoryController extends BaseController{
 				domain.setCreateDate(date);
 				domain.setUpdateDate(date);
 				domain.setDelFlag("0");
-				goodCategoryService.insert(domain);
+				bannerCategoryService.insert(domain);
 			}else{
 				
 				domain.setUpdateDate(date);
-				goodCategoryService.updateByPrimaryKeySelective(domain);
+				bannerCategoryService.updateByPrimaryKeySelective(domain);
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -162,4 +161,5 @@ public class BGoodCategoryController extends BaseController{
 		}
 		return pushMsg;
 	}
+	
 }

@@ -64,4 +64,16 @@ public class GoodCategoryServiceImpl implements GoodCategoryService{
 		// TODO Auto-generated method stub
 		return goodCategoryMapper.listGoodCategorysCount();
 	}
+
+	@Override
+	public List<PageData> list(Page page) {
+		// TODO Auto-generated method stub
+		return goodCategoryMapper.list(page);
+	}
+
+	@Override
+	public int listCount(Page page) {
+		// TODO Auto-generated method stub
+		return goodCategoryMapper.listCount(page);
+	}
 }

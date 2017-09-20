@@ -25,4 +25,8 @@ public interface GoodCategoryMapper {
     List<PageData> listGoodCategorys(@Param("page")Page page);
     
     int listGoodCategorysCount();
+    
+List<PageData> list(@Param("page")Page page);
+    
+    int listCount(@Param("page")Page page);
 }

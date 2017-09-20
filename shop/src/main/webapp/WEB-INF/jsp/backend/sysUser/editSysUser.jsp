@@ -13,6 +13,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <link href="<%=basePath%>/css/demo.css" rel="stylesheet" type="text/css" />
 <script src="<%=basePath%>/scripts/boot.js" type="text/javascript"></script> 
+<script src="<%=basePath%>/js/common.js" type="text/javascript"></script> 
 <style type="text/css">
     html, body
     {
@@ -73,16 +74,6 @@
         </div>        
     </form>
     <script type="text/javascript">
-    function onPhone(e) {
-    	if (e.isValid) {
-            var pattern = /\d*/;
-            if (e.value.length !=11 || pattern.test(e.value) == false) {
-                e.errorText = "必须输入11位数字";
-                e.isValid = false;
-            }
-        }
-    }
-    
     
         mini.parse();
 

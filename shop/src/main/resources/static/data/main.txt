@@ -1,15 +1,15 @@
 ﻿[
 	{id: "web", text: "网站管理"},
 		
-	{id: "advertiseCategory", text: "广告分类管理", pid: "web" },
+	{id: "advertiseCategory/advertiseCategory", text: "广告分类管理", pid: "web" },
 	
-	{id: "advertise", text: "广告管理", pid: "web" },
+	{id: "advertise/advertise", text: "广告管理", pid: "web" },
 	
-	{id: "bannerCategory", text: "banner分类管理", pid: "web" },
+	{id: "bannerCategory/bannerCategory", text: "banner分类管理", pid: "web" },
 	
-	{id: "banner", text: "banner管理", pid: "web" },
+	{id: "banner/banner", text: "banner管理", pid: "web" },
 	
-	{id: "dict", text: "字典管理", pid: "web" },
+	{id: "dict/dict", text: "字典管理", pid: "web" },
 			
 	{id: "user", text: "人员管理"},
 		
