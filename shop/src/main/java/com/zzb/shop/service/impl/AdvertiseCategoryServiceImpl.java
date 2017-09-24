@@ -4,14 +4,17 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.zzb.shop.dao.AdvertiseCategoryMapper;
 import com.zzb.shop.domain.AdvertiseCategory;
 import com.zzb.shop.domain.Page;
 import com.zzb.shop.service.AdvertiseCategoryService;
 import com.zzb.shop.util.PageData;
+import com.zzb.shop.util.StringUtil;
 
 @Service
+@Transactional(readOnly = true)
 public class AdvertiseCategoryServiceImpl implements AdvertiseCategoryService{
 
 	@Autowired
@@ -24,9 +27,25 @@ public class AdvertiseCategoryServiceImpl implements AdvertiseCategoryService{
 	}
 
 	@Override
+	@Transactional(readOnly = false)
 	public int insert(AdvertiseCategory record) {
-		// TODO Auto-generated method stub
-		return advertiseCategory.insert(record);
+	    boolean noPid=false;
+		if(StringUtil.isNullOrEmpty(record.getParentId())||0==record.getParentId()){
+			record.setParentId(0L);
+			noPid=true;
+		}
+		int flag=advertiseCategory.insert(record);
+		if(flag>0){
+			if(noPid){
+				record.setParentIds(record.getParentId()+","+record.getId());
+				updateByPrimaryKeySelective(record);
+			}else{
+				AdvertiseCategory pAC=selectByPrimaryKey(record.getParentId());
+				record.setParentIds(pAC.getParentIds()+","+record.getId());
+				updateByPrimaryKeySelective(record);
+			}
+		}
+		return flag;
 	}
 
 	@Override
@@ -42,8 +61,19 @@ public class AdvertiseCategoryServiceImpl implements AdvertiseCategoryService{
 	}
 
 	@Override
+	@Transactional(readOnly = false)
 	public int updateByPrimaryKeySelective(AdvertiseCategory record) {
-		// TODO Auto-generated method stub
+		boolean noPid=false;
+		if(StringUtil.isNullOrEmpty(record.getParentId())||0==record.getParentId()){
+			record.setParentId(0L);
+			noPid=true;
+		}
+		if (noPid) {
+			record.setParentIds(record.getParentId() + "," + record.getId());
+		} else {
+			AdvertiseCategory pAC = selectByPrimaryKey(record.getParentId());
+			record.setParentIds(pAC.getParentIds() + "," + record.getId());
+		}
 		return advertiseCategory.updateByPrimaryKeySelective(record);
 	}
 

@@ -19,10 +19,6 @@ public interface GoodCategoryService {
 
 	    int updateByPrimaryKey(GoodCategory record);
 	    
-	    List<PageData> listGoodCategorys(Page page);
-	    
-	    int listGoodCategorysCount();
-	    
 	    List<PageData> list(Page page);
 	    
 	    int listCount(Page page);

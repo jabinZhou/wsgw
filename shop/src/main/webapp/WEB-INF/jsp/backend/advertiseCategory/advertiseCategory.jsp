@@ -28,42 +28,45 @@
                         <a class="mini-button" iconCls="icon-remove" onclick="remove()">删除</a>       
                     </td>
                     <td style="white-space:nowrap;">
-                        <input id="key" class="mini-textbox" emptyText="请输入姓名" style="width:150px;" onenter="onKeyEnter"/>   
+                        <input id="key" class="mini-textbox" emptyText="请输入广告名称" style="width:150px;" onenter="onKeyEnter"/>   
                         <a class="mini-button" onclick="search()">查询</a>
                     </td>
                 </tr>
             </table>           
         </div>
     </div>
-    <div id="datagrid1" class="mini-datagrid" style="width:800px;height:280px;" allowResize="true"
-        url="<%=basePath%>/backend/advertiseCategory/advertiseCategoryList"  idField="id" multiSelect="true" 
+     <div id="treegrid1" class="mini-treegrid" style="width:800px;height:280px;" 
+        url="<%=basePath%>/backend/advertiseCategory/advertiseCategoryList"  treeColumn="taskname" idField="id" 
+        parentField="parent_id" resultAsTree="false" expandOnLoad="true" 
     >
-        <div property="columns">
-            <!--<div type="indexcolumn"></div>        -->
-            <div type="checkcolumn" ></div>        
-            <div field="name" width="120" headerAlign="center" allowSort="true">用户名称</div>    
-            <div field="parent_id" width="120" headerAlign="center" allowSort="true" renderer="onTypeRenderer">用户类型</div>  
-            <div field="phone" width="120" headerAlign="center" allowSort="true">用户账户</div>    
-            <div field="status" width="120" headerAlign="center" allowSort="true" renderer="onStatusRenderer">用户状态</div>    
-            <div field="create_date" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true" renderer="onTimeRenderer">创建时间</div> 
-            <div field="update_date" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true" renderer="onTimeRenderer">更新时间</div>       
-                              
-        </div>
+<%--     <div id="treegrid1" class="mini-treegrid" style="width:800px;height:280px;"     
+    url="<%=basePath%>/data/tasks.txt" showTreeIcon="true" 
+    treeColumn="taskname" idField="UID" parentField="ParentTaskUID" resultAsTree="false" expandOnLoad="true"
+	> --%>
+	
+	  <div property="columns">
+        <div type="indexcolumn"></div>
+        <div name="taskname" field="name" width="300">广告名称</div>
+        <div field="create_date" width="100" dateFormat="yyyy-MM-dd">开始日期</div>
+        <div field="update_date" width="100" dateFormat="yyyy-MM-dd">完成日期</div>
+    </div>
+	
+        
     </div>
     
 
     <script type="text/javascript">
         mini.parse();
 
-        var grid = mini.get("datagrid1");
-        grid.load();
-        grid.sortBy("create_date", "desc");
-
+        var grid = mini.get("treegrid1");
+        /* grid.load();
+        grid.sortBy("create_date", "desc"); */
+   
         
         function add() {
             
             mini.open({
-                url: "${basePath}/backend/sysUser/editSysUser",
+                url: "${basePath}/backend/advertiseCategory/editAdvertiseCategory",
                 title: "新增员工", width: 600, height: 400,
                 onload: function () {
                     var iframe = this.getIFrameEl();
@@ -81,7 +84,7 @@
             var row = grid.getSelected();
             if (row) {
                 mini.open({
-                    url: "${basePath}/backend/sysUser/editSysUser",
+                    url: "${basePath}/backend/advertiseCategory/editAdvertiseCategory",
                     title: "编辑员工", width: 600, height: 400,
                     onload: function () {
                         var iframe = this.getIFrameEl();
@@ -112,7 +115,7 @@
                     }
                     var id = ids.join(',');
                     grid.loading("操作中，请稍后......");
-                    $.post("${basePath}/backend/sysUser/delSysUser?id=" +id, function(info) {
+                    $.post("${basePath}/backend/advertiseCategory/delAdvertiseCategory?id=" +id, function(info) {
                 		if (info.status) {
                 			 grid.reload();
                 		} else {
@@ -125,35 +128,28 @@
                 alert("请选中一条记录");
             }
         }
-        function search() {
+      /*   function search() {
             var key = mini.get("key").getValue();
             grid.load({ key: key });
+        } */
+        function search() {
+            var key = mini.get("key").getValue();
+            if (key == "") {
+            	grid.clearFilter();
+            } else {
+                key = key.toLowerCase();
+                grid.filter(function (node) {
+                    var text = node.name ? node.name.toLowerCase() : "";
+                    if (text.indexOf(key) != -1) {
+                        return true;
+                    }
+                });
+            }
         }
         function onKeyEnter(e) {
             search();
         }
-        /////////////////////////////////////////////////
-        function onTimeRenderer(e) {
-            var value = e.value;
-            if (value) return mini.formatDate(value, 'yyyy-MM-dd');
-            return "";
-        }
-        var Types = [{ id: 0, text: '一般' }, { id: 1, text: '超级'}];        
-        function onTypeRenderer(e) {
-            for (var i = 0, l = Types.length; i < l; i++) {
-                var g = Types[i];
-                if (g.id == e.value) return g.text;
-            }
-            return "";
-        }
-        var Status = [{ id: 0, text: '可用' }, { id: 1, text: '不可用'}];       
-        function onStatusRenderer(e){
-        	for (var i = 0, l = Status.length; i < l; i++) {
-                var g = Status[i];
-                if (g.id == e.value) return g.text;
-            }
-            return "";
-        }
+       
     </script>
 	 </body>
 </html>

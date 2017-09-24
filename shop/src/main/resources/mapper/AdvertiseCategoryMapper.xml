@@ -13,17 +13,24 @@
   <sql id="Base_Column_List" >
     id, name, parent_id, parent_ids, create_date, update_date, del_flag
   </sql>
+  
+   <sql id="select_Base_Column_List" >
+    a.id, a.name, a.parent_id, a.parent_ids, a.create_date, a.update_date, a.del_flag
+  </sql>
+  
+  
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
-    <include refid="Base_Column_List" />
-    from advertise_category
-    where id = #{id,jdbcType=BIGINT}
+    <include refid="select_Base_Column_List" />,b.name as 'parentIdName'
+    from advertise_category a left join advertise_category b
+    on a.parent_id=b.id
+    where a.id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     UPDATE `advertise_category` SET `del_flag` = '1' 
-	WHERE id = #{id}
+	WHERE id = #{id} OR parent_ids LIKE  CONCAT('%,', #{id}, ',%')
   </delete>
-  <insert id="insert" parameterType="com.zzb.shop.domain.AdvertiseCategory" >
+  <insert id="insert" parameterType="com.zzb.shop.domain.AdvertiseCategory" useGeneratedKeys="true" keyProperty="id">
     insert into advertise_category (id, name, parent_id, 
       parent_ids, create_date, update_date, 
       del_flag)
@@ -123,14 +130,8 @@
     from advertise_category 
     where del_flag=0
     <if test="page.pd.key!= null" >
-       and title LIKE concat('%',#{page.pd.key},'%')
+       and name LIKE concat('%',#{page.pd.key},'%')
     </if> 
-    <if test="page.sortField!= null and page.sortOrder!= null" >
-       ORDER BY ${page.sortField}  ${page.sortOrder}
-    </if>
-    <if test="page.limit!= null" >
-       ${page.limit}
-    </if>
 	</select>
   
     

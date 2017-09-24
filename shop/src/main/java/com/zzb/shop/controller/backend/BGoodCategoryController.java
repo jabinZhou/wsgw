@@ -58,7 +58,10 @@ public class BGoodCategoryController extends BaseController{
 		if (null != key && !"".equals(key)) {
 			pd.put("key", key.trim());
 		}
-		pd.put("sortField","a."+pd.get("sortField"));
+		String sortFile=pd.getString("sortField");
+		if (null != sortFile && !"".equals(sortFile)) {
+			pd.put("sortField","a."+pd.get("sortField"));
+		}
 		page.setPd(pd);
 		List<PageData> list = goodCategoryService.list(page);// 列出用户列表
 		int total = goodCategoryService.listCount(page);
@@ -68,6 +71,28 @@ public class BGoodCategoryController extends BaseController{
 		return json;
 		
 	}
+	
+	
+	
+	/**
+	 * 列表数据页
+	 * @param model
+	 * @param page
+	 * @return
+	 */
+	@RequestMapping(value = "/getGoodCategoryList")
+	@ResponseBody
+	public Object getUserList(Model model,Page page) {
+		PageData pd = new PageData();
+		HashMap result = new HashMap();
+		pd = this.getPageData();
+		page.setPd(pd);
+		List<PageData> list = goodCategoryService.list(page);// 列出用户列表
+		String json = JSON.Encode(list);
+		return json;
+		
+	}
+	
 	@RequestMapping(value = "/delGoodCategory")
 	@ResponseBody
 	public Object delSysUser(Page page){

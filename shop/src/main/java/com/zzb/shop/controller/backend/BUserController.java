@@ -143,7 +143,7 @@ public class BUserController extends BaseController{
 			Date date=new Date();
 			if (StringUtil.isNullOrEmpty(user.getId())){
 				if(("0").equals(user.getUserType())){
-					user.setGoodCategoryType(0L);
+					user.setGoodCategoryType(null);
 				}
 				user.setCreateDate(date);
 				user.setUpdateDate(date);
@@ -151,7 +151,7 @@ public class BUserController extends BaseController{
 				userService.insert(user);
 			}else{
 				if(("0").equals(user.getUserType())){
-					user.setGoodCategoryType(0L);
+					user.setGoodCategoryType(null);
 				}
 				user.setUpdateDate(date);
 				userService.updateByPrimaryKeySelective(user);

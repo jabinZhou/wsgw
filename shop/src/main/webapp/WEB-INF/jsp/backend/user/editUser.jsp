@@ -61,7 +61,7 @@
                     <td >分类：</td>
                     <td >  
                     	<input name="goodCategoryType" class="mini-combobox" valueField="id" textField="name" 
-                            url="<%=basePath%>/backend/goodCategory/goodCategoryList"
+                            url="<%=basePath%>/backend/goodCategory/getGoodCategoryList"
                              required="false"
                              emptyText="请选择分类"
                             /> 
@@ -122,10 +122,11 @@
                 		var o=mini.decode(info.attr.data);
                 		form.setData(o);
                         form.setChanged(false);
-                        if(o.goodCategoryType=="0"){
+                        console.log(o);
+                        /* if(o.goodCategoryType=="0"){
                         	o.goodCategoryType="";
-                        }
-                        mini.getbyName("goodCategoryType").setValue(o.goodCategoryType);
+                        } */
+                        //mini.getbyName("goodCategoryType").setValue(o.goodCategoryType);
                         
             		} else {
             			alert(info.info);

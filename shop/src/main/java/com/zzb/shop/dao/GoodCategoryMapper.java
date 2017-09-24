@@ -21,12 +21,7 @@ public interface GoodCategoryMapper {
 
     int updateByPrimaryKey(GoodCategory record);
     
-    
-    List<PageData> listGoodCategorys(@Param("page")Page page);
-    
-    int listGoodCategorysCount();
-    
-List<PageData> list(@Param("page")Page page);
+    List<PageData> list(@Param("page")Page page);
     
     int listCount(@Param("page")Page page);
 }

@@ -25,7 +25,7 @@ import com.zzb.shop.util.StringUtil;
  *
  */
 @Controller
-@RequestMapping(value = "/backend/advertis")
+@RequestMapping(value = "/backend/advertise")
 public class BAdvertiseController extends BaseController{
 
 	@Autowired

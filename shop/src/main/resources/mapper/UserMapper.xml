@@ -124,9 +124,9 @@
       <if test="password != null" >
         password = #{password,jdbcType=VARCHAR},
       </if>
-      <if test="goodCategoryType != null" >
+      
         good_category_type = #{goodCategoryType,jdbcType=BIGINT},
-      </if>
+      
       <if test="status != null" >
         status = #{status,jdbcType=VARCHAR},
       </if>
