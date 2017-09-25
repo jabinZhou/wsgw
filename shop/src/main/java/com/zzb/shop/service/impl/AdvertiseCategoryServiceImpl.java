@@ -21,6 +21,7 @@ public class AdvertiseCategoryServiceImpl implements AdvertiseCategoryService{
 	private AdvertiseCategoryMapper advertiseCategory;
 
 	@Override
+	@Transactional(readOnly = false)
 	public int deleteByPrimaryKey(Long id) {
 		// TODO Auto-generated method stub
 		return advertiseCategory.deleteByPrimaryKey(id);

@@ -18,8 +18,18 @@ public class Advertise {
     private Date updateDate;
 
     private String delFlag;
+    
+    private String categoryIdName;
 
-    public Long getId() {
+    public String getCategoryIdName() {
+		return categoryIdName;
+	}
+
+	public void setCategoryIdName(String categoryIdName) {
+		this.categoryIdName = categoryIdName;
+	}
+
+	public Long getId() {
         return id;
     }
 

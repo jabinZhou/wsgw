@@ -1,0 +1,9 @@
+2017-9-26 00:04:33 http-nio-8080-exec-6 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-9-26 00:04:33 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-9-26 00:04:33 http-nio-8080-exec-6 DEBUG <==      Total: 15
+2017-9-26 00:04:35 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.advertise_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from advertise a left join advertise_category b on a.advertise_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-9-26 00:04:35 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-26 00:04:35 http-nio-8080-exec-1 DEBUG <==      Total: 10
+2017-9-26 00:04:35 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from advertise where del_flag=0 
+2017-9-26 00:04:35 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-9-26 00:04:35 http-nio-8080-exec-1 DEBUG <==      Total: 1

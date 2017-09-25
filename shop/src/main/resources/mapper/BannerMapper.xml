@@ -16,13 +16,13 @@
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
-    <include refid="Base_Column_List" />
-    from banner
-    where id = #{id,jdbcType=BIGINT}
+    <include refid="select_Base_Column_List" />,b.name  as 'categoryIdName'
+    from banner  a left join banner_category b on a.banner_category_id=b.id
+    where a.id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
-    delete from banner
-    where id = #{id,jdbcType=BIGINT}
+     UPDATE `banner` SET `del_flag` = '1' 
+	WHERE id = #{id}
   </delete>
   <insert id="insert" parameterType="com.zzb.shop.domain.Banner" >
     insert into banner (id, title, name, 
@@ -96,9 +96,7 @@
       <if test="name != null" >
         name = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="bannerCategoryId != null" >
         banner_category_id = #{bannerCategoryId,jdbcType=BIGINT},
-      </if>
       <if test="url != null" >
         url = #{url,jdbcType=VARCHAR},
       </if>
@@ -125,4 +123,36 @@
       del_flag = #{delFlag,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
+  
+  
+  <sql id="select_Base_Column_List" >
+    a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag
+  </sql>
+  
+  <!-- 用户列表(弹窗选择用) -->
+	<select id="list" resultType="java.util.HashMap" >
+		select 
+    <include refid="select_Base_Column_List" />,b.name  as 'type_name'
+    from banner  a left join banner_category b on a.banner_category_id=b.id
+    where a.del_flag=0
+    <if test="page.pd.key!= null" >
+       and (a.title LIKE concat('%',#{page.pd.key},'%')or a.name LIKE concat('%',#{page.pd.key},'%'))
+    </if> 
+    <if test="page.sortField!= null and page.sortOrder!= null" >
+       ORDER BY ${page.sortField}  ${page.sortOrder}
+    </if>
+    <if test="page.limit!= null" >
+       ${page.limit}
+    </if>
+	</select>
+  
+    
+    <select id="listCount" resultType="Integer">
+    select count(1) from banner 
+    where  del_flag=0
+    <if test="page.pd.key!= null" >
+       and name LIKE concat('%',#{page.pd.key},'%')
+    </if> 
+    </select>
 </mapper>

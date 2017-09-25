@@ -21,7 +21,7 @@ public interface BannerMapper {
 
     int updateByPrimaryKey(Banner record);
     
-List<PageData> list(@Param("page")Page page);
+    List<PageData> list(@Param("page")Page page);
     
     int listCount(@Param("page")Page page);
 }

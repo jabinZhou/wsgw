@@ -19,6 +19,15 @@ public class Banner {
 
     private String delFlag;
 
+    private String categoryIdName;
+
+    public String getCategoryIdName() {
+		return categoryIdName;
+	}
+
+	public void setCategoryIdName(String categoryIdName) {
+		this.categoryIdName = categoryIdName;
+	}
     public Long getId() {
         return id;
     }

@@ -34,31 +34,30 @@
         <input name="id" class="mini-hidden" />
         <div style="padding-left:11px;padding-bottom:5px;">
             <table style="table-layout:fixed;">
-               
+                
                 <tr>
-                    <td >标题：</td>
+                    <td >广告名称：</td>
                     <td >    
-                        <input name="title" class="mini-textbox" required="true" emptyText="请输入标题" vtype="rangeChar:1,20"/>
+                        <input name="name" class="mini-textbox" required="true" emptyText="请输入广告名称" vtype="rangeChar:1,20"/>
                     </td>
-                    <td style="width:70px;">名称：</td>
-	                <td >                        
-	                     <input name="name" class="mini-textbox" required="true" emptyText="请输入名称" vtype="rangeChar:1,20"/>
+                    <td style="width:70px;"></td>
+	                <td >           
 	                </td>
                 </tr>
                
-                <tr>
-                    <td >地址：</td>
-                    <td >    
-                        <input name="url" class="mini-textbox" required="true"  emptyText="请输入地址" requiredErrorText="地址不能为空" vtype="rangeChar:1,255"/>
-                    </td>
-                </tr> 
+                
                 <tr>
                     <td >分类：</td>
                     <td >  
-                    	<input id="advertiseCategoryId"  name="advertiseCategoryId" class="mini-buttonedit" onbuttonclick="onButtonEdit" allowInput="false"/> 
+                    	<%-- <input name="goodCategoryType" class="mini-combobox" valueField="id" textField="name" 
+                            url="<%=basePath%>/backend/goodCategory/getGoodCategoryList"
+                             required="false"  
+                             emptyText="请选择分类"
+                            />  --%>
+                            <input id="parentId"  name="parentId" class="mini-buttonedit" onbuttonclick="onButtonEdit" allowInput="false"/> 
                     </td>
                 </tr>  
-                 
+                         
             </table>
         </div>
         <div style="text-align:center;padding:10px;">               
@@ -77,14 +76,14 @@
 
             form.validate();
             if (form.isValid() == false){ 
-            	 var errors =  form.getErrorTexts();
-                 var t = errors[0]
-                 mini.alert(t)	
-            return;
-            }
+           	 var errors =  form.getErrorTexts();
+                var t = errors[0]
+                mini.alert(t)	
+           		return;
+           }
 
             var json = mini.encode([o]);
-            $.post("${basePath}/backend/advertise/saveAdvertise", $("#form1").serialize(), function(info) {
+            $.post("${basePath}/backend/advertiseCategory/saveAdvertiseCategory", $("#form1").serialize(), function(info) {
         		if (info.status) {
         			CloseWindow("save");
         		} else {
@@ -100,15 +99,16 @@
             if (data.action == "edit") {
                 //跨页面传递的数据对象，克隆后才可以安全使用
                 data = mini.clone(data);
-                $.post("${basePath}/backend/advertise/getAdvertise?id=" + data.id, function(info) {
-                	if (info.status) {
+                $.post("${basePath}/backend/advertiseCategory/getAdvertiseCategory?id=" + data.id, function(info) {
+             	if (info.status) {
+								
                 		var o=mini.decode(info.attr.data);
                 		form.setData(o);
                         form.setChanged(false);
-                        if(o.categoryIdName!=null){
-                        	mini.get("advertiseCategoryId").setText(o.categoryIdName);
+                   
+                        if(o.parentIdName!=null){
+                        	mini.get("parentId").setText(o.parentIdName);
                         }
-                        
             		} else {
             			alert(info.info);
             		}
@@ -136,7 +136,6 @@
         function onCancel(e) {
             CloseWindow("cancel");
         }
-
 
         function onButtonEdit(e) {
             var buttonEdit = e.sender;

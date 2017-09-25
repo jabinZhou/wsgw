@@ -55,7 +55,7 @@
                 <tr>
                     <td >分类：</td>
                     <td >  
-                    	<input id="advertiseCategoryId"  name="advertiseCategoryId" class="mini-buttonedit" onbuttonclick="onButtonEdit" allowInput="false"/> 
+                    	<input id="bannerCategoryId"  name="bannerCategoryId" class="mini-buttonedit" onbuttonclick="onButtonEdit" allowInput="false"/> 
                     </td>
                 </tr>  
                  
@@ -84,7 +84,7 @@
             }
 
             var json = mini.encode([o]);
-            $.post("${basePath}/backend/advertise/saveAdvertise", $("#form1").serialize(), function(info) {
+            $.post("${basePath}/backend/banner/saveBanner", $("#form1").serialize(), function(info) {
         		if (info.status) {
         			CloseWindow("save");
         		} else {
@@ -100,13 +100,13 @@
             if (data.action == "edit") {
                 //跨页面传递的数据对象，克隆后才可以安全使用
                 data = mini.clone(data);
-                $.post("${basePath}/backend/advertise/getAdvertise?id=" + data.id, function(info) {
+                $.post("${basePath}/backend/banner/getBanner?id=" + data.id, function(info) {
                 	if (info.status) {
                 		var o=mini.decode(info.attr.data);
                 		form.setData(o);
                         form.setChanged(false);
                         if(o.categoryIdName!=null){
-                        	mini.get("advertiseCategoryId").setText(o.categoryIdName);
+                        	mini.get("bannerCategoryId").setText(o.categoryIdName);
                         }
                         
             		} else {
@@ -146,7 +146,7 @@
 //                multiSelect: true,
 //                showFolderCheckBox: true,
 //                checkRecursive: true,                
-                url: "${basePath}/backend/advertiseCategory/advertiseCategoryListClick",    
+                url: "${basePath}/backend/bannerCategory/bannerCategoryListClick",    
                 title: "选择树形",
                 width: 350,
                 height: 350

@@ -19,15 +19,19 @@
 	
 	{id: "good", text: "商品管理"},
 		
-	{id: "goodCategory", text: "商品分类管理", pid: "good" },
+	{id: "goodCategory/goodCategory", text: "商品分类管理", pid: "good" },
 	
-	{id: "shopCar", text: "购物车管理", pid: "good" },
+	{id: "good/good", text: "商品管理", pid: "good" },
 	
-	{id: "order", text: "订单管理", pid: "good" },
+	{id: "shopCar/shopCar", text: "购物车管理", pid: "good" },
+	
+	{id: "order/order", text: "订单管理", pid: "good" },
 		
 	{id: "activity", text: "活动管理"},
 		
-	{id: "activityCategory", text: "活动分类管理",  pid: "activity" }				
+	{id: "activityCategory/activityCategory", text: "活动分类管理",  pid: "activity" },
+	
+	{id: "activity/activity", text: "活动管理",  pid: "activity" }				
 ]
 
 

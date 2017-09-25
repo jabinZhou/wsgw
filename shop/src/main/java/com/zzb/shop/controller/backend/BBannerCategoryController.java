@@ -1,5 +1,6 @@
 package com.zzb.shop.controller.backend;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -60,13 +61,58 @@ public class BBannerCategoryController extends BaseController{
 		pd.put("sortField","a."+pd.get("sortField"));
 		page.setPd(pd);
 		List<PageData> list = bannerCategoryService.list(page);// 列出用户列表
-		int total = bannerCategoryService.listCount(page);
+		/*int total = bannerCategoryService.listCount(page);
 		result.put("data", list);
-		result.put("total", total);
-		String json = JSON.Encode(result);
+		result.put("total", total);*/
+		String json = JSON.Encode(list);
 		return json;
 		
 	}
+	
+	
+	/**
+	 * 点击树形页
+	 * @param model
+	 * @param page
+	 * @return
+	 */
+	@RequestMapping(value = "/bannerCategoryListClick")
+	@ResponseBody
+	public Object sysUserListClick(Model model,Page page) {
+		PageData pd = new PageData();
+		HashMap result = new HashMap();
+		pd = this.getPageData();
+		String key = pd.getString("key"); // 检索条件 关键词
+		if (null != key && !"".equals(key)) {
+			pd.put("key", key.trim());
+		}
+		//pd.put("sortField","a."+pd.get("sortField"));
+		page.setPd(pd);
+		List<PageData> list = bannerCategoryService.list(page);// 列出用户列表
+		if(list!=null&&list.size()>0){
+			for(HashMap d:list){
+				//System.out.println(d.get("id"));
+				d.put("id",d.get("id"));
+				d.put("pid",d.get("parent_id"));
+				d.put("text",d.get("name"));
+			}
+			
+		}else{
+			list=new ArrayList<PageData>();
+		}
+		PageData m=new PageData();
+		m.put("id", 0);
+		m.put("pid", null);
+		m.put("text", "顶层");
+		list.add(m);
+		//int total = advertiseCategoryService.listCount(page);
+		//result.put("data", list);
+		//result.put("total", total);
+		String json = JSON.Encode(list);
+		return json;
+		
+	}
+	
 	@RequestMapping(value = "/delBannerCategory")
 	@ResponseBody
 	public Object delSysUser(Page page){
@@ -135,7 +181,7 @@ public class BBannerCategoryController extends BaseController{
 	 * @param page
 	 * @return
 	 */
-	@RequestMapping(value = "/savebannerCategory")
+	@RequestMapping(value = "/saveBannerCategory")
 	@ResponseBody
 	public Object saveSysUser(BannerCategory domain){
 		PushMsg pushMsg = new PushMsg("保存成功！", true);

@@ -14,11 +14,12 @@
   <sql id="Base_Column_List" >
     id, title, name, advertise_category_id, url, create_date, update_date, del_flag
   </sql>
+  
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
-    <include refid="Base_Column_List" />
-    from advertise
-    where id = #{id,jdbcType=BIGINT}
+    <include refid="select_Base_Column_List" />,b.name as 'categoryIdName'
+    from advertise a left join advertise_category b on a.advertise_category_id=b.id
+    where a.id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     UPDATE `advertise` SET `del_flag` = '1' 
@@ -96,9 +97,9 @@
       <if test="name != null" >
         name = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="advertiseCategoryId != null" >
+      
         advertise_category_id = #{advertiseCategoryId,jdbcType=BIGINT},
-      </if>
+     
       <if test="url != null" >
         url = #{url,jdbcType=VARCHAR},
       </if>

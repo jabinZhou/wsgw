@@ -20,8 +20,8 @@
     where id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
-    delete from banner_category
-    where id = #{id,jdbcType=BIGINT}
+    UPDATE `banner_category` SET `del_flag` = '1' 
+	WHERE id = #{id} OR parent_ids LIKE  CONCAT('%,', #{id}, ',%')
   </delete>
   <insert id="insert" parameterType="com.zzb.shop.domain.BannerCategory" >
     insert into banner_category (id, name, parent_id, 
@@ -114,4 +114,24 @@
       del_flag = #{delFlag,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
+   <!-- 用户列表(弹窗选择用) -->
+	<select id="list" resultType="java.util.HashMap" >
+		select 
+    <include refid="Base_Column_List" />
+    from banner_category 
+    where del_flag=0
+    <if test="page.pd.key!= null" >
+       and name LIKE concat('%',#{page.pd.key},'%')
+    </if> 
+	</select>
+  
+    
+    <select id="listCount" resultType="Integer">
+    select count(1) from banner_category 
+    where  del_flag=0
+    <if test="page.pd.key!= null" >
+       and name LIKE concat('%',#{page.pd.key},'%')
+    </if> 
+    </select>
 </mapper>
