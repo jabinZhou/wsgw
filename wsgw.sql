@@ -24,15 +24,17 @@ CREATE TABLE `advertise` (
   `id` bigint(11) NOT NULL AUTO_INCREMENT COMMENT 'Id主键',
   `title` varchar(60) NOT NULL COMMENT '标题',
   `name` varchar(30) NOT NULL COMMENT '名称',
-  `advertise_ category _id` bigint(11) NOT NULL COMMENT '分类id',
+  `advertise_category_id` bigint(11) DEFAULT NULL COMMENT '分类id',
   `url` varchar(255) NOT NULL COMMENT '地址',
   `create_date` datetime NOT NULL COMMENT '创建时间',
   `update_date` datetime NOT NULL COMMENT '更新时间',
   `del_flag` varchar(1) NOT NULL COMMENT '删除标记1删除0未删除　',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 /*Data for the table `advertise` */
+
+insert  into `advertise`(`id`,`title`,`name`,`advertise_category_id`,`url`,`create_date`,`update_date`,`del_flag`) values (1,'第1幅图片','第一幅图片',1,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(2,'第2幅图片','第一幅图片',1,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(3,'第3幅图片','第一幅图片',1,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(4,'第4幅图片','第一幅图片',1,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(5,'第5幅图片','第一幅图片',1,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(6,'第6幅图片','第一幅图片',1,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(7,'第7幅图片','第一幅图片',1,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(8,'第8幅图片','第一幅图片',16,'1','2017-09-20 00:00:00','2017-09-25 23:04:28','0'),(9,'第9幅图片','第一幅图片',2,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(10,'第0幅图片','第一幅图片',2,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(11,'第一幅图片','第一幅图片',2,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(12,'第一幅图片','第一幅图片',2,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(13,'第一幅图片','第一幅图片',2,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(14,'第一幅图片','第一幅图片',2,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(15,'第一幅图片','第一幅图片',2,'1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(16,'标题','名称',0,'地址','2017-09-25 23:03:15','2017-09-25 23:04:13','1'),(17,'广告1','11',3,'11','2017-09-25 23:34:48','2017-09-25 23:35:06','0'),(18,'广告2','2',1,'2','2017-09-25 23:34:58','2017-09-25 23:35:14','0');
 
 /*Table structure for table `advertise_category` */
 
@@ -42,14 +44,16 @@ CREATE TABLE `advertise_category` (
   `id` bigint(11) NOT NULL AUTO_INCREMENT COMMENT 'Id主键',
   `name` varchar(30) NOT NULL COMMENT '名称',
   `parent_id` bigint(11) NOT NULL COMMENT '父类id',
-  `parent_ids` varchar(255) NOT NULL COMMENT '父类ids',
+  `parent_ids` varchar(255) DEFAULT NULL COMMENT '父类ids',
   `create_date` datetime NOT NULL COMMENT '创建时间',
   `update_date` datetime NOT NULL COMMENT '更新时间',
   `del_flag` varchar(1) NOT NULL COMMENT '删除标记1删除0未删除　',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 /*Data for the table `advertise_category` */
+
+insert  into `advertise_category`(`id`,`name`,`parent_id`,`parent_ids`,`create_date`,`update_date`,`del_flag`) values (1,'首页广告',0,'0,1','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(2,'详情广告',0,'0,2','2017-09-20 00:00:00','2017-09-20 00:00:00','0'),(3,'登录页广告',0,'0,3','2017-09-24 00:00:00','2017-09-24 00:00:00','0'),(4,'首页第一排广告',0,'0,4','2017-09-24 00:00:00','2017-09-24 18:10:55','0'),(5,'首页第二排广告',1,'0,1,5','2017-09-24 00:00:00','2017-09-24 00:00:00','0'),(6,'详情第一排广告',2,'0,2,6','2017-09-24 00:00:00','2017-09-24 00:00:00','0'),(7,'详情第一排广告第一',6,'0,2,6,7','2017-09-24 00:00:00','2017-09-24 00:00:00','0'),(8,'啦啦',0,'0,8','2017-09-24 17:29:39','2017-09-24 17:29:39','0'),(9,'哈哈',0,'0,9','2017-09-24 17:30:35','2017-09-24 17:30:35','0'),(10,'苦苦',6,'0,2,6,10','2017-09-24 17:33:53','2017-09-24 17:56:54','0'),(11,'124654',8,'0,8,11','2017-09-24 17:35:27','2017-09-24 17:35:27','0'),(15,'一级',0,'0,15','2017-09-24 17:41:37','2017-09-24 17:41:37','0'),(16,'二级',15,'0,15,16','2017-09-24 17:41:49','2017-09-24 17:41:49','0'),(18,'11111',0,'0,18','2017-09-24 18:10:20','2017-09-24 18:10:20','0'),(19,'111110',0,'0,19','2017-09-24 18:10:32','2017-09-24 18:10:32','0');
 
 /*Table structure for table `banner` */
 
@@ -59,15 +63,17 @@ CREATE TABLE `banner` (
   `id` bigint(11) NOT NULL AUTO_INCREMENT COMMENT 'Id主键',
   `title` varchar(60) NOT NULL COMMENT '标题',
   `name` varchar(30) NOT NULL COMMENT '名称',
-  `banner_category_id` bigint(11) NOT NULL COMMENT '分类id',
+  `banner_category_id` bigint(11) DEFAULT NULL COMMENT '分类id',
   `url` varchar(255) NOT NULL COMMENT '地址',
   `create_date` datetime NOT NULL COMMENT '创建时间',
   `update_date` datetime NOT NULL COMMENT '更新时间',
   `del_flag` varchar(1) NOT NULL COMMENT '删除标记1删除0未删除',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 /*Data for the table `banner` */
+
+insert  into `banner`(`id`,`title`,`name`,`banner_category_id`,`url`,`create_date`,`update_date`,`del_flag`) values (1,'1111','1111',1,'1','2017-07-25 00:00:00','2017-07-25 00:00:00','0'),(2,'222','222',2,'2','2017-07-25 00:00:00','2017-07-25 00:00:00','0'),(4,'4444','4444',0,'4','2017-07-25 00:00:00','2017-09-25 23:36:39','0'),(6,'啦啦法拉盛','爸爸',4,'手动阀','2017-09-25 23:30:44','2017-09-25 23:36:33','0'),(7,'速度发斯蒂芬','阿斯顿发生',1,'手动阀','2017-09-25 23:51:23','2017-09-25 23:51:31','0');
 
 /*Table structure for table `banner_category` */
 
@@ -77,14 +83,16 @@ CREATE TABLE `banner_category` (
   `id` bigint(11) NOT NULL AUTO_INCREMENT COMMENT 'Id主键',
   `name` varchar(30) NOT NULL COMMENT '名称',
   `parent_id` bigint(11) NOT NULL COMMENT '父类id',
-  `parent_ids` varchar(255) NOT NULL COMMENT '父类ids',
+  `parent_ids` varchar(255) DEFAULT NULL COMMENT '父类ids',
   `create_date` datetime NOT NULL COMMENT '创建时间',
   `update_date` datetime NOT NULL COMMENT '更新时间',
   `del_flag` varchar(1) NOT NULL COMMENT '删除标记1删除0未删除　',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 /*Data for the table `banner_category` */
+
+insert  into `banner_category`(`id`,`name`,`parent_id`,`parent_ids`,`create_date`,`update_date`,`del_flag`) values (1,'111',2,'0,2,1','2017-07-25 00:00:00','2017-09-25 23:47:05','0'),(2,'222',0,'0,2','2017-07-25 00:00:00','2017-07-25 00:00:00','0'),(3,'333',2,'0,2,3','2017-07-25 00:00:00','2017-09-25 23:47:17','0'),(4,'444',1,'0,1,4','2017-07-25 00:00:00','2017-07-25 00:00:00','0'),(5,'5555',4,'0,1,4,5','2017-07-25 00:00:00','2017-09-25 23:47:40','0'),(6,'555',1,'0,1,6','2017-09-25 23:46:46','2017-09-25 23:46:56','0'),(7,'666',1,'0,2,1,7','2017-09-25 23:50:12','2017-09-26 23:25:47','0');
 
 /*Table structure for table `city` */
 
@@ -176,7 +184,7 @@ CREATE TABLE `good_activity_category` (
   `id` bigint(11) NOT NULL AUTO_INCREMENT COMMENT 'Id主键',
   `name` varchar(30) NOT NULL COMMENT '名称',
   `parent_id` bigint(11) NOT NULL COMMENT '父类id',
-  `parent_ids` varchar(255) NOT NULL COMMENT '父类ids',
+  `parent_ids` varchar(255) DEFAULT NULL COMMENT '父类ids',
   `create_date` datetime NOT NULL COMMENT '创建时间',
   `update_date` datetime NOT NULL COMMENT '更新时间',
   `del_flag` varchar(1) NOT NULL COMMENT '删除标记1删除0未删除　',
@@ -193,14 +201,16 @@ CREATE TABLE `good_category` (
   `id` bigint(11) NOT NULL AUTO_INCREMENT COMMENT 'Id主键',
   `name` varchar(30) NOT NULL COMMENT '名称',
   `parent_id` bigint(11) NOT NULL COMMENT '父类id',
-  `parent_ids` varchar(255) NOT NULL COMMENT '父类ids',
+  `parent_ids` varchar(255) DEFAULT NULL COMMENT '父类ids',
   `create_date` datetime NOT NULL COMMENT '创建时间',
   `update_date` datetime NOT NULL COMMENT '更新时间',
   `del_flag` varchar(1) NOT NULL COMMENT '删除标记1删除0未删除　',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 /*Data for the table `good_category` */
+
+insert  into `good_category`(`id`,`name`,`parent_id`,`parent_ids`,`create_date`,`update_date`,`del_flag`) values (1,'鞋子',0,'0,1','2017-09-18 00:00:00','2017-09-18 00:00:00','0'),(2,'口红',0,'0,2','2017-09-18 00:00:00','2017-09-18 00:00:00','0'),(3,'拉箱',0,'0,3','2017-09-26 00:00:00','2017-09-26 00:00:00','0'),(4,'包包',0,'0,4','2017-09-26 00:00:00','2017-09-26 00:00:00','0'),(5,'鞋子1',6,'0,1,5','2017-09-26 00:00:00','2017-09-26 23:36:33','0'),(6,'鞋子2',1,'0,1,6','2017-09-26 00:00:00','2017-09-26 00:00:00','0'),(7,'口红1',2,'0,2,7','2017-09-26 00:00:00','2017-09-26 00:00:00','0'),(8,'口红2',2,'0,2,8','2017-09-26 00:00:00','2017-09-26 00:00:00','0'),(9,'拉箱1',3,'0,3,9','2017-09-26 00:00:00','2017-09-26 00:00:00','0'),(10,'拉箱2',3,'0,3,10','2017-09-26 00:00:00','2017-09-26 00:00:00','0'),(11,'包包1',4,'0,4,11','2017-09-26 00:00:00','2017-09-26 00:00:00','0'),(12,'包包2',4,'0,4,12','2017-09-26 00:00:00','2017-09-26 00:00:00','0');
 
 /*Table structure for table `good_detail` */
 
@@ -269,14 +279,16 @@ CREATE TABLE `sys_user` (
   `user_type` varchar(2) NOT NULL COMMENT '用户类型 0一般 1超级',
   `phone` varchar(11) NOT NULL COMMENT '用户账户',
   `password` varchar(32) NOT NULL COMMENT '用户密码',
-  `status` varchar(2) NOT NULL COMMENT '用户状态',
+  `status` varchar(2) NOT NULL COMMENT '用户状态 0可用1不可用',
   `create_date` datetime NOT NULL COMMENT '创建时间',
   `update_date` datetime NOT NULL COMMENT '更新时间',
   `del_flag` varchar(1) NOT NULL COMMENT '删除标记1删除0未删除',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 /*Data for the table `sys_user` */
+
+insert  into `sys_user`(`id`,`name`,`user_type`,`phone`,`password`,`status`,`create_date`,`update_date`,`del_flag`) values (1,'我的','1','18825113545','123456','0','2017-09-17 00:00:00','2017-09-17 00:00:00','0'),(2,'你的1','0','18825151515','123456','1','2017-09-19 00:00:00','2017-09-17 22:24:39','0'),(3,'它的','1','12345678911','123456','1','2017-09-17 20:38:32','2017-09-17 21:12:19','0'),(4,'他的','0','18825413545','123456','1','2017-09-17 20:46:33','2017-09-17 21:12:01','0'),(5,'拉埃','1','18825111111','123456','0','2017-09-17 22:24:59','2017-09-17 22:24:59','0');
 
 /*Table structure for table `user` */
 
@@ -294,11 +306,11 @@ CREATE TABLE `user` (
   `update_date` datetime NOT NULL COMMENT '更新时间',
   `del_flag` varchar(1) NOT NULL COMMENT '删除标记1删除0未删除',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 /*Data for the table `user` */
 
-insert  into `user`(`id`,`name`,`user_type`,`phone`,`password`,`good_category_type`,`status`,`create_date`,`update_date`,`del_flag`) values (1,'jabin','1','18825113545','123456',1,'1','2017-09-02 00:00:00','2017-09-02 00:00:00','0'),(2,'库','2','18825113546','123456',1,'1','2017-09-03 00:00:00','2017-09-03 00:00:00','0'),(3,'百','1','18825113547','123',1,'1','2017-09-03 00:00:00','2017-09-03 00:00:00','0'),(4,'的','1','18825113548','123456',1,'1','2017-09-03 00:00:00','2017-09-03 00:00:00','0');
+insert  into `user`(`id`,`name`,`user_type`,`phone`,`password`,`good_category_type`,`status`,`create_date`,`update_date`,`del_flag`) values (1,'jabin','1','18825113545','123456',2,'1','2017-09-02 00:00:00','2017-09-24 14:17:02','0'),(2,'库','0','18825113546','123456',NULL,'1','2017-09-03 00:00:00','2017-09-03 00:00:00','0'),(3,'百1','1','18825113547','123456',1,'1','2017-09-03 00:00:00','2017-09-24 14:19:36','0'),(4,'他','0','18825113549','1234567',NULL,'0','2017-09-03 00:00:00','2017-09-24 14:19:30','0'),(5,'我的买家','0','18825113599','123456',NULL,'0','2017-09-19 23:10:34','2017-09-24 13:57:51','0'),(6,'大是大非2','0','18181818118','123456',NULL,'0','2017-09-19 23:13:08','2017-09-24 13:56:10','0'),(7,'是的发送','0','12345678911','123456',NULL,'0','2017-09-19 23:15:42','2017-09-19 23:15:42','0'),(8,'ASDF','0','15151512222','123465',NULL,'0','2017-09-19 23:56:59','2017-09-20 00:00:06','0'),(9,'大是大非','0','18484887878','123456',NULL,'1','2017-09-20 00:00:27','2017-09-24 14:18:43','0'),(10,'沙发上','1','15151515151','123456',1,'0','2017-09-24 14:19:08','2017-09-24 14:19:08','0'),(11,'沙发斯蒂芬','0','15151548484','123456',NULL,'0','2017-09-24 14:19:23','2017-09-24 14:19:23','0');
 
 /*Table structure for table `userss` */
 
