@@ -21,6 +21,8 @@ public class ShopApplication extends SpringBootServletInitializer{
 	        return application.sources(ShopApplication.class,SessionConfiguration.class);
 	    }
 	
+	 
+	 
 	public static void main(String[] args) {
 		SpringApplication.run(ShopApplication.class, args);
 	}
