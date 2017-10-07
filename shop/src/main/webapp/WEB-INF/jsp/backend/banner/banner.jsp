@@ -13,6 +13,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <link href="<%=basePath%>/css/demo.css" rel="stylesheet" type="text/css" />
 <script src="<%=basePath%>/scripts/boot.js" type="text/javascript"></script> 
+<script src="<%=basePath%>/js/plupload.full.min.js"></script>
 <title>Hello world Example</title>
 </head>
 	 <body>
@@ -25,7 +26,10 @@
                     <td style="width:100%;">
                         <a class="mini-button" iconCls="icon-add" onclick="add()">增加</a>
                         <a class="mini-button" iconCls="icon-add" onclick="edit()">编辑</a>
-                        <a class="mini-button" iconCls="icon-remove" onclick="remove()">删除</a>       
+                        <a class="mini-button" iconCls="icon-remove" onclick="remove()">删除</a>  
+                        <button id=image_btn>点击上传证件一</button>
+                        <div id="image_url"><img src="${basePath}/img/show.jpg" alt=""></div>
+						<input id="input_image" type="text" value=""/>     
                     </td>
                     <td style="white-space:nowrap;">
                         <input id="key" class="mini-textbox" emptyText="请输入标题或名称" style="width:150px;" onenter="onKeyEnter"/>   
@@ -138,6 +142,51 @@
             if (value) return mini.formatDate(value, 'yyyy-MM-dd');
             return "";
         }
+        
+        
+        
+        function initUploader(uploaderHead,memberHead,image_btn,input_image,showWhere) {
+        	var uploaderHead = new plupload.Uploader({ //实例化一个plupload上传对象
+        		browse_button : image_btn,
+        		url : '${basePath}/file/upload',
+        		multi_selection:false,
+        		auto_start : true,
+        		flash_swf_url : '${basePath}/js/Moxie.swf',
+        		silverlight_xap_url : '${basePath}/js/Moxie.xap',
+        		filters: {
+        		  mime_types : [ //只允许上传图片文件
+        		    { title : "图片文件", extensions : "jpg,gif,png" }
+        		  ],
+        		  max_file_size : '1024kb',
+        		  prevent_duplicates : true 
+        		},
+        		multipart_params: {
+        			fileType: 'image',
+        			dirName: memberHead,
+        			width:580,
+    				height:255
+        			
+        		}
+        	});
+        	uploaderHead.init(); //初始化
+        	uploaderHead.bind('FilesAdded',function(uploader,files){
+        		if(files.length>0){
+        			uploader.start();
+        		}
+        	});
+        	uploaderHead.bind('Error',function(uploader,errObject){
+        		alert(errObject.message,false);
+        	});
+        	
+        	uploaderHead.bind('FileUploaded',function(uploader,file,responseObject){
+        			var response = $.parseJSON(responseObject.response);
+        			$("#"+showWhere).html('<img src="'+response.url+'"/>');
+        			$("#"+input_image).val(response.url);
+        	});
+        }
+
+        		//初始化上传图片实例   1、对象名 2、文件夹 3、触发按钮 4、url保存位置,5、图片显示位置
+        initUploader("bannerLoader","bannerImg","image_btn","input_image","image_url");    
     </script>
 	 </body>
 </html>

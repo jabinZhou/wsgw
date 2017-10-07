@@ -41,7 +41,7 @@ public class Page {
 	}
 
 	public String getLimit() {
-		this.limit=" limit "+((this.pageIndex<1?1:this.pageIndex)-1)*this.pageSize+","+this.pageSize;
+		this.limit=" limit "+(this.pageIndex<0?0:this.pageIndex)*this.pageSize+","+this.pageSize;
 		return limit;
 	}
 
@@ -245,6 +245,13 @@ public class Page {
 	}
 
 	public void setPd(PageData pd) {
+		if(pd!=null){
+			String pageIndex = pd.getString("pageIndex"); // 检索条件 关键词
+			String pageSize = pd.getString("pageSize"); // 检索条件 关键词
+			if (null != pageIndex && !"".equals(pageIndex)&&null != pageSize && !"".equals(pageSize)) {
+				setLimit(getLimit());
+			}
+		}
 		this.pd = pd;
 	}
 	
