@@ -13073,3 +13073,1092 @@
 2017-10-09 19:52:18.084 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.zzb.shop.domain.PushMsg@7e705206] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4462efe1]
 2017-10-09 19:52:18.084 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
 2017-10-09 19:52:18.084 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:54:51.467 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/scripts/miniui/themes/default/images/tabs/hover.png]
+2017-10-09 19:54:51.467 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /scripts/miniui/themes/default/images/tabs/hover.png
+2017-10-09 19:54:51.468 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/scripts/miniui/themes/default/images/tabs/hover.png]
+2017-10-09 19:54:51.468 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/scripts/miniui/themes/default/images/tabs/hover.png] are [/**]
+2017-10-09 19:54:51.468 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/scripts/miniui/themes/default/images/tabs/hover.png] are {}
+2017-10-09 19:54:51.468 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/scripts/miniui/themes/default/images/tabs/hover.png] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 19:54:51.468 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/scripts/miniui/themes/default/images/tabs/hover.png] is: -1
+2017-10-09 19:54:51.470 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:54:51.470 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:54:58.058 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/docs/api/overview.html]
+2017-10-09 19:54:58.058 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /docs/api/overview.html
+2017-10-09 19:54:58.059 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/docs/api/overview.html]
+2017-10-09 19:54:58.059 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/docs/api/overview.html] are [/**]
+2017-10-09 19:54:58.059 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/docs/api/overview.html] are {}
+2017-10-09 19:54:58.059 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/docs/api/overview.html] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 19:54:58.059 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/docs/api/overview.html] is: -1
+2017-10-09 19:54:58.059 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:54:58.059 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:54:58.060 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/404.html]
+2017-10-09 19:54:58.060 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /404.html
+2017-10-09 19:54:58.060 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/404.html]
+2017-10-09 19:54:58.060 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/404.html] are [/**]
+2017-10-09 19:54:58.060 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/404.html] are {}
+2017-10-09 19:54:58.060 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/404.html] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 19:54:58.060 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/404.html] is: -1
+2017-10-09 19:54:58.061 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:54:58.061 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:54:59.923 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/admin/ajaxCommon]
+2017-10-09 19:54:59.924 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /admin/ajaxCommon
+2017-10-09 19:54:59.924 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.AdminController.ajaxCommon(javax.servlet.http.HttpServletRequest)]
+2017-10-09 19:54:59.924 [http-nio-8080-exec-6] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 19:54:59.924 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.zzb.shop.domain.PushMsg@3ea782c8] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4462efe1]
+2017-10-09 19:54:59.925 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:54:59.925 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:54:59.944 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/backend/goodCategory/goodCategory]
+2017-10-09 19:54:59.944 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/goodCategory/goodCategory
+2017-10-09 19:54:59.944 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zzb.shop.controller.backend.BGoodCategoryController.sysUser(org.springframework.ui.Model)]
+2017-10-09 19:54:59.944 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/backend/goodCategory/goodCategory] is: -1
+2017-10-09 19:54:59.945 [http-nio-8080-exec-3] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Requested media types are [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+2017-10-09 19:54:59.945 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/goodCategory/goodCategory'
+2017-10-09 19:54:59.945 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/goodCategory/goodCategory.html'
+2017-10-09 19:54:59.945 [http-nio-8080-exec-3] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'backend/goodCategory/goodCategory'; URL [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp]] based on requested media type 'text/html'
+2017-10-09 19:54:59.945 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'backend/goodCategory/goodCategory'; URL [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp]] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-09 19:54:59.945 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp] in InternalResourceView 'backend/goodCategory/goodCategory'
+2017-10-09 19:54:59.946 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:55:00.121 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/backend/advertiseCategory/advertiseCategoryList]
+2017-10-09 19:55:00.122 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/advertiseCategory/advertiseCategoryList
+2017-10-09 19:55:00.122 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.BAdvertiseCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]
+2017-10-09 19:55:00.122 [http-nio-8080-exec-9] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 19:55:00.129 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [[{"del_flag":"0","parent_id":0,"name":"首页广告","id":1,"parent_ids":"0,1","create_date":"2017-09-20T00:00:00","update_date":"2017-09-20T00:00:00"},{"del_flag":"0","parent_id":0,"name":"详情广告","id":2,"parent_ids":"0,2","create_date":"2017-09-20T00:00:00","update_date":"2017-09-20T00:00:00"},{"del_flag":"0","parent_id":0,"name":"登录页广告","id":3,"parent_ids":"0,3","create_date":"2017-09-24T00:00:00","update_date":"2017-09-24T00:00:00"},{"del_flag":"0","parent_id":0,"name":"首页第一排广告","id":4,"parent_ids":"0,4","create_date":"2017-09-24T00:00:00","update_date":"2017-09-24T18:10:55"},{"del_flag":"0","parent_id":1,"name":"首页第二排广告","id":5,"parent_ids":"0,1,5","create_date":"2017-09-24T00:00:00","update_date":"2017-09-24T00:00:00"},{"del_flag":"0","parent_id":2,"name":"详情第一排广告","id":6,"parent_ids":"0,2,6","create_date":"2017-09-24T00:00:00","update_date":"2017-09-24T00:00:00"},{"del_flag":"0","parent_id":6,"name":"详情第一排广告第一","id":7,"parent_ids":"0,2,6,7","create_date":"2017-09-24T00:00:00","update_date":"2017-09-24T00:00:00"},{"del_flag":"0","parent_id":0,"name":"啦啦","id":8,"parent_ids":"0,8","create_date":"2017-09-24T17:29:39","update_date":"2017-09-24T17:29:39"},{"del_flag":"0","parent_id":0,"name":"哈哈","id":9,"parent_ids":"0,9","create_date":"2017-09-24T17:30:35","update_date":"2017-09-24T17:30:35"},{"del_flag":"0","parent_id":6,"name":"苦苦","id":10,"parent_ids":"0,2,6,10","create_date":"2017-09-24T17:33:53","update_date":"2017-09-24T17:56:54"},{"del_flag":"0","parent_id":8,"name":"124654","id":11,"parent_ids":"0,8,11","create_date":"2017-09-24T17:35:27","update_date":"2017-09-24T17:35:27"},{"del_flag":"0","parent_id":0,"name":"一级","id":15,"parent_ids":"0,15","create_date":"2017-09-24T17:41:37","update_date":"2017-09-24T17:41:37"},{"del_flag":"0","parent_id":15,"name":"二级","id":16,"parent_ids":"0,15,16","create_date":"2017-09-24T17:41:49","update_date":"2017-09-24T17:41:49"},{"del_flag":"0","parent_id":0,"name":"11111","id":18,"parent_ids":"0,18","create_date":"2017-09-24T18:10:20","update_date":"2017-09-24T18:10:20"},{"del_flag":"0","parent_id":0,"name":"111110","id":19,"parent_ids":"0,19","create_date":"2017-09-24T18:10:32","update_date":"2017-09-24T18:10:32"}]] as "text/plain" using [org.springframework.http.converter.StringHttpMessageConverter@6342ff7f]
+2017-10-09 19:55:00.129 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:55:00.129 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:56:49.795 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/admin/ajaxCommon]
+2017-10-09 19:56:49.795 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /admin/ajaxCommon
+2017-10-09 19:56:49.795 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.AdminController.ajaxCommon(javax.servlet.http.HttpServletRequest)]
+2017-10-09 19:56:49.795 [http-nio-8080-exec-8] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 19:56:49.796 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.zzb.shop.domain.PushMsg@5eb303ef] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4462efe1]
+2017-10-09 19:56:49.796 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:56:49.796 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:56:49.813 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/backend/good/good]
+2017-10-09 19:56:49.814 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/good/good
+2017-10-09 19:56:49.814 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zzb.shop.controller.backend.BGoodController.sysUser(org.springframework.ui.Model)]
+2017-10-09 19:56:49.814 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/backend/good/good] is: -1
+2017-10-09 19:56:49.814 [http-nio-8080-exec-5] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Requested media types are [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+2017-10-09 19:56:49.814 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/good/good'
+2017-10-09 19:56:49.814 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/good/good.html'
+2017-10-09 19:56:49.814 [http-nio-8080-exec-5] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'backend/good/good'; URL [/WEB-INF/jsp/backend/good/good.jsp]] based on requested media type 'text/html'
+2017-10-09 19:56:49.814 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'backend/good/good'; URL [/WEB-INF/jsp/backend/good/good.jsp]] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-09 19:56:49.814 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/backend/good/good.jsp] in InternalResourceView 'backend/good/good'
+2017-10-09 19:56:49.816 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:56:50.017 [http-nio-8080-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/backend/advertise/advertiseList]
+2017-10-09 19:56:50.017 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/advertise/advertiseList
+2017-10-09 19:56:50.017 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.BAdvertiseController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]
+2017-10-09 19:56:50.018 [http-nio-8080-exec-10] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 19:56:50.024 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [{"total":17,"data":[{"del_flag":"0","type_name":"首页广告","name":"2","id":18,"title":"广告2","advertise_category_id":1,"create_date":"2017-09-25T23:34:58","url":"2","update_date":"2017-09-25T23:35:14"},{"del_flag":"0","type_name":"登录页广告","name":"11","id":17,"title":"广告1","advertise_category_id":3,"create_date":"2017-09-25T23:34:48","url":"11","update_date":"2017-09-25T23:35:06"},{"del_flag":"0","type_name":"首页广告","name":"第一幅图片","id":1,"title":"第1幅图片","advertise_category_id":1,"create_date":"2017-09-20T00:00:00","url":"1","update_date":"2017-09-20T00:00:00"},{"del_flag":"0","type_name":"首页广告","name":"第一幅图片","id":2,"title":"第2幅图片","advertise_category_id":1,"create_date":"2017-09-20T00:00:00","url":"1","update_date":"2017-09-20T00:00:00"},{"del_flag":"0","type_name":"首页广告","name":"第一幅图片","id":3,"title":"第3幅图片","advertise_category_id":1,"create_date":"2017-09-20T00:00:00","url":"1","update_date":"2017-09-20T00:00:00"},{"del_flag":"0","type_name":"首页广告","name":"第一幅图片","id":4,"title":"第4幅图片","advertise_category_id":1,"create_date":"2017-09-20T00:00:00","url":"1","update_date":"2017-09-20T00:00:00"},{"del_flag":"0","type_name":"首页广告","name":"第一幅图片","id":5,"title":"第5幅图片","advertise_category_id":1,"create_date":"2017-09-20T00:00:00","url":"1","update_date":"2017-09-20T00:00:00"},{"del_flag":"0","type_name":"首页广告","name":"第一幅图片","id":6,"title":"第6幅图片","advertise_category_id":1,"create_date":"2017-09-20T00:00:00","url":"1","update_date":"2017-09-20T00:00:00"},{"del_flag":"0","type_name":"首页广告","name":"第一幅图片","id":7,"title":"第7幅图片","advertise_category_id":1,"create_date":"2017-09-20T00:00:00","url":"1","update_date":"2017-09-20T00:00:00"},{"del_flag":"0","type_name":"二级","name":"第一幅图片","id":8,"title":"第8幅图片","advertise_category_id":16,"create_date":"2017-09-20T00:00:00","url":"1","update_date":"2017-09-25T23:04:28"}]}] as "text/plain" using [org.springframework.http.converter.StringHttpMessageConverter@6342ff7f]
+2017-10-09 19:56:50.024 [http-nio-8080-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:56:50.024 [http-nio-8080-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:56:50.226 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/admin/ajaxCommon]
+2017-10-09 19:56:50.227 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /admin/ajaxCommon
+2017-10-09 19:56:50.227 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.AdminController.ajaxCommon(javax.servlet.http.HttpServletRequest)]
+2017-10-09 19:56:50.227 [http-nio-8080-exec-7] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 19:56:50.228 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.zzb.shop.domain.PushMsg@4576b5cd] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4462efe1]
+2017-10-09 19:56:50.228 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:56:50.228 [http-nio-8080-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:56:53.178 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/admin/ajaxCommon]
+2017-10-09 19:56:53.178 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /admin/ajaxCommon
+2017-10-09 19:56:53.178 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.AdminController.ajaxCommon(javax.servlet.http.HttpServletRequest)]
+2017-10-09 19:56:53.178 [http-nio-8080-exec-1] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 19:56:53.179 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.zzb.shop.domain.PushMsg@7b632ad1] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4462efe1]
+2017-10-09 19:56:53.179 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:56:53.179 [http-nio-8080-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:58:20.659 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/backend/sysUser/main]
+2017-10-09 19:58:20.660 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/sysUser/main
+2017-10-09 19:58:20.660 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zzb.shop.controller.backend.SysUserController.main(org.springframework.ui.Model)]
+2017-10-09 19:58:20.660 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/backend/sysUser/main] is: -1
+2017-10-09 19:58:20.660 [http-nio-8080-exec-6] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Requested media types are [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+2017-10-09 19:58:20.660 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/sysUser/main'
+2017-10-09 19:58:20.660 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/sysUser/main.html'
+2017-10-09 19:58:20.660 [http-nio-8080-exec-6] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'backend/sysUser/main'; URL [/WEB-INF/jsp/backend/sysUser/main.jsp]] based on requested media type 'text/html'
+2017-10-09 19:58:20.660 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'backend/sysUser/main'; URL [/WEB-INF/jsp/backend/sysUser/main.jsp]] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-09 19:58:20.660 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/backend/sysUser/main.jsp] in InternalResourceView 'backend/sysUser/main'
+2017-10-09 19:58:20.661 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:58:20.800 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/data/main.txt]
+2017-10-09 19:58:20.800 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /data/main.txt
+2017-10-09 19:58:20.801 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/data/main.txt]
+2017-10-09 19:58:20.801 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/data/main.txt] are [/**]
+2017-10-09 19:58:20.801 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/data/main.txt] are {}
+2017-10-09 19:58:20.801 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/data/main.txt] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 19:58:20.801 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/data/main.txt] is: -1
+2017-10-09 19:58:20.802 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:58:20.803 [http-nio-8080-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:58:20.885 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2017-10-09 19:58:20.885 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2017-10-09 19:58:20.885 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/favicon.ico] are {}
+2017-10-09 19:58:20.885 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@2f80cb79]]] and 1 interceptor
+2017-10-09 19:58:20.885 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/favicon.ico] is: -1
+2017-10-09 19:58:20.887 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:58:20.887 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:58:24.244 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/admin/ajaxCommon]
+2017-10-09 19:58:24.244 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /admin/ajaxCommon
+2017-10-09 19:58:24.244 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.AdminController.ajaxCommon(javax.servlet.http.HttpServletRequest)]
+2017-10-09 19:58:24.244 [http-nio-8080-exec-4] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 19:58:24.244 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.zzb.shop.domain.PushMsg@178a51c8] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4462efe1]
+2017-10-09 19:58:24.244 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:58:24.244 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:58:24.264 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/backend/goodCategory/goodCategory]
+2017-10-09 19:58:24.265 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/goodCategory/goodCategory
+2017-10-09 19:58:24.265 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zzb.shop.controller.backend.BGoodCategoryController.sysUser(org.springframework.ui.Model)]
+2017-10-09 19:58:24.265 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/backend/goodCategory/goodCategory] is: -1
+2017-10-09 19:58:24.266 [http-nio-8080-exec-8] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Requested media types are [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+2017-10-09 19:58:24.266 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/goodCategory/goodCategory'
+2017-10-09 19:58:24.266 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/goodCategory/goodCategory.html'
+2017-10-09 19:58:24.266 [http-nio-8080-exec-8] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'backend/goodCategory/goodCategory'; URL [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp]] based on requested media type 'text/html'
+2017-10-09 19:58:24.266 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'backend/goodCategory/goodCategory'; URL [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp]] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-09 19:58:24.266 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp] in InternalResourceView 'backend/goodCategory/goodCategory'
+2017-10-09 19:58:24.313 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 19:58:24.390 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/backend/goodCategory/goodCategoryList]
+2017-10-09 19:58:24.390 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/goodCategory/goodCategoryList
+2017-10-09 19:58:24.390 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]
+2017-10-09 19:58:24.390 [http-nio-8080-exec-5] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 19:58:24.403 [http-nio-8080-exec-5] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-10-09 19:58:24.427 [http-nio-8080-exec-5] INFO  o.s.jdbc.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-10-09 19:58:24.430 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolving exception from handler [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+2017-10-09 19:58:24.432 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolving exception from handler [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+2017-10-09 19:58:24.432 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolving exception from handler [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+2017-10-09 19:58:24.434 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy75.list(Unknown Source)
+	at com.zzb.shop.service.impl.GoodCategoryServiceImpl.list(GoodCategoryServiceImpl.java:59)
+	at com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(BGoodCategoryController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy102.execute(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy103.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 74 common frames omitted
+2017-10-09 19:58:24.437 [http-nio-8080-exec-5] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy102.execute(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy103.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy75.list(Unknown Source)
+	at com.zzb.shop.service.impl.GoodCategoryServiceImpl.list(GoodCategoryServiceImpl.java:59)
+	at com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(BGoodCategoryController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-10-09 19:58:24.437 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/500.html]
+2017-10-09 19:58:24.440 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /500.html
+2017-10-09 19:58:24.440 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/500.html]
+2017-10-09 19:58:24.440 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/500.html] are [/**]
+2017-10-09 19:58:24.440 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/500.html] are {}
+2017-10-09 19:58:24.440 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/500.html] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 19:58:24.441 [http-nio-8080-exec-5] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 19:58:24.441 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolving exception from handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]]: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2017-10-09 19:58:24.441 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolving exception from handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]]: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2017-10-09 19:58:24.441 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.PageNotFound - Request method 'POST' not supported
+2017-10-09 19:58:24.441 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 19:58:24.441 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:31.780 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/backend/sysUser/main]
+2017-10-09 20:00:31.781 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/sysUser/main
+2017-10-09 20:00:31.781 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zzb.shop.controller.backend.SysUserController.main(org.springframework.ui.Model)]
+2017-10-09 20:00:31.781 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/backend/sysUser/main] is: -1
+2017-10-09 20:00:31.781 [http-nio-8080-exec-9] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Requested media types are [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+2017-10-09 20:00:31.781 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/sysUser/main'
+2017-10-09 20:00:31.781 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/sysUser/main.html'
+2017-10-09 20:00:31.781 [http-nio-8080-exec-9] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'backend/sysUser/main'; URL [/WEB-INF/jsp/backend/sysUser/main.jsp]] based on requested media type 'text/html'
+2017-10-09 20:00:31.781 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'backend/sysUser/main'; URL [/WEB-INF/jsp/backend/sysUser/main.jsp]] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-09 20:00:31.781 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/backend/sysUser/main.jsp] in InternalResourceView 'backend/sysUser/main'
+2017-10-09 20:00:31.782 [http-nio-8080-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:31.917 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/data/main.txt]
+2017-10-09 20:00:31.917 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /data/main.txt
+2017-10-09 20:00:31.918 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/data/main.txt]
+2017-10-09 20:00:31.918 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/data/main.txt] are [/**]
+2017-10-09 20:00:31.918 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/data/main.txt] are {}
+2017-10-09 20:00:31.918 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/data/main.txt] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 20:00:31.918 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/data/main.txt] is: -1
+2017-10-09 20:00:31.919 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 20:00:31.919 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:31.998 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+2017-10-09 20:00:31.998 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+2017-10-09 20:00:31.998 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/favicon.ico] are {}
+2017-10-09 20:00:31.998 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@2f80cb79]]] and 1 interceptor
+2017-10-09 20:00:31.998 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/favicon.ico] is: -1
+2017-10-09 20:00:31.999 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 20:00:32.000 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:36.491 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/admin/ajaxCommon]
+2017-10-09 20:00:36.491 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /admin/ajaxCommon
+2017-10-09 20:00:36.491 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.AdminController.ajaxCommon(javax.servlet.http.HttpServletRequest)]
+2017-10-09 20:00:36.491 [http-nio-8080-exec-5] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 20:00:36.492 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.zzb.shop.domain.PushMsg@81b81] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4462efe1]
+2017-10-09 20:00:36.492 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 20:00:36.492 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:36.508 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/backend/goodCategory/goodCategory]
+2017-10-09 20:00:36.509 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/goodCategory/goodCategory
+2017-10-09 20:00:36.509 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zzb.shop.controller.backend.BGoodCategoryController.sysUser(org.springframework.ui.Model)]
+2017-10-09 20:00:36.509 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/backend/goodCategory/goodCategory] is: -1
+2017-10-09 20:00:36.509 [http-nio-8080-exec-2] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Requested media types are [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+2017-10-09 20:00:36.509 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/goodCategory/goodCategory'
+2017-10-09 20:00:36.509 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/goodCategory/goodCategory.html'
+2017-10-09 20:00:36.509 [http-nio-8080-exec-2] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'backend/goodCategory/goodCategory'; URL [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp]] based on requested media type 'text/html'
+2017-10-09 20:00:36.509 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'backend/goodCategory/goodCategory'; URL [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp]] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-09 20:00:36.509 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp] in InternalResourceView 'backend/goodCategory/goodCategory'
+2017-10-09 20:00:36.510 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:36.585 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/backend/goodCategory/goodCategoryList]
+2017-10-09 20:00:36.586 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/goodCategory/goodCategoryList
+2017-10-09 20:00:36.586 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]
+2017-10-09 20:00:36.586 [http-nio-8080-exec-6] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 20:00:36.588 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolving exception from handler [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+2017-10-09 20:00:36.588 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolving exception from handler [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+2017-10-09 20:00:36.588 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolving exception from handler [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+2017-10-09 20:00:36.589 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy75.list(Unknown Source)
+	at com.zzb.shop.service.impl.GoodCategoryServiceImpl.list(GoodCategoryServiceImpl.java:59)
+	at com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(BGoodCategoryController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy102.execute(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy103.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 74 common frames omitted
+2017-10-09 20:00:36.589 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy102.execute(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy103.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy75.list(Unknown Source)
+	at com.zzb.shop.service.impl.GoodCategoryServiceImpl.list(GoodCategoryServiceImpl.java:59)
+	at com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(BGoodCategoryController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-10-09 20:00:36.590 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/500.html]
+2017-10-09 20:00:36.590 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /500.html
+2017-10-09 20:00:36.590 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/500.html]
+2017-10-09 20:00:36.590 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/500.html] are [/**]
+2017-10-09 20:00:36.590 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/500.html] are {}
+2017-10-09 20:00:36.590 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/500.html] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 20:00:36.590 [http-nio-8080-exec-6] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 20:00:36.591 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolving exception from handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]]: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2017-10-09 20:00:36.591 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolving exception from handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]]: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2017-10-09 20:00:36.591 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.PageNotFound - Request method 'POST' not supported
+2017-10-09 20:00:36.591 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 20:00:36.591 [http-nio-8080-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:44.198 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/docs/api/overview.html]
+2017-10-09 20:00:44.198 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /docs/api/overview.html
+2017-10-09 20:00:44.199 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/docs/api/overview.html]
+2017-10-09 20:00:44.199 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/docs/api/overview.html] are [/**]
+2017-10-09 20:00:44.199 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/docs/api/overview.html] are {}
+2017-10-09 20:00:44.199 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/docs/api/overview.html] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 20:00:44.199 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/docs/api/overview.html] is: -1
+2017-10-09 20:00:44.199 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 20:00:44.199 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:44.200 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/404.html]
+2017-10-09 20:00:44.200 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /404.html
+2017-10-09 20:00:44.200 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/404.html]
+2017-10-09 20:00:44.200 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/404.html] are [/**]
+2017-10-09 20:00:44.200 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/404.html] are {}
+2017-10-09 20:00:44.200 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/404.html] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 20:00:44.200 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/404.html] is: -1
+2017-10-09 20:00:44.201 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 20:00:44.202 [http-nio-8080-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:44.859 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/admin/ajaxCommon]
+2017-10-09 20:00:44.860 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /admin/ajaxCommon
+2017-10-09 20:00:44.860 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.AdminController.ajaxCommon(javax.servlet.http.HttpServletRequest)]
+2017-10-09 20:00:44.860 [http-nio-8080-exec-8] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 20:00:44.860 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.zzb.shop.domain.PushMsg@54ce4e86] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4462efe1]
+2017-10-09 20:00:44.860 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 20:00:44.860 [http-nio-8080-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:44.884 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing GET request for [/backend/goodCategory/goodCategory]
+2017-10-09 20:00:44.885 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/goodCategory/goodCategory
+2017-10-09 20:00:44.885 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.String com.zzb.shop.controller.backend.BGoodCategoryController.sysUser(org.springframework.ui.Model)]
+2017-10-09 20:00:44.885 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Last-Modified value for [/backend/goodCategory/goodCategory] is: -1
+2017-10-09 20:00:44.885 [http-nio-8080-exec-5] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Requested media types are [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+2017-10-09 20:00:44.885 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/goodCategory/goodCategory'
+2017-10-09 20:00:44.885 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.view.BeanNameViewResolver - No matching bean found for view name 'backend/goodCategory/goodCategory.html'
+2017-10-09 20:00:44.885 [http-nio-8080-exec-5] DEBUG o.s.w.servlet.view.ContentNegotiatingViewResolver - Returning [org.springframework.web.servlet.view.JstlView: name 'backend/goodCategory/goodCategory'; URL [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp]] based on requested media type 'text/html'
+2017-10-09 20:00:44.885 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'backend/goodCategory/goodCategory'; URL [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp]] in DispatcherServlet with name 'dispatcherServlet'
+2017-10-09 20:00:44.885 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/jsp/backend/goodCategory/goodCategory.jsp] in InternalResourceView 'backend/goodCategory/goodCategory'
+2017-10-09 20:00:44.886 [http-nio-8080-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:44.969 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/backend/goodCategory/goodCategoryList]
+2017-10-09 20:00:44.970 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /backend/goodCategory/goodCategoryList
+2017-10-09 20:00:44.970 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]
+2017-10-09 20:00:44.970 [http-nio-8080-exec-2] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 20:00:44.972 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolving exception from handler [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+2017-10-09 20:00:44.972 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolving exception from handler [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+2017-10-09 20:00:44.972 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolving exception from handler [public java.lang.Object com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(org.springframework.ui.Model,com.zzb.shop.domain.Page)]: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+2017-10-09 20:00:44.972 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Could not complete request
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy75.list(Unknown Source)
+	at com.zzb.shop.service.impl.GoodCategoryServiceImpl.list(GoodCategoryServiceImpl.java:59)
+	at com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(BGoodCategoryController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy102.execute(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy103.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 74 common frames omitted
+2017-10-09 20:00:44.973 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+### The error may exist in file [E:\workspace\wsgw\shop\target\classes\mapper\GoodCategoryMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select            id, name, parent_id, parent_ids, create_date, update_date, del_flag         from good_category where del_flag=0                     ORDER BY                        limit 0,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11] with root cause
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0,10' at line 11
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy102.execute(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy103.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy75.list(Unknown Source)
+	at com.zzb.shop.service.impl.GoodCategoryServiceImpl.list(GoodCategoryServiceImpl.java:59)
+	at com.zzb.shop.controller.backend.BGoodCategoryController.sysUserList(BGoodCategoryController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-10-09 20:00:44.973 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/500.html]
+2017-10-09 20:00:44.973 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /500.html
+2017-10-09 20:00:44.973 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Did not find handler method for [/500.html]
+2017-10-09 20:00:44.973 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Matching patterns for request [/500.html] are [/**]
+2017-10-09 20:00:44.973 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - URI Template variables for request [/500.html] are {}
+2017-10-09 20:00:44.973 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapping [/500.html] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]] and 1 interceptor
+2017-10-09 20:00:44.974 [http-nio-8080-exec-2] DEBUG org.springframework.web.cors.DefaultCorsProcessor - Skip CORS processing: request is from same origin
+2017-10-09 20:00:44.974 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolving exception from handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]]: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2017-10-09 20:00:44.974 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolving exception from handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@20d33ea]]]: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2017-10-09 20:00:44.974 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.PageNotFound - Request method 'POST' not supported
+2017-10-09 20:00:44.974 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-10-09 20:00:44.974 [http-nio-8080-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Successfully completed request
+2017-10-09 20:00:53.623 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2017-10-09 20:00:53.623 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19bb07ed: startup date [Sun Oct 08 21:45:36 CST 2017]; root of context hierarchy
+2017-10-09 20:00:53.633 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase 0
+2017-10-09 20:00:53.635 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-10-09 20:00:53.635 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+2017-10-09 20:00:53.635 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

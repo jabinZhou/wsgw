@@ -3,6 +3,7 @@
 <mapper namespace="com.zzb.shop.dao.GoodMapper" >
   <resultMap id="BaseResultMap" type="com.zzb.shop.domain.Good" >
     <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="user_id" property="userId" jdbcType="BIGINT" />
     <result column="title" property="title" jdbcType="VARCHAR" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="good_category_type" property="goodCategoryType" jdbcType="BIGINT" />
@@ -13,25 +14,40 @@
     <result column="del_flag" property="delFlag" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, title, name, good_category_type, good_image, status, create_date, update_date, 
+    id,user_id, title, name, good_category_type, good_image, status, create_date, update_date, 
     del_flag
+  </sql>
+  
+   <sql id="select_Base_Column_List" >
+    a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, 
+    a.del_flag
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
-    <include refid="Base_Column_List" />
-    from good
-    where id = #{id,jdbcType=BIGINT}
+    <include refid="select_Base_Column_List" />,
+    b.id as 'detailId',
+    b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice',
+    b.good_images as 'goodImages',b.good_detail as 'goodDetail',
+	c.activity_title,c.activity_price,
+	d.name AS 'categoryName',
+	e.name AS 'activityName'
+    from good a
+    LEFT JOIN good_detail b ON a.id=b.good_id
+	LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id
+	LEFT JOIN good_category d ON a.good_category_type=d.id
+	LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id
+    where a.id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
      UPDATE `good` SET `del_flag` = '1' 
 	WHERE id = #{id}
   </delete>
   <insert id="insert" parameterType="com.zzb.shop.domain.Good" >
-    insert into good (id, title, name, 
+    insert into good (id,user_id, title, name, 
       good_category_type, good_image, status, 
       create_date, update_date, del_flag
       )
-    values (#{id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
       #{goodCategoryType,jdbcType=BIGINT}, #{goodImage,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, 
       #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP}, #{delFlag,jdbcType=VARCHAR}
       )
@@ -41,6 +57,9 @@
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
+      </if>
+       <if test="userId != null" >
+        user_id,
       </if>
       <if test="title != null" >
         title,
@@ -71,6 +90,9 @@
       <if test="id != null" >
         #{id,jdbcType=BIGINT},
       </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=BIGINT},
+      </if>
       <if test="title != null" >
         #{title,jdbcType=VARCHAR},
       </if>
@@ -100,6 +122,9 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.zzb.shop.domain.Good" >
     update good
     <set >
+     <if test="userId != null" >
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
       <if test="title != null" >
         title = #{title,jdbcType=VARCHAR},
       </if>
@@ -129,7 +154,8 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zzb.shop.domain.Good" >
     update good
-    set title = #{title,jdbcType=VARCHAR},
+    set user_id = #{userId,jdbcType=BIGINT}, 
+      title = #{title,jdbcType=VARCHAR},
       name = #{name,jdbcType=VARCHAR},
       good_category_type = #{goodCategoryType,jdbcType=BIGINT},
       good_image = #{goodImage,jdbcType=VARCHAR},
@@ -139,4 +165,45 @@
       del_flag = #{delFlag,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
+  
+  <!-- 用户列表(弹窗选择用) -->
+	<select id="list" resultType="java.util.HashMap" >
+		select 
+    <include refid="select_Base_Column_List" />,
+    b.id as 'detailId',
+     b.good_tag_price,b.good_market_price,
+	c.activity_title,c.activity_price,
+	d.name AS 'categoryName',
+	e.name AS 'activityName'
+	FROM good a 
+	LEFT JOIN good_detail b ON a.id=b.good_id
+	LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id
+	LEFT JOIN good_category d ON a.good_category_type=d.id
+	LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id
+    where a.del_flag=0
+    <if test="page.pd.key!= null" >
+       and (a.name LIKE concat('%',#{page.pd.key},'%')or a.title LIKE concat('%',#{page.pd.key},'%'))
+    </if> 
+    <if test="page.sortField!= null and page.sortOrder!= null" >
+       ORDER BY ${page.sortField}  ${page.sortOrder}
+    </if>
+    <if test="page.limit!= null" >
+       ${page.limit}
+    </if>
+	</select>
+  
+    
+    <select id="listCount" resultType="Integer">
+    select count(1) FROM good a 
+	LEFT JOIN good_detail b ON a.id=b.good_id
+	LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id
+	LEFT JOIN good_category d ON a.good_category_type=d.id
+	LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id
+    where a.del_flag=0
+    <if test="page.pd.key!= null" >
+      and (a.name LIKE concat('%',#{page.pd.key},'%')or a.title LIKE concat('%',#{page.pd.key},'%'))
+    </if> 
+    </select>
+  
 </mapper>

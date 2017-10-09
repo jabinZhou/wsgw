@@ -6,7 +6,9 @@ import java.util.Date;
 public class GoodActivity {
     private Long id;
 
-    private Long goodId;
+    private Long goodActivityCategoryId;
+
+	private Long goodId;
 
     private String activityTitle;
 
@@ -20,6 +22,16 @@ public class GoodActivity {
 
     private String activityFlag;
 
+    private String categoryIdName;
+
+    public String getCategoryIdName() {
+		return categoryIdName;
+	}
+
+	public void setCategoryIdName(String categoryIdName) {
+		this.categoryIdName = categoryIdName;
+	}
+    
     public Long getId() {
         return id;
     }
@@ -28,6 +40,14 @@ public class GoodActivity {
         this.id = id;
     }
 
+    public Long getGoodActivityCategoryId() {
+		return goodActivityCategoryId;
+	}
+
+	public void setGoodActivityCategoryId(Long goodActivityCategoryId) {
+		this.goodActivityCategoryId = goodActivityCategoryId;
+	}
+    
     public Long getGoodId() {
         return goodId;
     }

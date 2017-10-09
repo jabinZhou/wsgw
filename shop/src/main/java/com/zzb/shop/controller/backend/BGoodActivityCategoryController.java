@@ -1,11 +1,10 @@
 package com.zzb.shop.controller.backend;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,26 +13,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.zzb.shop.controller.BaseController;
-import com.zzb.shop.domain.Good;
+import com.zzb.shop.domain.GoodActivityCategory;
 import com.zzb.shop.domain.Page;
 import com.zzb.shop.domain.PushMsg;
-import com.zzb.shop.domain.SysUser;
-import com.zzb.shop.service.GoodService;
+import com.zzb.shop.service.GoodActivityCategoryService;
 import com.zzb.shop.util.JSON;
 import com.zzb.shop.util.PageData;
 import com.zzb.shop.util.StringUtil;
-
 /**
  * 
  * @author zhouzb
  *
  */
 @Controller
-@RequestMapping(value = "/backend/good")
-public class BGoodController extends BaseController{
+@RequestMapping(value = "/backend/goodActivityCategory")
+public class BGoodActivityCategoryController extends BaseController{
 
 	@Autowired
-	private GoodService goodService;
+	private GoodActivityCategoryService goodActivityCategoryService;
 	
 	
 	/**
@@ -41,9 +38,9 @@ public class BGoodController extends BaseController{
 	 * @param model
 	 * @return
 	 */
-	@RequestMapping(value = "good")
+	@RequestMapping(value = "goodActivityCategory")
 	public String sysUser(Model model) {
-		return "backend/good/good";
+		return "backend/goodActivityCategory/goodActivityCategory";
 	}
 	/**
 	 * 列表数据页
@@ -51,7 +48,7 @@ public class BGoodController extends BaseController{
 	 * @param page
 	 * @return
 	 */
-	@RequestMapping(value = "/goodList")
+	@RequestMapping(value = "/goodActivityCategoryList")
 	@ResponseBody
 	public Object sysUserList(Model model,Page page) {
 		PageData pd = new PageData();
@@ -63,15 +60,60 @@ public class BGoodController extends BaseController{
 		}
 		pd.put("sortField","a."+pd.get("sortField"));
 		page.setPd(pd);
-		List<PageData> list = goodService.list(page);// 列出用户列表
-		int total = goodService.listCount(page);
+		List<PageData> list = goodActivityCategoryService.list(page);// 列出用户列表
+		/*int total = bannerCategoryService.listCount(page);
 		result.put("data", list);
-		result.put("total", total);
-		String json = JSON.Encode(result);
+		result.put("total", total);*/
+		String json = JSON.Encode(list);
 		return json;
 		
 	}
-	@RequestMapping(value = "/delGood")
+	
+	
+	/**
+	 * 点击树形页
+	 * @param model
+	 * @param page
+	 * @return
+	 */
+	@RequestMapping(value = "/goodActivityCategoryListClick")
+	@ResponseBody
+	public Object sysUserListClick(Model model,Page page) {
+		PageData pd = new PageData();
+		HashMap result = new HashMap();
+		pd = this.getPageData();
+		String key = pd.getString("key"); // 检索条件 关键词
+		if (null != key && !"".equals(key)) {
+			pd.put("key", key.trim());
+		}
+		//pd.put("sortField","a."+pd.get("sortField"));
+		page.setPd(pd);
+		List<PageData> list = goodActivityCategoryService.list(page);// 列出用户列表
+		if(list!=null&&list.size()>0){
+			for(HashMap d:list){
+				//System.out.println(d.get("id"));
+				d.put("id",d.get("id"));
+				d.put("pid",d.get("parent_id"));
+				d.put("text",d.get("name"));
+			}
+			
+		}else{
+			list=new ArrayList<PageData>();
+		}
+		PageData m=new PageData();
+		m.put("id", 0);
+		m.put("pid", null);
+		m.put("text", "顶层");
+		list.add(m);
+		//int total = advertiseCategoryService.listCount(page);
+		//result.put("data", list);
+		//result.put("total", total);
+		String json = JSON.Encode(list);
+		return json;
+		
+	}
+	
+	@RequestMapping(value = "/delGoodActivityCategory")
 	@ResponseBody
 	public Object delSysUser(Page page){
 		PushMsg pushMsg = new PushMsg("删除成功！", true);
@@ -85,7 +127,7 @@ public class BGoodController extends BaseController{
 			String[] ids = idStr.split(",");
 			for (int i = 0, l = ids.length; i < l; i++) {
 				String id = ids[i];
-				goodService.deleteByPrimaryKey(Long.parseLong(id));
+				goodActivityCategoryService.deleteByPrimaryKey(Long.parseLong(id));
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -101,16 +143,16 @@ public class BGoodController extends BaseController{
 	 * @param model
 	 * @return
 	 */
-	@RequestMapping(value = "editGood")
+	@RequestMapping(value = "editGoodActivityCategory")
 	public String editSysUser(Model model) {
-		return "backend/good/editGood";
+		return "backend/goodActivityCategory/editGoodActivityCategory";
 	}
 	/**
 	 * 获取用户
 	 * @param page
 	 * @return
 	 */
-	@RequestMapping(value = "/getGood")
+	@RequestMapping(value = "/getGoodActivityCategory")
 	@ResponseBody
 	public Object getSysUser(Page page){
 		PushMsg pushMsg = new PushMsg("获取成功！", true);
@@ -119,7 +161,7 @@ public class BGoodController extends BaseController{
 			PageData pd = new PageData();
 			pd = this.getPageData();
 			String id = pd.getString("id");
-			Good domain = goodService.selectByPrimaryKey(Long.parseLong(id));
+			GoodActivityCategory domain = goodActivityCategoryService.selectByPrimaryKey(Long.parseLong(id));
 			String json = JSON.Encode(domain);
 			Map<String,Object>attr=new HashMap<String,Object>();
 			attr.put("data", json);
@@ -139,25 +181,23 @@ public class BGoodController extends BaseController{
 	 * @param page
 	 * @return
 	 */
-	@RequestMapping(value = "/saveGood")
+	@RequestMapping(value = "/saveGoodActivityCategory")
 	@ResponseBody
-	public Object saveSysUser(Good domain,HttpServletRequest request){
+	public Object saveSysUser(GoodActivityCategory domain){
 		PushMsg pushMsg = new PushMsg("保存成功！", true);
 		pushMsg.setCode("1");
 		try {
-			SysUser sysUser=(SysUser) request.getSession().getAttribute("sysUser");
 			Date date=new Date();
 			if (StringUtil.isNullOrEmpty(domain.getId())){
 				
 				domain.setCreateDate(date);
 				domain.setUpdateDate(date);
 				domain.setDelFlag("0");
-				domain.setUserId(sysUser.getId());
-				goodService.insert(domain);
+				goodActivityCategoryService.insert(domain);
 			}else{
 				
 				domain.setUpdateDate(date);
-				goodService.updateByPrimaryKeySelective(domain);
+				goodActivityCategoryService.updateByPrimaryKeySelective(domain);
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -167,5 +207,4 @@ public class BGoodController extends BaseController{
 		}
 		return pushMsg;
 	}
-	
 }

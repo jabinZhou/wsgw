@@ -34,76 +34,30 @@
         <input name="id" class="mini-hidden" />
         <div style="padding-left:11px;padding-bottom:5px;">
             <table style="table-layout:fixed;">
-               
+                
                 <tr>
-                    <td >标题：</td>
+                    <td >广告名称：</td>
                     <td >    
-                        <input name="title" class="mini-textbox" required="true" emptyText="请输入标题" vtype="rangeChar:1,20"/>
+                        <input name="name" class="mini-textbox" required="true" emptyText="请输入广告名称" vtype="rangeChar:1,20"/>
                     </td>
-                    <td style="width:70px;">名称：</td>
-	                <td >                        
-	                     <input name="name" class="mini-textbox" required="true" emptyText="请输入名称" vtype="rangeChar:1,20"/>
+                    <td style="width:70px;"></td>
+	                <td >           
 	                </td>
                 </tr>
                
-                <tr>
-                    <td >地址：</td>
-                    <td >    
-                        <input name="goodImage" class="mini-textbox" required="true"  emptyText="请输入地址" requiredErrorText="地址不能为空" vtype="rangeChar:1,255"/>
-                    </td>
-                    <td style="width:70px;">商品状态：</td>
-	                <td >                        
-	                     <input name="status" class="mini-combobox" valueField="value" textField="name" 
-                            url="<%=basePath%>/backend/dict/dictList?key=goodStatus"
-                             required="true"
-                             emptyText="请选择商品状态"
-                            />
-	                </td>
-                    
-                </tr> 
+                
                 <tr>
                     <td >分类：</td>
                     <td >  
-                    	<input id="goodCategoryType"  name="goodCategoryType" class="mini-buttonedit" onbuttonclick="onButtonEdit" allowInput="false"/> 
+                    	<%-- <input name="goodCategoryType" class="mini-combobox" valueField="id" textField="name" 
+                            url="<%=basePath%>/backend/goodCategory/getGoodCategoryList"
+                             required="false"  
+                             emptyText="请选择分类"
+                            />  --%>
+                            <input id="parentId"  name="parentId" class="mini-buttonedit" onbuttonclick="onButtonEdit" allowInput="false"/> 
                     </td>
-                    <td style="width:70px;">活动：</td>
-	                <td>                        
-	                     <input id="goodActivityId" name="goodActivityId" class="mini-combobox" valueField="id" textField="name" 
-                            url="<%=basePath%>/backend/dict/dictList"
-                             required="true"
-                             emptyText="请选择活动"/>
-	                </td>
-                    
                 </tr>  
-                <tr>
-                    <td >  
-                    	<input name="detailId" class="mini-hidden">
-                    </td>
-                    
-                </tr> 
-                <tr>
-                    <td >商品多图:</td>
-                    <td >  
-                    	<input name="goodImages" class="mini-textbox" required="true">
-                    </td>
-                    <td >商品详情图：</td>
-                    <td >  
-                    	<input name="goodDetail" class="mini-textbox" required="true">
-                    </td>
-                    
-                </tr> 
-                <tr>
-                    <td >商品标签价格：</td>
-                    <td >  
-                    	<input name="goodTagPrice" class="mini-textbox" required="true" vtype="int">
-                    </td>
-                    <td >商品上架价格：</td>
-                    <td >  
-                    	<input name="goodMarketPrice" class="mini-textbox" required="true" vtype="int">
-                    </td>
-                    
-                </tr> 
-                 
+                         
             </table>
         </div>
         <div style="text-align:center;padding:10px;">               
@@ -122,14 +76,14 @@
 
             form.validate();
             if (form.isValid() == false){ 
-            	 var errors =  form.getErrorTexts();
-                 var t = errors[0]
-                 mini.alert(t)	
-            return;
-            }
+           	 var errors =  form.getErrorTexts();
+                var t = errors[0]
+                mini.alert(t)	
+           		return;
+           }
 
             var json = mini.encode([o]);
-            $.post("${basePath}/backend/good/saveGood", $("#form1").serialize(), function(info) {
+            $.post("${basePath}/backend/goodActivityCategory/saveGoodActivityCategory", $("#form1").serialize(), function(info) {
         		if (info.status) {
         			CloseWindow("save");
         		} else {
@@ -145,18 +99,16 @@
             if (data.action == "edit") {
                 //跨页面传递的数据对象，克隆后才可以安全使用
                 data = mini.clone(data);
-                $.post("${basePath}/backend/good/getGood?id=" + data.id, function(info) {
-                	if (info.status) {
+                $.post("${basePath}/backend/goodActivityCategory/getGoodActivityCategory?id=" + data.id, function(info) {
+             	if (info.status) {
+								
                 		var o=mini.decode(info.attr.data);
                 		form.setData(o);
                         form.setChanged(false);
-                        if(o.categoryName!=null){
-                        	mini.get("goodCategoryType").setText(o.categoryName);
+                   
+                        if(o.parentIdName!=null){
+                        	mini.get("parentId").setText(o.parentIdName);
                         }
-                        if(o.activityName!=null){
-                        	mini.get("goodActivityId").setText(o.activityName);
-                        }
-                        
             		} else {
             			alert(info.info);
             		}
@@ -185,7 +137,6 @@
             CloseWindow("cancel");
         }
 
-
         function onButtonEdit(e) {
             var buttonEdit = e.sender;
             
@@ -194,7 +145,7 @@
 //                multiSelect: true,
 //                showFolderCheckBox: true,
 //                checkRecursive: true,                
-                url: "${basePath}/backend/goodCategory/goodCategoryListClick",    
+                url: "${basePath}/backend/goodActivityCategory/goodActivityCategoryListClick",    
                 title: "选择树形",
                 width: 350,
                 height: 350

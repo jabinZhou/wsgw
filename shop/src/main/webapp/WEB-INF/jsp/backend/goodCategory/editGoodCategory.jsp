@@ -83,7 +83,7 @@
            }
 
             var json = mini.encode([o]);
-            $.post("${basePath}/backend/advertiseCategory/saveAdvertiseCategory", $("#form1").serialize(), function(info) {
+            $.post("${basePath}/backend/goodCategory/saveGoodCategory", $("#form1").serialize(), function(info) {
         		if (info.status) {
         			CloseWindow("save");
         		} else {
@@ -99,13 +99,14 @@
             if (data.action == "edit") {
                 //跨页面传递的数据对象，克隆后才可以安全使用
                 data = mini.clone(data);
-                $.post("${basePath}/backend/advertiseCategory/getAdvertiseCategory?id=" + data.id, function(info) {
+                $.post("${basePath}/backend/goodCategory/getGoodCategory?id=" + data.id, function(info) {
              	if (info.status) {
 								
                 		var o=mini.decode(info.attr.data);
                 		form.setData(o);
                         form.setChanged(false);
                    
+                        console.log("111"+o.parentIdName);
                         if(o.parentIdName!=null){
                         	mini.get("parentId").setText(o.parentIdName);
                         }
@@ -145,7 +146,7 @@
 //                multiSelect: true,
 //                showFolderCheckBox: true,
 //                checkRecursive: true,                
-                url: "${basePath}/backend/advertiseCategory/advertiseCategoryListClick",    
+                url: "${basePath}/backend/goodCategory/goodCategoryListClick",    
                 title: "选择树形",
                 width: 350,
                 height: 350

@@ -13,11 +13,15 @@
   <sql id="Base_Column_List" >
     id, name, parent_id, parent_ids, create_date, update_date, del_flag
   </sql>
+   <sql id="select_Base_Column_List" >
+    a.id, a.name, a.parent_id, a.parent_ids, a.create_date, a.update_date, a.del_flag
+  </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
-    <include refid="Base_Column_List" />
-    from good_activity_category
-    where id = #{id,jdbcType=BIGINT}
+    <include refid="select_Base_Column_List" />,b.name as 'parentIdName'
+    from good_activity_category a left join good_activity_category b
+    on a.parent_id=b.id
+    where a.id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
      UPDATE `good_activity_category` SET `del_flag` = '1' 
@@ -114,4 +118,25 @@
       del_flag = #{delFlag,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
+  
+  <!-- 用户列表(弹窗选择用) -->
+	<select id="list" resultType="java.util.HashMap" >
+		select 
+    <include refid="Base_Column_List" />
+    from good_activity_category 
+    where del_flag=0
+    <if test="page.pd.key!= null" >
+       and name LIKE concat('%',#{page.pd.key},'%')
+    </if> 
+	</select>
+  
+    
+    <select id="listCount" resultType="Integer">
+    select count(1) from good_activity_category 
+    where  del_flag=0
+    <if test="page.pd.key!= null" >
+       and name LIKE concat('%',#{page.pd.key},'%')
+    </if> 
+    </select>
 </mapper>

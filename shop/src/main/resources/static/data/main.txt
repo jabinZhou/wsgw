@@ -29,9 +29,9 @@
 		
 	{id: "activity", text: "活动管理"},
 		
-	{id: "activityCategory/activityCategory", text: "活动分类管理",  pid: "activity" },
+	{id: "goodActivityCategory/goodActivityCategory", text: "活动分类管理",  pid: "activity" },
 	
-	{id: "activity/activity", text: "活动管理",  pid: "activity" }				
+	{id: "goodActivity/goodActivity", text: "活动管理",  pid: "activity" }				
 ]
 
 

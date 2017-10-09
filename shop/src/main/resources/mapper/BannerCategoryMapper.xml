@@ -13,11 +13,15 @@
   <sql id="Base_Column_List" >
     id, name, parent_id, parent_ids, create_date, update_date, del_flag
   </sql>
+  <sql id="select_Base_Column_List" >
+    a.id, a.name, a.parent_id, a.parent_ids, a.create_date, a.update_date, a.del_flag
+  </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
-    <include refid="Base_Column_List" />
-    from banner_category
-    where id = #{id,jdbcType=BIGINT}
+    <include refid="select_Base_Column_List" />,b.name as 'parentIdName'
+    from banner_category a left join banner_category b
+    on a.parent_id=b.id
+    where a.id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     UPDATE `banner_category` SET `del_flag` = '1' 

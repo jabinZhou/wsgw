@@ -57,13 +57,13 @@ public class BDictController extends BaseController{
 		if (null != key && !"".equals(key)) {
 			pd.put("key", key.trim());
 		}
-		pd.put("sortField","a."+pd.get("sortField"));
+		//pd.put("sortField","a."+pd.get("sortField"));
 		page.setPd(pd);
 		List<PageData> list = dictService.list(page);// 列出用户列表
-		int total = dictService.listCount(page);
+		/*int total = dictService.listCount(page);
 		result.put("data", list);
-		result.put("total", total);
-		String json = JSON.Encode(result);
+		result.put("total", total);*/
+		String json = JSON.Encode(list);
 		return json;
 		
 	}

@@ -28,7 +28,7 @@
                         <a class="mini-button" iconCls="icon-remove" onclick="remove()">删除</a>       
                     </td>
                     <td style="white-space:nowrap;">
-                        <input id="key" class="mini-textbox" emptyText="请输入广告名称" style="width:150px;" onenter="onKeyEnter"/>   
+                        <input id="key" class="mini-textbox" emptyText="请输入分类名称" style="width:150px;" onenter="onKeyEnter"/>   
                         <a class="mini-button" onclick="search()">查询</a>
                     </td>
                 </tr>
@@ -36,7 +36,7 @@
         </div>
     </div>
      <div id="treegrid1" class="mini-treegrid" style="width:800px;height:280px;" 
-        url="<%=basePath%>/backend/advertiseCategory/advertiseCategoryList"  treeColumn="taskname" idField="id" 
+        url="<%=basePath%>/backend/goodCategory/goodCategoryList"  treeColumn="taskname" idField="id" 
         parentField="parent_id" resultAsTree="false" expandOnLoad="true" 
     >
 <%--     <div id="treegrid1" class="mini-treegrid" style="width:800px;height:280px;"     
@@ -46,7 +46,7 @@
 	
 	  <div property="columns">
         <div type="indexcolumn"></div>
-        <div name="taskname" field="name" width="300">广告名称</div>
+        <div name="taskname" field="name" width="300">分类名称</div>
         <div field="create_date" width="100" dateFormat="yyyy-MM-dd">开始日期</div>
         <div field="update_date" width="100" dateFormat="yyyy-MM-dd">完成日期</div>
     </div>
@@ -66,7 +66,7 @@
         function add() {
             
             mini.open({
-                url: "${basePath}/backend/advertiseCategory/editAdvertiseCategory",
+                url: "${basePath}/backend/goodCategory/editGoodCategory",
                 title: "新增员工", width: 600, height: 400,
                 onload: function () {
                     var iframe = this.getIFrameEl();
@@ -84,7 +84,7 @@
             var row = grid.getSelected();
             if (row) {
                 mini.open({
-                    url: "${basePath}/backend/advertiseCategory/editAdvertiseCategory",
+                    url: "${basePath}/backend/goodCategory/editGoodCategory",
                     title: "编辑员工", width: 600, height: 400,
                     onload: function () {
                         var iframe = this.getIFrameEl();
@@ -115,7 +115,7 @@
                     }
                     var id = ids.join(',');
                     grid.loading("操作中，请稍后......");
-                    $.post("${basePath}/backend/advertiseCategory/delAdvertiseCategory?id=" +id, function(info) {
+                    $.post("${basePath}/backend/goodCategory/delGoodCategory?id=" +id, function(info) {
                 		if (info.status) {
                 			 grid.reload();
                 		} else {

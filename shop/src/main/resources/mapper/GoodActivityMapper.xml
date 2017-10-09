@@ -3,6 +3,7 @@
 <mapper namespace="com.zzb.shop.dao.GoodActivityMapper" >
   <resultMap id="BaseResultMap" type="com.zzb.shop.domain.GoodActivity" >
     <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="good_activity_category_id" property="goodActivityCategoryId" jdbcType="BIGINT" />
     <result column="good_id" property="goodId" jdbcType="BIGINT" />
     <result column="activity_title" property="activityTitle" jdbcType="VARCHAR" />
     <result column="activity_price" property="activityPrice" jdbcType="DECIMAL" />
@@ -12,24 +13,31 @@
     <result column="activity_flag" property="activityFlag" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, good_id, activity_title, activity_price, activity_begin_date, activity_end_date, 
+    id,good_activity_category_id, good_id, activity_title, activity_price, activity_begin_date, activity_end_date, 
     activity_status, activity_flag
   </sql>
+  
+  <sql id="select_Base_Column_List" >
+    a.id,a.good_activity_category_id, a.good_id, a.activity_title, a.activity_price, a.activity_begin_date, a.activity_end_date, 
+    a.activity_status, a.activity_flag
+  </sql>
+  
+  
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
-    <include refid="Base_Column_List" />
-    from good_activity
-    where id = #{id,jdbcType=BIGINT}
+    <include refid="select_Base_Column_List" />,b.name as 'categoryIdName'
+    from good_activity a left join good_activity_category b on a.good_activity_category_id=b.id
+    where a.id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
-    UPDATE `good_activity` SET `del_flag` = '1' 
+    UPDATE `good_activity` SET `activity_flag` = '1' 
 	WHERE id = #{id}
   </delete>
   <insert id="insert" parameterType="com.zzb.shop.domain.GoodActivity" >
-    insert into good_activity (id, good_id, activity_title, 
+    insert into good_activity (id,good_activity_category_id, good_id, activity_title, 
       activity_price, activity_begin_date, activity_end_date, 
       activity_status, activity_flag)
-    values (#{id,jdbcType=BIGINT}, #{goodId,jdbcType=BIGINT}, #{activityTitle,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=BIGINT},#{goodActivityCategoryId,jdbcType=BIGINT}, #{goodId,jdbcType=BIGINT}, #{activityTitle,jdbcType=VARCHAR}, 
       #{activityPrice,jdbcType=DECIMAL}, #{activityBeginDate,jdbcType=TIMESTAMP}, #{activityEndDate,jdbcType=TIMESTAMP}, 
       #{activityStatus,jdbcType=VARCHAR}, #{activityFlag,jdbcType=VARCHAR})
   </insert>
@@ -38,6 +46,9 @@
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
+      </if>
+      <if test="goodActivityCategoryId != null" >
+        good_activity_category_id,
       </if>
       <if test="goodId != null" >
         good_id,
@@ -64,6 +75,9 @@
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         #{id,jdbcType=BIGINT},
+      </if>
+      <if test="goodActivityCategoryId != null" >
+        #{goodActivityCategoryId,jdbcType=BIGINT},
       </if>
       <if test="goodId != null" >
         #{goodId,jdbcType=BIGINT},
@@ -94,6 +108,9 @@
       <if test="goodId != null" >
         good_id = #{goodId,jdbcType=BIGINT},
       </if>
+       <if test="goodActivityCategoryId != null" >
+        good_activity_category_id = #{goodActivityCategoryId,jdbcType=BIGINT},
+      </if>
       <if test="activityTitle != null" >
         activity_title = #{activityTitle,jdbcType=VARCHAR},
       </if>
@@ -118,6 +135,7 @@
   <update id="updateByPrimaryKey" parameterType="com.zzb.shop.domain.GoodActivity" >
     update good_activity
     set good_id = #{goodId,jdbcType=BIGINT},
+      good_activity_category_id = #{goodActivityCategoryId,jdbcType=BIGINT},
       activity_title = #{activityTitle,jdbcType=VARCHAR},
       activity_price = #{activityPrice,jdbcType=DECIMAL},
       activity_begin_date = #{activityBeginDate,jdbcType=TIMESTAMP},
@@ -126,4 +144,30 @@
       activity_flag = #{activityFlag,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
+  <!-- 用户列表(弹窗选择用) -->
+	<select id="list" resultType="java.util.HashMap" >
+		select 
+    <include refid="select_Base_Column_List" />,b.name  as 'type_name'
+    from good_activity  a left join good_activity_category b on a.good_activity_category_id=b.id
+    where a.activity_flag=0
+    <if test="page.pd.key!= null" >
+       and a.activity_title LIKE concat('%',#{page.pd.key},'%')
+    </if> 
+    <if test="page.sortField!= null and page.sortOrder!= null" >
+       ORDER BY ${page.sortField}  ${page.sortOrder}
+    </if>
+    <if test="page.limit!= null" >
+       ${page.limit}
+    </if>
+	</select>
+  
+    
+    <select id="listCount" resultType="Integer">
+    select count(1) from good_activity 
+    where  activity_flag=0
+    <if test="page.pd.key!= null" >
+       and activity_title LIKE concat('%',#{page.pd.key},'%')
+    </if> 
+    </select>
 </mapper>

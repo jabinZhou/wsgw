@@ -17,8 +17,6 @@
    <sql id="select_Base_Column_List" >
     a.id, a.name, a.parent_id, a.parent_ids, a.create_date, a.update_date, a.del_flag
   </sql>
-  
-  
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="select_Base_Column_List" />,b.name as 'parentIdName'

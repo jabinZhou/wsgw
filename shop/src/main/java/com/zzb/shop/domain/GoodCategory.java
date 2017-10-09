@@ -16,6 +16,16 @@ public class GoodCategory {
     private Date updateDate;
 
     private String delFlag;
+    
+    private String parentIdName;
+
+    public String getParentIdName() {
+		return parentIdName;
+	}
+
+	public void setParentIdName(String parentIdName) {
+		this.parentIdName = parentIdName;
+	}
 
     public Long getId() {
         return id;

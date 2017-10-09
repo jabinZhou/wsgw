@@ -4,14 +4,18 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.zzb.shop.dao.GoodActivityCategoryMapper;
+import com.zzb.shop.domain.BannerCategory;
 import com.zzb.shop.domain.GoodActivityCategory;
 import com.zzb.shop.domain.Page;
 import com.zzb.shop.service.GoodActivityCategoryService;
 import com.zzb.shop.util.PageData;
+import com.zzb.shop.util.StringUtil;
 
 @Service
+@Transactional(readOnly = true)
 public class GoodActivityCategoryServiceImpl implements GoodActivityCategoryService{
 
 	@Autowired
@@ -24,12 +28,32 @@ public class GoodActivityCategoryServiceImpl implements GoodActivityCategoryServ
 	}
 
 	@Override
+	@Transactional(readOnly = false)
 	public int insert(GoodActivityCategory record) {
 		// TODO Auto-generated method stub
-		return goodActivityCategoryMapper.insert(record);
+		//return goodActivityCategoryMapper.insert(record);
+		
+		boolean noPid=false;
+		if(StringUtil.isNullOrEmpty(record.getParentId())||0==record.getParentId()){
+			record.setParentId(0L);
+			noPid=true;
+		}
+		int flag=goodActivityCategoryMapper.insert(record);
+		if(flag>0){
+			if(noPid){
+				record.setParentIds(record.getParentId()+","+record.getId());
+				updateByPrimaryKeySelective(record);
+			}else{
+				GoodActivityCategory pAC=selectByPrimaryKey(record.getParentId());
+				record.setParentIds(pAC.getParentIds()+","+record.getId());
+				updateByPrimaryKeySelective(record);
+			}
+		}
+		return flag;
 	}
 
 	@Override
+	@Transactional(readOnly = false)
 	public int insertSelective(GoodActivityCategory record) {
 		// TODO Auto-generated method stub
 		return goodActivityCategoryMapper.insertSelective(record);
@@ -42,12 +66,25 @@ public class GoodActivityCategoryServiceImpl implements GoodActivityCategoryServ
 	}
 
 	@Override
+	@Transactional(readOnly = false)
 	public int updateByPrimaryKeySelective(GoodActivityCategory record) {
-		// TODO Auto-generated method stub
+		
+		boolean noPid=false;
+		if(StringUtil.isNullOrEmpty(record.getParentId())||0==record.getParentId()){
+			record.setParentId(0L);
+			noPid=true;
+		}
+		if (noPid) {
+			record.setParentIds(record.getParentId() + "," + record.getId());
+		} else {
+			GoodActivityCategory pAC = selectByPrimaryKey(record.getParentId());
+			record.setParentIds(pAC.getParentIds() + "," + record.getId());
+		}
 		return goodActivityCategoryMapper.updateByPrimaryKeySelective(record);
 	}
 
 	@Override
+	@Transactional(readOnly = false)
 	public int updateByPrimaryKey(GoodActivityCategory record) {
 		// TODO Auto-generated method stub
 		return goodActivityCategoryMapper.updateByPrimaryKey(record);
