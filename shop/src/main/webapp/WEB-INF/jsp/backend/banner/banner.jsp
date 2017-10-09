@@ -28,7 +28,9 @@
                         <a class="mini-button" iconCls="icon-add" onclick="edit()">编辑</a>
                         <a class="mini-button" iconCls="icon-remove" onclick="remove()">删除</a>  
                         <button id=image_btn>点击上传证件一</button>
-                        <div id="image_url"><img src="${basePath}/img/show.jpg" alt=""></div>
+                        <div id="image_url">
+                        <img src="${basePath}/img/show.jpg" alt="">
+                        </div>
 						<input id="input_image" type="text" value=""/>     
                     </td>
                     <td style="white-space:nowrap;">
@@ -180,7 +182,7 @@
         	
         	uploaderHead.bind('FileUploaded',function(uploader,file,responseObject){
         			var response = $.parseJSON(responseObject.response);
-        			$("#"+showWhere).html('<img src="'+response.url+'"/>');
+        			$("#"+showWhere).html('<img src="http://127.0.0.1:8082'+response.url+'"/>');
         			$("#"+input_image).val(response.url);
         	});
         }

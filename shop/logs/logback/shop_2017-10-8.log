@@ -1,0 +1,152 @@
+2017-10-8 18:40:13 main INFO Starting ShopApplication on IE361.COM-30530 with PID 9840 (E:\workspace\wsgw\shop\target\classes started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 18:40:13 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 18:40:13 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 18:40:17 main INFO Started ShopApplication in 4.203 seconds (JVM running for 4.738)
+2017-10-8 18:46:04 main INFO Starting ShopApplication on IE361.COM-30530 with PID 5476 (E:\workspace\wsgw\shop\target\classes started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 18:46:04 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 18:46:04 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 18:46:08 main INFO Started ShopApplication in 4.153 seconds (JVM running for 4.674)
+2017-10-8 18:47:04 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-8 18:47:04 http-nio-8080-exec-2 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-8 18:47:04 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-10-8 18:47:07 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 18:47:07 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-8 18:47:07 http-nio-8080-exec-4 DEBUG <==      Total: 5
+2017-10-8 18:47:07 http-nio-8080-exec-4 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 18:47:07 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-8 18:47:07 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-10-8 18:49:03 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 18:49:03 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-8 18:49:03 http-nio-8080-exec-5 DEBUG <==      Total: 5
+2017-10-8 18:49:03 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 18:49:03 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-8 18:49:03 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-8 18:50:11 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 18:50:11 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-8 18:50:11 http-nio-8080-exec-4 DEBUG <==      Total: 5
+2017-10-8 18:50:11 http-nio-8080-exec-4 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 18:50:11 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-8 18:50:11 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-10-8 18:52:46 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 18:52:46 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-8 18:52:46 http-nio-8080-exec-6 DEBUG <==      Total: 5
+2017-10-8 18:52:46 http-nio-8080-exec-6 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 18:52:46 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-8 18:52:46 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-10-8 19:02:26 main INFO Starting ShopApplicationTests on IE361.COM-30530 with PID 9240 (started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 19:02:26 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 19:02:26 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 19:02:30 main INFO Started ShopApplicationTests in 4.126 seconds (JVM running for 4.994)
+2017-10-8 19:17:45 main INFO Starting ShopApplicationTests on IE361.COM-30530 with PID 8332 (started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 19:17:45 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 19:17:45 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 19:17:49 main INFO Started ShopApplicationTests in 3.913 seconds (JVM running for 4.539)
+2017-10-8 19:29:04 main INFO Starting ShopApplicationTests on IE361.COM-30530 with PID 8748 (started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 19:29:04 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 19:29:04 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 19:29:08 main INFO Started ShopApplicationTests in 3.87 seconds (JVM running for 4.476)
+2017-10-8 19:35:57 main INFO Starting ShopApplication on IE361.COM-30530 with PID 6108 (E:\workspace\wsgw\shop\target\classes started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 19:35:57 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 19:35:57 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 19:36:02 main INFO Started ShopApplication in 4.938 seconds (JVM running for 5.449)
+2017-10-8 19:36:15 http-nio-8080-exec-4 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-8 19:36:15 http-nio-8080-exec-4 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-8 19:36:15 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-10-8 19:36:17 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 19:36:17 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-8 19:36:17 http-nio-8080-exec-9 DEBUG <==      Total: 5
+2017-10-8 19:36:17 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 19:36:17 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-8 19:36:17 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-10-8 19:37:33 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 19:37:33 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-8 19:37:33 http-nio-8080-exec-6 DEBUG <==      Total: 5
+2017-10-8 19:37:33 http-nio-8080-exec-6 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 19:37:33 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-8 19:37:33 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-10-8 19:39:33 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 19:39:33 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-8 19:39:33 http-nio-8080-exec-4 DEBUG <==      Total: 5
+2017-10-8 19:39:33 http-nio-8080-exec-4 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 19:39:33 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-8 19:39:33 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-10-8 19:46:37 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 19:46:37 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-8 19:46:37 http-nio-8080-exec-1 DEBUG <==      Total: 5
+2017-10-8 19:46:37 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 19:46:37 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-8 19:46:37 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-10-8 19:48:34 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 19:48:34 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-8 19:48:34 http-nio-8080-exec-8 DEBUG <==      Total: 5
+2017-10-8 19:48:34 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 19:48:34 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-8 19:48:34 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-8 20:35:12 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-8 20:35:12 http-nio-8080-exec-7 DEBUG ==> Parameters: (String), (String)
+2017-10-8 20:35:12 http-nio-8080-exec-7 DEBUG <==      Total: 0
+2017-10-8 20:35:15 http-nio-8080-exec-8 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-8 20:35:15 http-nio-8080-exec-8 DEBUG ==> Parameters: (String), (String)
+2017-10-8 20:35:15 http-nio-8080-exec-8 DEBUG <==      Total: 0
+2017-10-8 20:35:43 http-nio-8080-exec-9 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-8 20:35:43 http-nio-8080-exec-9 DEBUG ==> Parameters: (String), (String)
+2017-10-8 20:35:43 http-nio-8080-exec-9 DEBUG <==      Total: 0
+2017-10-8 20:37:11 main INFO Starting ShopApplication on IE361.COM-30530 with PID 2152 (E:\workspace\wsgw\shop\target\classes started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 20:37:11 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 20:37:11 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 20:37:15 main INFO Started ShopApplication in 4.404 seconds (JVM running for 4.923)
+2017-10-8 20:37:37 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-8 20:37:37 http-nio-8080-exec-2 DEBUG ==> Parameters: (String), (String)
+2017-10-8 20:37:37 http-nio-8080-exec-2 DEBUG <==      Total: 0
+2017-10-8 20:41:25 main INFO Starting ShopApplication on IE361.COM-30530 with PID 6724 (E:\workspace\wsgw\shop\target\classes started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 20:41:25 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 20:41:25 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 20:41:28 main INFO Started ShopApplication in 4.061 seconds (JVM running for 4.58)
+2017-10-8 20:41:58 http-nio-8080-exec-9 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-8 20:41:58 http-nio-8080-exec-9 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-8 20:41:58 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-10-8 20:42:00 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 20:42:00 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-8 20:42:00 http-nio-8080-exec-5 DEBUG <==      Total: 5
+2017-10-8 20:42:00 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 20:42:00 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-8 20:42:00 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-8 20:42:32 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 20:42:32 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-8 20:42:32 http-nio-8080-exec-7 DEBUG <==      Total: 5
+2017-10-8 20:42:32 http-nio-8080-exec-7 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 
+2017-10-8 20:42:32 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-8 20:42:32 http-nio-8080-exec-7 DEBUG <==      Total: 1
+2017-10-8 20:54:55 http-nio-8080-exec-10 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where id = ? 
+2017-10-8 20:54:55 http-nio-8080-exec-10 DEBUG ==> Parameters: 2(Long)
+2017-10-8 20:54:55 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-8 20:54:57 http-nio-8080-exec-1 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 20:54:57 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-8 20:54:57 http-nio-8080-exec-1 DEBUG <==      Total: 5
+2017-10-8 20:54:57 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 
+2017-10-8 20:54:57 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-8 20:54:57 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-10-8 20:55:00 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-8 20:55:00 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-8 20:55:00 http-nio-8080-exec-7 DEBUG <==      Total: 15
+2017-10-8 21:41:19 main INFO Starting ShopApplicationTests on IE361.COM-30530 with PID 1604 (started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 21:41:19 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 21:41:19 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 21:41:24 main INFO Started ShopApplicationTests in 5.136 seconds (JVM running for 5.811)
+2017-10-8 21:41:47 main INFO Starting ShopApplication on IE361.COM-30530 with PID 3084 (E:\workspace\wsgw\shop\target\classes started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 21:41:47 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 21:41:47 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 21:41:53 main INFO Started ShopApplication in 6.275 seconds (JVM running for 6.845)
+2017-10-8 21:44:15 http-nio-8080-exec-4 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-8 21:44:15 http-nio-8080-exec-4 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-8 21:44:15 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-10-8 21:44:18 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-8 21:44:18 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-8 21:44:18 http-nio-8080-exec-8 DEBUG <==      Total: 5
+2017-10-8 21:44:18 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-8 21:44:18 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-8 21:44:18 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-8 21:45:36 main INFO Starting ShopApplication on IE361.COM-30530 with PID 10892 (E:\workspace\wsgw\shop\target\classes started by Administrator in E:\workspace\wsgw\shop)
+2017-10-8 21:45:36 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-8 21:45:36 main INFO No active profile set, falling back to default profiles: default
+2017-10-8 21:45:41 main INFO Started ShopApplication in 4.713 seconds (JVM running for 5.223)

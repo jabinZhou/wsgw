@@ -1,0 +1,48 @@
+2017-10-9 19:50:51 http-nio-8080-exec-10 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-9 19:50:51 http-nio-8080-exec-10 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-9 19:50:51 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-9 19:50:53 http-nio-8080-exec-9 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-9 19:50:53 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-9 19:50:53 http-nio-8080-exec-9 DEBUG <==      Total: 15
+2017-10-9 19:50:59 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id, a.name, a.parent_id, a.parent_ids, a.create_date, a.update_date, a.del_flag ,b.name as 'parentIdName' from advertise_category a left join advertise_category b on a.parent_id=b.id where a.id = ? 
+2017-10-9 19:50:59 http-nio-8080-exec-3 DEBUG ==> Parameters: 5(Long)
+2017-10-9 19:50:59 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-10-9 19:51:06 http-nio-8080-exec-6 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-9 19:51:06 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-9 19:51:06 http-nio-8080-exec-6 DEBUG <==      Total: 15
+2017-10-9 19:51:28 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-9 19:51:28 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-9 19:51:28 http-nio-8080-exec-8 DEBUG <==      Total: 5
+2017-10-9 19:51:28 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-9 19:51:28 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-9 19:51:28 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-9 19:51:30 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from banner_category where del_flag=0 
+2017-10-9 19:51:30 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-9 19:51:30 http-nio-8080-exec-7 DEBUG <==      Total: 7
+2017-10-9 19:51:30 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.advertise_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from advertise a left join advertise_category b on a.advertise_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-9 19:51:30 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-9 19:51:30 http-nio-8080-exec-6 DEBUG <==      Total: 10
+2017-10-9 19:51:30 http-nio-8080-exec-6 DEBUG ==>  Preparing: select count(1) from advertise where del_flag=0 
+2017-10-9 19:51:30 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-9 19:51:30 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-10-9 19:51:40 http-nio-8080-exec-9 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-9 19:51:40 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-9 19:51:40 http-nio-8080-exec-9 DEBUG <==      Total: 5
+2017-10-9 19:51:40 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 
+2017-10-9 19:51:40 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-9 19:51:40 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-10-9 19:51:42 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.name,a.user_type,a.phone,a.good_category_type,a.status,a.create_date,a.update_date ,b.name type_name from user a left join good_category b on a.good_category_type=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-9 19:51:42 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-9 19:51:42 http-nio-8080-exec-5 DEBUG <==      Total: 10
+2017-10-9 19:51:42 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) from user where del_flag=0 
+2017-10-9 19:51:42 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-9 19:51:42 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-9 19:51:49 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-9 19:51:49 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-9 19:51:49 http-nio-8080-exec-3 DEBUG <==      Total: 15
+2017-10-9 19:51:51 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.advertise_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from advertise a left join advertise_category b on a.advertise_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-9 19:51:51 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-9 19:51:51 http-nio-8080-exec-8 DEBUG <==      Total: 10
+2017-10-9 19:51:51 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) from advertise where del_flag=0 
+2017-10-9 19:51:51 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-9 19:51:51 http-nio-8080-exec-8 DEBUG <==      Total: 1
