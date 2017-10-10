@@ -57,11 +57,12 @@
 </head>
 	 <body style="overflow-x:hidden;overflow-y:scroll">
 	     <ul id="nav"> 
-			<li><a href="${basePath}">首页223</a></li> 
-			<li><a href="http://www.divcss5.com/html/">鞋子</a></li> 
-			<li><a href="http://www.divcss5.com/rumen/">口红</a></li> 
-			<li><a href="http://www.divcss5.com/css-tool/">拉箱</a></li> 
-			<li><a href="http://www.divcss5.com/css-texiao/">包包</a></li> 
+			<!--  <li><a href="${basePath}">首页</a></li> -->
+			<li><a href="${basePath}/goodIndexList?type=1">鞋子</a></li> 
+			<li><a href="${basePath}/goodIndexList?type=2">口红</a></li> 
+			<li><a href="${basePath}/goodIndexList?type=3">拉箱</a></li> 
+			<li><a href="${basePath}/goodIndexList?type=4">包包</a></li> 
+			<li><a href="${basePath}/login">登录</a></li>
 		 </ul>
 		 <div id="slideBox" class="slideBox">
 			<div class="bd">

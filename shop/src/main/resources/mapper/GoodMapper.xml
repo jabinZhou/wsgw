@@ -165,6 +165,23 @@
       del_flag = #{delFlag,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  
+  <!-- 用户列表(弹窗选择用) -->
+	<select id="goodIndexList" resultType="java.util.HashMap" >
+		select 
+    <include refid="select_Base_Column_List" />,
+     c.id as 'detailId',
+     c.good_tag_price,c.good_market_price
+    FROM good a 
+	LEFT JOIN good_category b ON a.good_category_type=b.id
+	LEFT JOIN good_detail c ON a.id=c.good_id
+	
+	WHERE b.id=1 AND a.status=1
+    <if test="page.limit!= null" >
+       ${page.limit}
+    </if>
+	</select>
   
   
   <!-- 用户列表(弹窗选择用) -->

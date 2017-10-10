@@ -17,7 +17,7 @@ public class SessionInterceptor implements HandlerInterceptor{
 		String path=request.getContextPath();
 		String url=request.getRequestURI();
 		//登录不做拦截
-		if(url.contains("/admin")||("/").equals(url)||url.contains("/login")||url.contains("/ajaxLogin")||url.contains("/ajaxCommon")||url.contains("/file")||url.contains("/city")){
+		if(url.contains("/admin")||("/").equals(url)||url.contains("/login")||url.contains("/ajaxLogin")||url.contains("/ajaxCommon")||url.contains("/file")||url.contains("/city")||url.contains("/goodIndexList")){
 			return true;
 		}
 		if(request.getRequestURI().contains("/frontend")){

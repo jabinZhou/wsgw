@@ -31,11 +31,11 @@
     <div class="header" region="north" height="70" showSplit="false" showHeader="false">
         <h1 style="margin:0;padding:15px;cursor:default;font-family:微软雅黑,黑体,宋体;">购物网站管理系统 </h1>
         <div style="position:absolute;top:18px;right:10px;">
-            <a class="mini-button mini-button-iconTop" iconCls="icon-add" onclick="onQuickClick" plain="true">快捷</a>    
+            <!--  <a class="mini-button mini-button-iconTop" iconCls="icon-add" onclick="onQuickClick" plain="true">快捷</a>    
             <a class="mini-button mini-button-iconTop" iconCls="icon-edit" onclick="onClick"  plain="true" >首页</a>        
             <a class="mini-button mini-button-iconTop" iconCls="icon-date" onclick="onClick"  plain="true" >消息</a>        
-            <a class="mini-button mini-button-iconTop" iconCls="icon-edit" onclick="onClick"  plain="true" >设置</a>        
-            <a class="mini-button mini-button-iconTop" iconCls="icon-close" onclick="onClick"  plain="true" >关闭</a>        
+            <a class="mini-button mini-button-iconTop" iconCls="icon-edit" onclick="onClick"  plain="true" >设置</a> -->       
+            <a class="mini-button mini-button-iconTop" iconCls="icon-close" onclick="onClick"  plain="true" >首页</a>        
             
         </div>
         
@@ -59,9 +59,9 @@
                 <div id="mainTabs" class="mini-tabs" activeIndex="2" style="width:100%;height:100%;"      
                      plain="false" onactivechanged="onTabsActiveChanged"
                 >
-                    <div title="首页" url="../../docs/api/overview.html" >        
+                    <!--  <div title="首页" url="../../docs/api/overview.html" >        
                     </div>
-                   <!--  <div title="子页面关闭" url="../tabs/pages/page1.html" >        
+                   <div title="子页面关闭" url="../tabs/pages/page1.html" >        
                     </div>
                     <div title="弹出面板" url="../datagrid/datagrid.html" >        
                     </div>
@@ -114,8 +114,9 @@
         }
 
         function onClick(e) {
-            var text = this.getText();
-            alert(text);
+            //var text = this.getText();
+            //alert(text);
+        	location.href = "${basePath}/";
         }
         function onQuickClick(e) {
             tree.expandPath("datagrid");

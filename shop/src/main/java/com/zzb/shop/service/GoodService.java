@@ -19,7 +19,9 @@ public interface GoodService {
 
     int updateByPrimaryKey(Good record);
     
-List<PageData> list(Page page);
+    List<PageData> list(Page page);
+    
+    List<PageData> goodIndexList(Page page);
     
     int listCount(Page page);
 }

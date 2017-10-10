@@ -22,8 +22,18 @@ public class GoodDetail {
     private String marketStatus;
 
     private String marketFlag;
+    
+    private Advertise Advertise;
 
-    public Long getId() {
+    public Advertise getAdvertise() {
+		return Advertise;
+	}
+
+	public void setAdvertise(Advertise advertise) {
+		Advertise = advertise;
+	}
+
+	public Long getId() {
         return id;
     }
 

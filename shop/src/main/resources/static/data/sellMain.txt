@@ -1,11 +1,11 @@
 ﻿[
 	{id: "sell", text: "卖家管理"},
 		
-	{id: "advertiseCategory", text: "商品管理", pid: "sell" },
+	{id: "good/good", text: "商品管理", pid: "sell" },
 	
-	{id: "advertise", text: "活动管理", pid: "sell" },
+	{id: "goodActivity/goodActivity", text: "活动管理", pid: "sell" },
 	
-	{id: "bannerCategory", text: "订单管理", pid: "sell" }				
+	{id: "order/order", text: "订单管理", pid: "sell" }				
 ]
 
 

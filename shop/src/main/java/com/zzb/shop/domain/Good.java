@@ -40,7 +40,7 @@ public class Good {
 
     private BigDecimal goodMarketPrice;
 
-    public static final String WAIT_STATUS="0";
+	public static final String WAIT_STATUS="0";
     public static final String PASS_STATUS="1";
     public static final String REFUSE_STATUS="2";
     

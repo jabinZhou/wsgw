@@ -23,5 +23,7 @@ public interface GoodMapper {
     
     List<PageData> list(@Param("page")Page page);
     
+    List<PageData> goodIndexList(@Param("page")Page page);
+    
     int listCount(@Param("page")Page page);
 }

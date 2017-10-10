@@ -1,0 +1,456 @@
+2017-10-11 00:01:52 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:01:52 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 00:01:52 http-nio-8080-exec-5 DEBUG <==      Total: 2
+2017-10-11 00:03:47 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:03:47 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 00:03:47 http-nio-8080-exec-9 DEBUG <==      Total: 2
+2017-10-11 00:04:52 http-nio-8080-exec-1 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-11 00:04:52 http-nio-8080-exec-1 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 00:04:52 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-10-11 00:04:54 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.advertise_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from advertise a left join advertise_category b on a.advertise_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 00:04:54 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-11 00:04:54 http-nio-8080-exec-1 DEBUG <==      Total: 10
+2017-10-11 00:04:54 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) from advertise where del_flag=0 
+2017-10-11 00:04:54 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-11 00:04:54 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-10-11 00:04:55 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from banner_category where del_flag=0 
+2017-10-11 00:04:55 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 00:04:55 http-nio-8080-exec-7 DEBUG <==      Total: 7
+2017-10-11 00:04:56 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id, a.title, a.name, a.banner_category_id, a.url, a.create_date, a.update_date, a.del_flag ,b.name as 'type_name' from banner a left join banner_category b on a.banner_category_id=b.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 00:04:56 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 00:04:56 http-nio-8080-exec-2 DEBUG <==      Total: 5
+2017-10-11 00:04:56 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) from banner where del_flag=0 
+2017-10-11 00:04:56 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 00:04:56 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-10-11 00:05:47 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:05:47 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-11 00:05:47 http-nio-8080-exec-1 DEBUG <==      Total: 2
+2017-10-11 00:13:21 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:13:21 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 00:13:21 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 00:15:05 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:15:05 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 00:15:05 http-nio-8080-exec-3 DEBUG <==      Total: 2
+2017-10-11 00:16:41 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:16:41 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-11 00:16:42 http-nio-8080-exec-1 DEBUG <==      Total: 2
+2017-10-11 00:17:08 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:17:08 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-11 00:17:08 http-nio-8080-exec-6 DEBUG <==      Total: 2
+2017-10-11 00:17:47 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:17:47 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-11 00:17:47 http-nio-8080-exec-4 DEBUG <==      Total: 2
+2017-10-11 00:18:17 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:18:17 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 00:18:17 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 00:18:18 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:18:18 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 00:18:18 http-nio-8080-exec-3 DEBUG <==      Total: 2
+2017-10-11 00:18:19 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:18:19 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-11 00:18:19 http-nio-8080-exec-1 DEBUG <==      Total: 2
+2017-10-11 00:18:20 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:18:20 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-11 00:18:20 http-nio-8080-exec-6 DEBUG <==      Total: 2
+2017-10-11 00:18:59 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:18:59 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-11 00:18:59 http-nio-8080-exec-4 DEBUG <==      Total: 2
+2017-10-11 00:19:16 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:19:16 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 00:19:16 http-nio-8080-exec-3 DEBUG <==      Total: 2
+2017-10-11 00:23:45 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:23:45 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-11 00:23:45 http-nio-8080-exec-6 DEBUG <==      Total: 2
+2017-10-11 00:24:53 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:24:53 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 00:24:53 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 00:25:15 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:25:15 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 00:25:15 http-nio-8080-exec-2 DEBUG <==      Total: 2
+2017-10-11 00:25:36 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:25:36 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-11 00:25:36 http-nio-8080-exec-6 DEBUG <==      Total: 2
+2017-10-11 00:27:31 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:27:31 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 00:27:31 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 00:28:06 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:28:06 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 00:28:06 http-nio-8080-exec-2 DEBUG <==      Total: 2
+2017-10-11 00:28:16 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:28:16 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-11 00:28:16 http-nio-8080-exec-6 DEBUG <==      Total: 2
+2017-10-11 00:29:07 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:29:07 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-11 00:29:07 http-nio-8080-exec-4 DEBUG <==      Total: 2
+2017-10-11 00:31:37 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:31:37 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 00:31:37 http-nio-8080-exec-2 DEBUG <==      Total: 2
+2017-10-11 00:34:08 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:34:08 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 00:34:08 http-nio-8080-exec-9 DEBUG <==      Total: 2
+2017-10-11 00:34:17 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:34:17 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-11 00:34:17 http-nio-8080-exec-4 DEBUG <==      Total: 2
+2017-10-11 00:35:02 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:35:02 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 00:35:02 http-nio-8080-exec-3 DEBUG <==      Total: 2
+2017-10-11 00:36:10 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:36:10 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-11 00:36:10 http-nio-8080-exec-6 DEBUG <==      Total: 2
+2017-10-11 00:37:02 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:37:02 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-11 00:37:02 http-nio-8080-exec-4 DEBUG <==      Total: 2
+2017-10-11 00:37:27 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , c.id as 'detailId', c.good_tag_price,c.good_market_price FROM good a LEFT JOIN good_category b ON a.good_category_type=b.id LEFT JOIN good_detail c ON a.id=c.good_id WHERE b.id=1 AND a.status=1 limit 0,10 
+2017-10-11 00:37:27 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 00:37:27 http-nio-8080-exec-3 DEBUG <==      Total: 2
+2017-10-11 00:51:57 http-nio-8080-exec-10 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 00:51:57 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 00:51:57 http-nio-8080-exec-10 DEBUG <==      Total: 15
+2017-10-11 00:52:02 http-nio-8080-exec-5 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 00:52:02 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 00:52:02 http-nio-8080-exec-5 DEBUG <==      Total: 5
+2017-10-11 00:52:02 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) from sys_user where del_flag=0 
+2017-10-11 00:52:02 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 00:52:02 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 00:52:30 http-nio-8080-exec-10 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where phone = ? and password = ? 
+2017-10-11 00:52:30 http-nio-8080-exec-10 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 00:52:30 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-11 00:52:35 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where phone = ? and password = ? 
+2017-10-11 00:52:35 http-nio-8080-exec-3 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 00:52:35 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-10-11 00:55:59 main INFO Starting ShopApplication on IE361.COM-30530 with PID 2528 (E:\workspace\wsgw\shop\target\classes started by Administrator in E:\workspace\wsgw\shop)
+2017-10-11 00:55:59 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-11 00:55:59 main INFO No active profile set, falling back to default profiles: default
+2017-10-11 00:56:04 main INFO Started ShopApplication in 5.227 seconds (JVM running for 5.836)
+2017-10-11 00:56:47 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where phone = ? and password = ? 
+2017-10-11 00:56:47 http-nio-8080-exec-3 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 00:56:47 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-10-11 00:56:49 http-nio-8080-exec-6 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where phone = ? and password = ? 
+2017-10-11 00:56:49 http-nio-8080-exec-6 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 00:56:49 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-10-11 00:58:27 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 00:58:27 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 00:58:27 http-nio-8080-exec-5 DEBUG <==      Total: 2
+2017-10-11 00:58:27 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 00:58:27 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 00:58:27 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 00:58:49 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 00:58:49 http-nio-8080-exec-3 DEBUG ==> Parameters: 2(Long)
+2017-10-11 00:58:49 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-10-11 00:59:50 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 00:59:50 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 00:59:50 http-nio-8080-exec-2 DEBUG <==      Total: 2
+2017-10-11 00:59:50 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 00:59:50 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 00:59:50 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-10-11 01:01:08 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:01:08 http-nio-8080-exec-9 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:01:08 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-10-11 01:01:21 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:01:21 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:01:21 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 01:01:21 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:01:21 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:01:21 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-11 01:04:25 http-nio-8080-exec-5 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-11 01:04:25 http-nio-8080-exec-5 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 01:04:25 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 01:04:28 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.good_activity_category_id, a.good_id, a.activity_title, a.activity_price, a.activity_begin_date, a.activity_end_date, a.activity_status, a.activity_flag ,b.name as 'type_name' from good_activity a left join good_activity_category b on a.good_activity_category_id=b.id where a.activity_flag=0 ORDER BY activity_end_date desc limit 0,10 
+2017-10-11 01:04:28 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:04:28 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-11 01:04:28 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) from good_activity where activity_flag=0 
+2017-10-11 01:04:28 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:04:28 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-11 01:04:44 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:04:44 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 01:04:44 http-nio-8080-exec-2 DEBUG <==      Total: 3
+2017-10-11 01:04:54 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id, a.name, a.parent_id, a.parent_ids, a.create_date, a.update_date, a.del_flag ,b.name as 'parentIdName' from good_activity_category a left join good_activity_category b on a.parent_id=b.id where a.id = ? 
+2017-10-11 01:04:54 http-nio-8080-exec-3 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:04:54 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-10-11 01:04:55 http-nio-8080-exec-6 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:04:55 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-11 01:04:55 http-nio-8080-exec-6 DEBUG <==      Total: 3
+2017-10-11 01:05:05 http-nio-8080-exec-1 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:05:05 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-11 01:05:05 http-nio-8080-exec-1 DEBUG <==      Total: 3
+2017-10-11 01:06:51 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:06:51 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:06:51 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 01:06:51 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:06:51 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:06:51 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-11 01:06:54 http-nio-8080-exec-4 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:06:54 http-nio-8080-exec-4 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:06:54 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-10-11 01:07:18 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:07:18 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:07:18 http-nio-8080-exec-5 DEBUG <==      Total: 2
+2017-10-11 01:07:18 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:07:18 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:07:18 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 01:07:23 http-nio-8080-exec-6 DEBUG ==>  Preparing: select a.id, a.name, a.parent_id, a.parent_ids, a.create_date, a.update_date, a.del_flag ,b.name as 'parentIdName' from good_activity_category a left join good_activity_category b on a.parent_id=b.id where a.id = ? 
+2017-10-11 01:07:23 http-nio-8080-exec-6 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:07:23 http-nio-8080-exec-6 DEBUG <==      Total: 1
+2017-10-11 01:07:23 http-nio-8080-exec-8 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:07:23 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-11 01:07:23 http-nio-8080-exec-8 DEBUG <==      Total: 3
+2017-10-11 01:07:29 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:07:29 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:07:29 http-nio-8080-exec-7 DEBUG <==      Total: 3
+2017-10-11 01:07:31 http-nio-8080-exec-9 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:07:31 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:07:31 http-nio-8080-exec-9 DEBUG <==      Total: 3
+2017-10-11 01:07:36 http-nio-8080-exec-4 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:07:36 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-11 01:07:36 http-nio-8080-exec-4 DEBUG <==      Total: 3
+2017-10-11 01:07:47 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:07:47 http-nio-8080-exec-2 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:07:47 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-10-11 01:09:51 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:09:51 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-11 01:09:51 http-nio-8080-exec-1 DEBUG <==      Total: 2
+2017-10-11 01:09:51 http-nio-8080-exec-1 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:09:51 http-nio-8080-exec-1 DEBUG ==> Parameters: 
+2017-10-11 01:09:51 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-10-11 01:09:52 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:09:52 http-nio-8080-exec-5 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:09:52 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 01:09:54 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:09:54 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 01:09:54 http-nio-8080-exec-3 DEBUG <==      Total: 15
+2017-10-11 01:10:02 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:10:02 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:10:02 http-nio-8080-exec-7 DEBUG <==      Total: 15
+2017-10-11 01:11:07 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:11:07 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:11:07 http-nio-8080-exec-9 DEBUG <==      Total: 2
+2017-10-11 01:11:07 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:11:07 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:11:07 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-10-11 01:11:09 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:11:09 http-nio-8080-exec-1 DEBUG ==> Parameters: 1(Long)
+2017-10-11 01:11:09 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-10-11 01:11:11 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:11:11 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 01:11:11 http-nio-8080-exec-2 DEBUG <==      Total: 15
+2017-10-11 01:11:27 http-nio-8080-exec-5 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:11:27 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:11:27 http-nio-8080-exec-5 DEBUG <==      Total: 15
+2017-10-11 01:11:32 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:11:32 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 01:11:32 http-nio-8080-exec-3 DEBUG <==      Total: 2
+2017-10-11 01:11:32 http-nio-8080-exec-3 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:11:32 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 01:11:32 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-10-11 01:11:37 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:11:37 http-nio-8080-exec-8 DEBUG ==> Parameters: 1(Long)
+2017-10-11 01:11:37 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-11 01:13:09 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:13:09 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:13:09 http-nio-8080-exec-9 DEBUG <==      Total: 2
+2017-10-11 01:13:09 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:13:09 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:13:09 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-10-11 01:13:11 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:13:11 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 01:13:11 http-nio-8080-exec-3 DEBUG <==      Total: 2
+2017-10-11 01:13:11 http-nio-8080-exec-3 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:13:11 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 01:13:11 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-10-11 01:13:13 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:13:13 http-nio-8080-exec-8 DEBUG ==> Parameters: 1(Long)
+2017-10-11 01:13:13 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-11 01:13:14 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 
+2017-10-11 01:13:14 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:13:14 http-nio-8080-exec-7 DEBUG <==      Total: 12
+2017-10-11 01:13:23 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:13:23 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:13:23 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 01:13:23 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:13:23 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:13:23 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-11 01:14:18 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:14:18 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:14:18 http-nio-8080-exec-5 DEBUG <==      Total: 2
+2017-10-11 01:14:18 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:14:18 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:14:18 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 01:14:22 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:14:22 http-nio-8080-exec-8 DEBUG ==> Parameters: 1(Long)
+2017-10-11 01:14:22 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-11 01:14:24 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:14:24 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:14:24 http-nio-8080-exec-7 DEBUG <==      Total: 15
+2017-10-11 01:14:27 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:14:27 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:14:27 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 01:14:27 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:14:27 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:14:27 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-11 01:14:30 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:14:30 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:14:30 http-nio-8080-exec-5 DEBUG <==      Total: 2
+2017-10-11 01:14:30 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:14:30 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:14:30 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 01:14:34 http-nio-8080-exec-6 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:14:34 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-11 01:14:34 http-nio-8080-exec-6 DEBUG <==      Total: 15
+2017-10-11 01:14:38 http-nio-8080-exec-8 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:14:38 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-11 01:14:38 http-nio-8080-exec-8 DEBUG <==      Total: 15
+2017-10-11 01:14:42 http-nio-8080-exec-7 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:14:42 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:14:42 http-nio-8080-exec-7 DEBUG <==      Total: 2
+2017-10-11 01:14:42 http-nio-8080-exec-7 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:14:42 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:14:42 http-nio-8080-exec-7 DEBUG <==      Total: 1
+2017-10-11 01:15:34 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:15:34 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 01:15:34 http-nio-8080-exec-2 DEBUG <==      Total: 2
+2017-10-11 01:15:34 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:15:34 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 01:15:34 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-10-11 01:15:39 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:15:39 http-nio-8080-exec-3 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:15:39 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-10-11 01:15:41 http-nio-8080-exec-6 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:15:41 http-nio-8080-exec-6 DEBUG ==> Parameters: 
+2017-10-11 01:15:41 http-nio-8080-exec-6 DEBUG <==      Total: 15
+2017-10-11 01:15:45 http-nio-8080-exec-8 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:15:45 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-11 01:15:45 http-nio-8080-exec-8 DEBUG <==      Total: 3
+2017-10-11 01:15:50 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:15:50 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:15:50 http-nio-8080-exec-7 DEBUG <==      Total: 15
+2017-10-11 01:15:52 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:15:52 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:15:52 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 01:15:52 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:15:52 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:15:52 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-11 01:16:01 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:16:01 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:16:01 http-nio-8080-exec-5 DEBUG <==      Total: 2
+2017-10-11 01:16:01 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:16:01 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:16:01 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 01:16:11 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:16:11 http-nio-8080-exec-8 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:16:11 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-11 01:16:15 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:16:15 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:16:15 http-nio-8080-exec-7 DEBUG <==      Total: 3
+2017-10-11 01:16:18 http-nio-8080-exec-10 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 
+2017-10-11 01:16:18 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:16:18 http-nio-8080-exec-10 DEBUG <==      Total: 12
+2017-10-11 01:16:26 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:16:26 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:16:26 http-nio-8080-exec-9 DEBUG <==      Total: 2
+2017-10-11 01:16:26 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:16:26 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:16:26 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-10-11 01:16:30 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:16:30 http-nio-8080-exec-1 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:16:30 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-10-11 01:16:31 http-nio-8080-exec-2 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from advertise_category where del_flag=0 
+2017-10-11 01:16:31 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 01:16:31 http-nio-8080-exec-2 DEBUG <==      Total: 15
+2017-10-11 01:16:57 http-nio-8080-exec-7 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:16:57 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:16:57 http-nio-8080-exec-7 DEBUG <==      Total: 2
+2017-10-11 01:16:57 http-nio-8080-exec-7 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:16:57 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:16:57 http-nio-8080-exec-7 DEBUG <==      Total: 1
+2017-10-11 01:16:59 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:16:59 http-nio-8080-exec-9 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:16:59 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-10-11 01:17:00 http-nio-8080-exec-4 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 
+2017-10-11 01:17:00 http-nio-8080-exec-4 DEBUG ==> Parameters: 
+2017-10-11 01:17:00 http-nio-8080-exec-4 DEBUG <==      Total: 12
+2017-10-11 01:17:04 http-nio-8080-exec-5 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_activity_category where del_flag=0 
+2017-10-11 01:17:04 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:17:04 http-nio-8080-exec-5 DEBUG <==      Total: 3
+2017-10-11 01:17:10 http-nio-8080-exec-3 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:17:10 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 01:17:10 http-nio-8080-exec-3 DEBUG <==      Total: 2
+2017-10-11 01:17:10 http-nio-8080-exec-3 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:17:10 http-nio-8080-exec-3 DEBUG ==> Parameters: 
+2017-10-11 01:17:10 http-nio-8080-exec-3 DEBUG <==      Total: 1
+2017-10-11 01:17:17 http-nio-8080-exec-9 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:17:17 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:17:17 http-nio-8080-exec-9 DEBUG <==      Total: 2
+2017-10-11 01:17:17 http-nio-8080-exec-9 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:17:17 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:17:17 http-nio-8080-exec-9 DEBUG <==      Total: 1
+2017-10-11 01:17:29 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:17:29 http-nio-8080-exec-1 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:17:29 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-10-11 01:18:20 main INFO Starting ShopApplication on IE361.COM-30530 with PID 12796 (E:\workspace\wsgw\shop\target\classes started by Administrator in E:\workspace\wsgw\shop)
+2017-10-11 01:18:20 main DEBUG Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-10-11 01:18:20 main INFO No active profile set, falling back to default profiles: default
+2017-10-11 01:18:25 main INFO Started ShopApplication in 5.344 seconds (JVM running for 6.019)
+2017-10-11 01:18:34 http-nio-8080-exec-7 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-11 01:18:34 http-nio-8080-exec-7 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 01:18:34 http-nio-8080-exec-7 DEBUG <==      Total: 1
+2017-10-11 01:18:35 http-nio-8080-exec-8 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-11 01:18:35 http-nio-8080-exec-8 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 01:18:35 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-11 01:18:37 http-nio-8080-exec-5 DEBUG ==>  Preparing: select id, name, user_type, phone, password, status, create_date, update_date, del_flag from sys_user where phone = ? and password = ? 
+2017-10-11 01:18:37 http-nio-8080-exec-5 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 01:18:37 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 01:18:41 http-nio-8080-exec-9 DEBUG ==>  Preparing: select id, name, parent_id, parent_ids, create_date, update_date, del_flag from good_category where del_flag=0 
+2017-10-11 01:18:41 http-nio-8080-exec-9 DEBUG ==> Parameters: 
+2017-10-11 01:18:41 http-nio-8080-exec-9 DEBUG <==      Total: 12
+2017-10-11 01:18:41 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:18:41 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-11 01:18:41 http-nio-8080-exec-8 DEBUG <==      Total: 2
+2017-10-11 01:18:41 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:18:41 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-11 01:18:42 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-11 01:19:06 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:19:06 http-nio-8080-exec-2 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:19:06 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-10-11 01:19:07 http-nio-8080-exec-10 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:19:07 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:19:07 http-nio-8080-exec-10 DEBUG <==      Total: 2
+2017-10-11 01:19:07 http-nio-8080-exec-10 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:19:07 http-nio-8080-exec-10 DEBUG ==> Parameters: 
+2017-10-11 01:19:07 http-nio-8080-exec-10 DEBUG <==      Total: 1
+2017-10-11 01:20:13 http-nio-8080-exec-3 DEBUG ==>  Preparing: select id, name, value, key_type, sort, create_date, update_date, del_flag from dict where del_flag=0 and key_type =? 
+2017-10-11 01:20:13 http-nio-8080-exec-3 DEBUG ==> Parameters: goodStatus(String)
+2017-10-11 01:20:13 http-nio-8080-exec-3 DEBUG <==      Total: 3
+2017-10-11 01:20:13 http-nio-8080-exec-3 INFO 字典列表插入缓存 >> [{del_flag=0, key_type=goodStatus, name=待审核, id=1, sort=1, create_date=2017-10-09 00:00:00.0, value=0, update_date=2017-10-09 00:00:00.0}, {del_flag=0, key_type=goodStatus, name=审核通过, id=2, sort=2, create_date=2017-10-09 00:00:00.0, value=1, update_date=2017-10-09 00:00:00.0}, {del_flag=0, key_type=goodStatus, name=审核不通过, id=3, sort=3, create_date=2017-10-09 00:00:00.0, value=2, update_date=2017-10-09 00:00:00.0}]
+2017-10-11 01:20:13 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:20:13 http-nio-8080-exec-8 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:20:13 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-11 01:20:20 http-nio-8080-exec-5 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:20:20 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:20:20 http-nio-8080-exec-5 DEBUG <==      Total: 2
+2017-10-11 01:20:20 http-nio-8080-exec-5 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:20:20 http-nio-8080-exec-5 DEBUG ==> Parameters: 
+2017-10-11 01:20:20 http-nio-8080-exec-5 DEBUG <==      Total: 1
+2017-10-11 01:20:24 http-nio-8080-exec-4 DEBUG ==>  Preparing: select id, name, user_type, phone, password, good_category_type, status, create_date, update_date, del_flag from user where phone = ? and password = ? 
+2017-10-11 01:20:24 http-nio-8080-exec-4 DEBUG ==> Parameters: 18825113545(String), 123456(String)
+2017-10-11 01:20:24 http-nio-8080-exec-4 DEBUG <==      Total: 1
+2017-10-11 01:20:26 http-nio-8080-exec-8 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:20:26 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-11 01:20:26 http-nio-8080-exec-8 DEBUG <==      Total: 2
+2017-10-11 01:20:26 http-nio-8080-exec-8 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:20:26 http-nio-8080-exec-8 DEBUG ==> Parameters: 
+2017-10-11 01:20:26 http-nio-8080-exec-8 DEBUG <==      Total: 1
+2017-10-11 01:20:29 http-nio-8080-exec-1 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price as 'goodTagPrice',b.good_market_price as 'goodMarketPrice', b.good_images as 'goodImages',b.good_detail as 'goodDetail', c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' from good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.id = ? 
+2017-10-11 01:20:29 http-nio-8080-exec-1 DEBUG ==> Parameters: 2(Long)
+2017-10-11 01:20:29 http-nio-8080-exec-1 DEBUG <==      Total: 1
+2017-10-11 01:20:30 http-nio-8080-exec-2 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:20:30 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 01:20:30 http-nio-8080-exec-2 DEBUG <==      Total: 2
+2017-10-11 01:20:30 http-nio-8080-exec-2 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:20:30 http-nio-8080-exec-2 DEBUG ==> Parameters: 
+2017-10-11 01:20:30 http-nio-8080-exec-2 DEBUG <==      Total: 1
+2017-10-11 01:21:16 http-nio-8080-exec-7 DEBUG ==>  Preparing: select a.id,a.user_id, a.title, a.name, a.good_category_type, a.good_image, a.status, a.create_date, a.update_date, a.del_flag , b.id as 'detailId', b.good_tag_price,b.good_market_price, c.activity_title,c.activity_price, d.name AS 'categoryName', e.name AS 'activityName' FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 ORDER BY create_date desc limit 0,10 
+2017-10-11 01:21:16 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:21:16 http-nio-8080-exec-7 DEBUG <==      Total: 2
+2017-10-11 01:21:16 http-nio-8080-exec-7 DEBUG ==>  Preparing: select count(1) FROM good a LEFT JOIN good_detail b ON a.id=b.good_id LEFT JOIN good_activity c ON b.good_activity_id=c.id AND a.id=c.good_id LEFT JOIN good_category d ON a.good_category_type=d.id LEFT JOIN good_activity_category e ON c.good_activity_category_id=e.id where a.del_flag=0 
+2017-10-11 01:21:16 http-nio-8080-exec-7 DEBUG ==> Parameters: 
+2017-10-11 01:21:16 http-nio-8080-exec-7 DEBUG <==      Total: 1

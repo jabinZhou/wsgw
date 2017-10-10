@@ -90,4 +90,10 @@ public class GoodServiceImpl implements GoodService{
 		// TODO Auto-generated method stub
 		return goodMapper.listCount(page);
 	}
+
+	@Override
+	public List<PageData> goodIndexList(Page page) {
+		// TODO Auto-generated method stub
+		return goodMapper.goodIndexList(page);
+	}
 }

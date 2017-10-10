@@ -68,10 +68,7 @@
                     </td>
                     <td style="width:70px;">活动：</td>
 	                <td>                        
-	                     <input id="goodActivityId" name="goodActivityId" class="mini-combobox" valueField="id" textField="name" 
-                            url="<%=basePath%>/backend/dict/dictList"
-                             required="true"
-                             emptyText="请选择活动"/>
+	                      <input id="goodActivityId" name="goodActivityId" class="mini-buttonedit" onbuttonclick="onButtonEdit2" allowInput="false"/>
 	                </td>
                     
                 </tr>  
@@ -216,6 +213,35 @@
             });
         }
 
+        function onButtonEdit2(e) {
+            var buttonEdit = e.sender;
+            
+            var win = new TreeSelectWindow();
+            win.set({
+//                multiSelect: true,
+//                showFolderCheckBox: true,
+//                checkRecursive: true,                
+                url: "${basePath}/backend/goodActivityCategory/goodActivityCategoryListClick",    
+                title: "选择树形",
+                width: 350,
+                height: 350
+            });
+            
+            win.show();
+
+            //初始化数据
+            win.setData(null, function (action) {
+                if (action == "ok") {
+                    //获取数据
+                    var data = win.getData();
+                    if (data) {
+                        buttonEdit.setValue(data.id);
+                        buttonEdit.setText(data.text);
+
+                    }
+                }
+            });
+        }
 
     </script>
 </body>
