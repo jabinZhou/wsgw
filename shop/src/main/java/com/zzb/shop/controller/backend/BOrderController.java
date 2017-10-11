@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +18,7 @@ import com.zzb.shop.controller.BaseController;
 import com.zzb.shop.domain.Order;
 import com.zzb.shop.domain.Page;
 import com.zzb.shop.domain.PushMsg;
+import com.zzb.shop.domain.User;
 import com.zzb.shop.service.OrderService;
 import com.zzb.shop.util.JSON;
 import com.zzb.shop.util.PageData;

@@ -171,7 +171,7 @@ public class OrderController extends BaseController{
 	/**
 	 * 购买
 	 * @param model
-	 * @param shopCar
+	 * @param order
 	 * @param request
 	 * @param response
 	 * @return
@@ -191,6 +191,164 @@ public class OrderController extends BaseController{
 				pushMsg.setCode("0");
 				pushMsg.setInfo("操作失败请稍后再试！");
 			}
+		}catch(Exception ex){
+			ex.printStackTrace();
+			pushMsg.setStatus(false);
+			pushMsg.setCode("0");
+			pushMsg.setInfo("操作失败请稍后再试！");
+		}
+		return pushMsg;
+	}
+	
+	/**
+	 * 付款
+	 * @param model
+	 * @param order
+	 * @param request
+	 * @param response
+	 * @return
+	 */
+	@RequestMapping(value = "/ajaxPayOrder")
+	@ResponseBody
+	public Object ajaxPayOrder(Model model,Order order,HttpServletRequest request,HttpServletResponse response) {
+		//登录成功标志
+		PushMsg pushMsg=new PushMsg("操作成功！",true);
+		pushMsg.setCode("1");
+		try{		
+			User user=(User) request.getSession().getAttribute("user");
+			Order o=orderService.selectByPrimaryKey(order.getId());
+			if(o!=null){
+				o.setOrderStatus(Order.PAY_STATUS);
+				int ret=orderService.updateByPrimaryKey(order);
+				if(ret<0){
+					pushMsg.setStatus(false);
+					pushMsg.setCode("0");
+					pushMsg.setInfo("操作失败请稍后再试！");
+				}
+			}else{
+				pushMsg.setStatus(false);
+				pushMsg.setCode("0");
+				pushMsg.setInfo("订单不存在请稍后再试！");
+			}
+			
+		}catch(Exception ex){
+			ex.printStackTrace();
+			pushMsg.setStatus(false);
+			pushMsg.setCode("0");
+			pushMsg.setInfo("操作失败请稍后再试！");
+		}
+		return pushMsg;
+	}
+	
+	/**
+	 * 确认买家已付款
+	 * @param model
+	 * @param order
+	 * @param request
+	 * @param response
+	 * @return
+	 */
+	@RequestMapping(value = "/ajaxWiatShippingOrder")
+	@ResponseBody
+	public Object ajaxWiatShippingOrder(Model model,Order order,HttpServletRequest request,HttpServletResponse response) {
+		//登录成功标志
+		PushMsg pushMsg=new PushMsg("操作成功！",true);
+		pushMsg.setCode("1");
+		try{		
+			Order o=orderService.selectByPrimaryKey(order.getId());
+			if(o!=null){
+				o.setOrderStatus(Order.WAIT_SHIPPING_STATUS);
+				int ret=orderService.updateByPrimaryKey(order);
+				if(ret<0){
+					pushMsg.setStatus(false);
+					pushMsg.setCode("0");
+					pushMsg.setInfo("操作失败请稍后再试！");
+				}
+			}else{
+				pushMsg.setStatus(false);
+				pushMsg.setCode("0");
+				pushMsg.setInfo("订单不存在请稍后再试！");
+			}
+			
+		}catch(Exception ex){
+			ex.printStackTrace();
+			pushMsg.setStatus(false);
+			pushMsg.setCode("0");
+			pushMsg.setInfo("操作失败请稍后再试！");
+		}
+		return pushMsg;
+	}
+	
+	/**
+	 * 卖家发货
+	 * @param model
+	 * @param order
+	 * @param request
+	 * @param response
+	 * @return
+	 */
+	@RequestMapping(value = "/ajaxShippingOrder")
+	@ResponseBody
+	public Object ajaxShippingOrder(Model model,Order order,HttpServletRequest request,HttpServletResponse response) {
+		//登录成功标志
+		PushMsg pushMsg=new PushMsg("操作成功！",true);
+		pushMsg.setCode("1");
+		try{		
+			Order o=orderService.selectByPrimaryKey(order.getId());
+			if(o!=null){
+				o.setOrderStatus(Order.SHIPPING_STATUS);
+				o.setExpressCode(order.getExpressCode());
+				int ret=orderService.updateByPrimaryKey(order);
+				if(ret<0){
+					pushMsg.setStatus(false);
+					pushMsg.setCode("0");
+					pushMsg.setInfo("操作失败请稍后再试！");
+				}
+			}else{
+				pushMsg.setStatus(false);
+				pushMsg.setCode("0");
+				pushMsg.setInfo("订单不存在请稍后再试！");
+			}
+			
+		}catch(Exception ex){
+			ex.printStackTrace();
+			pushMsg.setStatus(false);
+			pushMsg.setCode("0");
+			pushMsg.setInfo("操作失败请稍后再试！");
+		}
+		return pushMsg;
+	}
+	
+	/**
+	 * 确认收货
+	 * @param model
+	 * @param order
+	 * @param request
+	 * @param response
+	 * @return
+	 */
+	@RequestMapping(value = "/ajaxFinishOrder")
+	@ResponseBody
+	public Object ajaxFinishOrder(Model model,Order order,HttpServletRequest request,HttpServletResponse response) {
+		//登录成功标志
+		PushMsg pushMsg=new PushMsg("操作成功！",true);
+		pushMsg.setCode("1");
+		try{		
+			Order o=orderService.selectByPrimaryKey(order.getId());
+			if(o!=null){
+				o.setOrderStatus(Order.FINISH_STATUS);
+				int ret=orderService.updateByPrimaryKey(order);
+				if(ret<0){
+					pushMsg.setStatus(false);
+					pushMsg.setCode("0");
+					pushMsg.setInfo("操作失败请稍后再试！");
+				}
+			}else{
+				pushMsg.setStatus(false);
+				pushMsg.setCode("0");
+				pushMsg.setInfo("订单不存在请稍后再试！");
+			}
+			
 		}catch(Exception ex){
 			ex.printStackTrace();
 			pushMsg.setStatus(false);
