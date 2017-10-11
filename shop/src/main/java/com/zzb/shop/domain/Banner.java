@@ -1,9 +1,15 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Banner {
-    private Long id;
+public class Banner implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4952262673460250062L;
+
+	private Long id;
 
     private String title;
 

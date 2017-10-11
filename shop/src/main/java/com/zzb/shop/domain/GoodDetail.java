@@ -1,8 +1,9 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class GoodDetail {
+public class GoodDetail implements Serializable{
     private Long id;
 
     private Long goodId;

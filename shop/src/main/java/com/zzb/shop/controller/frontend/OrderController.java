@@ -215,7 +215,6 @@ public class OrderController extends BaseController{
 		PushMsg pushMsg=new PushMsg("操作成功！",true);
 		pushMsg.setCode("1");
 		try{		
-			User user=(User) request.getSession().getAttribute("user");
 			Order o=orderService.selectByPrimaryKey(order.getId());
 			if(o!=null){
 				o.setOrderStatus(Order.PAY_STATUS);
@@ -241,7 +240,7 @@ public class OrderController extends BaseController{
 	}
 	
 	/**
-	 * 确认买家已付款
+	 * 卖家确认买家已付款
 	 * @param model
 	 * @param order
 	 * @param request

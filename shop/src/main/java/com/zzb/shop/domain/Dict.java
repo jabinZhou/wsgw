@@ -1,9 +1,18 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Dict {
-    private Long id;
+public class Dict implements Serializable{
+	
+	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8763859704536539042L;
+
+	private Long id;
 
     private String name;
 

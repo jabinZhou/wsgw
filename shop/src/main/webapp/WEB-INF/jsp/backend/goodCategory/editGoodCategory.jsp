@@ -36,9 +36,9 @@
             <table style="table-layout:fixed;">
                 
                 <tr>
-                    <td >广告名称：</td>
+                    <td >分类名称：</td>
                     <td >    
-                        <input name="name" class="mini-textbox" required="true" emptyText="请输入广告名称" vtype="rangeChar:1,20"/>
+                        <input name="name" class="mini-textbox" required="true" emptyText="请输入分类名称" vtype="rangeChar:1,20"/>
                     </td>
                     <td style="width:70px;"></td>
 	                <td >           

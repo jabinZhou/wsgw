@@ -1,9 +1,15 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Advertise {
-    private Long id;
+public class Advertise implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6306826462022299298L;
+
+	private Long id;
 
     private String title;
 

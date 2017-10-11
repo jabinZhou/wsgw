@@ -127,7 +127,7 @@
   </update>
   
   
-  <!-- 用户列表(弹窗选择用) -->
+    <!-- 用户列表(弹窗选择用) -->
 	<select id="list" resultType="java.util.HashMap" >
 		select 
     <include refid="Base_Column_List" />
@@ -135,6 +135,17 @@
     <if test="page.pd.key!= null" >
        and key_type =#{page.pd.key}
     </if> 
-    
+    ORDER BY sort asc
+	</select>
+	
+	
+	 <!-- 用户列表(弹窗选择用) -->
+	<select id="listCount" resultType="Integer">
+		select 
+    count(1)
+    from dict where del_flag=0
+    <if test="page.pd.key!= null" >
+       and key_type =#{page.pd.key}
+    </if> 
 	</select>
 </mapper>

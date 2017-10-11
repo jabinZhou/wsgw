@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="<%=basePath%>/css/login.css">
 	<script src="<%=basePath%>/js/jquery.min.js"></script>
 	<script src="<%=basePath%>/js/lb.js"></script>
+	<script src="<%=basePath%>/js/md5.js"></script>
 <script type="text/javascript">
 function login(){
 	console.log("login");
@@ -54,6 +55,9 @@ function varifyPhone(){
 }
 function varifyPassword(){
 	console.log("varifyPassword");
+	var password2=$("#password2").val();
+	var md5s=md5(password2);
+	$("#password").val(md5s);
 }
 $(document).ready(function(){
 	$('.box').imgtransition({
@@ -110,7 +114,8 @@ $(document).ready(function(){
 					</div>
 					<div class="same">
 						<p>密&emsp;码：</p>
-						<input type="password" class="input_2" name="password" id="password" onblur="varifyPassword()">
+						<input type="password" class="input_2" name="password2" id="password2" onblur="varifyPassword()">
+						<input type="hidden" name="password" id="password">
 					</div>
 					<!--<div class="same">
 						<p>验证码：</p>

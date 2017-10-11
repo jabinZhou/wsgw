@@ -51,7 +51,7 @@ public class BGoodCategoryController extends BaseController{
 	 */
 	@RequestMapping(value = "/goodCategoryList")
 	@ResponseBody
-	public Object sysUserList(Model model,Page page) {
+	public Object goodCategoryList(Model model,Page page) {
 		PageData pd = new PageData();
 		HashMap result = new HashMap();
 		pd = this.getPageData();
@@ -59,15 +59,8 @@ public class BGoodCategoryController extends BaseController{
 		if (null != key && !"".equals(key)) {
 			pd.put("key", key.trim());
 		}
-		String sortFile=pd.getString("sortField");
-		if (null != sortFile && !"".equals(sortFile)) {
-			pd.put("sortField","a."+pd.get("sortField"));
-		}
 		page.setPd(pd);
-		List<PageData> list = goodCategoryService.list(page);// 列出用户列表
-		/*int total = goodCategoryService.listCount(page);
-		result.put("data", list);
-		result.put("total", total);*/
+		List<PageData> list = goodCategoryService.list(page);
 		String json = JSON.Encode(list);
 		return json;
 		
@@ -91,12 +84,10 @@ public class BGoodCategoryController extends BaseController{
 		if (null != key && !"".equals(key)) {
 			pd.put("key", key.trim());
 		}
-		//pd.put("sortField","a."+pd.get("sortField"));
 		page.setPd(pd);
 		List<PageData> list = goodCategoryService.list(page);// 列出用户列表
 		if(list!=null&&list.size()>0){
 			for(HashMap d:list){
-				//System.out.println(d.get("id"));
 				d.put("id",d.get("id"));
 				d.put("pid",d.get("parent_id"));
 				d.put("text",d.get("name"));
@@ -110,9 +101,6 @@ public class BGoodCategoryController extends BaseController{
 		m.put("pid", null);
 		m.put("text", "顶层");
 		list.add(m);
-		//int total = advertiseCategoryService.listCount(page);
-		//result.put("data", list);
-		//result.put("total", total);
 		String json = JSON.Encode(list);
 		return json;
 		
@@ -182,13 +170,13 @@ public class BGoodCategoryController extends BaseController{
 	}
 	
 	/**
-	 * 保存用户
+	 * 保存分类
 	 * @param page
 	 * @return
 	 */
 	@RequestMapping(value = "/saveGoodCategory")
 	@ResponseBody
-	public Object saveSysUser(GoodCategory domain){
+	public Object saveGoodCategory(GoodCategory domain){
 		PushMsg pushMsg = new PushMsg("保存成功！", true);
 		pushMsg.setCode("1");
 		try {

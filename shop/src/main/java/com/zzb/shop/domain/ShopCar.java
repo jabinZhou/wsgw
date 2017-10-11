@@ -1,9 +1,15 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class ShopCar {
-    private Long id;
+public class ShopCar implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5909754175853621064L;
+
+	private Long id;
 
     private Long userId;
 
@@ -15,6 +21,44 @@ public class ShopCar {
 
     private BigDecimal totalPrice;
 
+    private User buyUser;
+    private User sellUser;
+    private Good good;
+    private GoodDetail goodDetail;
+    public User getBuyUser() {
+		return buyUser;
+	}
+
+	public void setBuyUser(User buyUser) {
+		this.buyUser = buyUser;
+	}
+
+	public User getSellUser() {
+		return sellUser;
+	}
+
+	public void setSellUser(User sellUser) {
+		this.sellUser = sellUser;
+	}
+
+	public Good getGood() {
+		return good;
+	}
+
+	public void setGood(Good good) {
+		this.good = good;
+	}
+
+	public GoodDetail getGoodDetail() {
+		return goodDetail;
+	}
+
+	public void setGoodDetail(GoodDetail goodDetail) {
+		this.goodDetail = goodDetail;
+	}
+
+	
+    
     public Long getId() {
         return id;
     }

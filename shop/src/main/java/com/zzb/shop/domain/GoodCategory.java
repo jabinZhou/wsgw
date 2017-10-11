@@ -1,9 +1,15 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class GoodCategory {
-    private Long id;
+public class GoodCategory implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1309467169899426998L;
+
+	private Long id;
 
     private String name;
 

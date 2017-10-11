@@ -177,25 +177,24 @@ public class BBannerCategoryController extends BaseController{
 	}
 	
 	/**
-	 * 保存用户
+	 * 保存分类
 	 * @param page
 	 * @return
 	 */
 	@RequestMapping(value = "/saveBannerCategory")
 	@ResponseBody
-	public Object saveSysUser(BannerCategory domain){
+	public Object saveBannerCategory(BannerCategory domain) {
 		PushMsg pushMsg = new PushMsg("保存成功！", true);
 		pushMsg.setCode("1");
 		try {
-			Date date=new Date();
-			if (StringUtil.isNullOrEmpty(domain.getId())){
-				
+			Date date = new Date();
+			// 判断分类是否有ID 无新增 有更新
+			if (StringUtil.isNullOrEmpty(domain.getId())) {
 				domain.setCreateDate(date);
 				domain.setUpdateDate(date);
 				domain.setDelFlag("0");
 				bannerCategoryService.insert(domain);
-			}else{
-				
+			} else {
 				domain.setUpdateDate(date);
 				bannerCategoryService.updateByPrimaryKeySelective(domain);
 			}

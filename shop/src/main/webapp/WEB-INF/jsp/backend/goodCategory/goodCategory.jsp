@@ -67,7 +67,7 @@
             
             mini.open({
                 url: "${basePath}/backend/goodCategory/editGoodCategory",
-                title: "新增员工", width: 600, height: 400,
+                title: "新增分类", width: 600, height: 400,
                 onload: function () {
                     var iframe = this.getIFrameEl();
                     var data = { action: "new"};
@@ -85,7 +85,7 @@
             if (row) {
                 mini.open({
                     url: "${basePath}/backend/goodCategory/editGoodCategory",
-                    title: "编辑员工", width: 600, height: 400,
+                    title: "编辑分类", width: 600, height: 400,
                     onload: function () {
                         var iframe = this.getIFrameEl();
                         var data = { action: "edit", id: row.id };

@@ -32,23 +32,28 @@ public class BannerCategoryServiceImpl implements BannerCategoryService{
 	@Transactional(readOnly = false)
 	public int insert(BannerCategory record) {
 		
-		 boolean noPid=false;
-			if(StringUtil.isNullOrEmpty(record.getParentId())||0==record.getParentId()){
-				record.setParentId(0L);
-				noPid=true;
+		boolean noPid=false;//是否有父分类
+		if(StringUtil.isNullOrEmpty(record.getParentId())||0==record.getParentId()){
+			record.setParentId(0L);//设置分类为一级分类
+			noPid=true;
+		}
+		int flag=bannerCategoryMapper.insert(record);
+		if(flag>0){
+			/*
+			 * 无父分类 设置当前分类的父分类为0 当前分类的父分类字符串数组为0和本分类的主键ID
+			 * 有父分类 获取父分类的父分类字符串数组 设置当前分类的父分类字符串数组为父分类字符串数组和本分类的主键ID
+			 * 更新当前分类
+			 */
+			if(noPid){
+				record.setParentIds(record.getParentId()+","+record.getId());
+				updateByPrimaryKeySelective(record);
+			}else{
+				BannerCategory pAC=selectByPrimaryKey(record.getParentId());
+				record.setParentIds(pAC.getParentIds()+","+record.getId());
+				updateByPrimaryKeySelective(record);
 			}
-			int flag=bannerCategoryMapper.insert(record);
-			if(flag>0){
-				if(noPid){
-					record.setParentIds(record.getParentId()+","+record.getId());
-					updateByPrimaryKeySelective(record);
-				}else{
-					BannerCategory pAC=selectByPrimaryKey(record.getParentId());
-					record.setParentIds(pAC.getParentIds()+","+record.getId());
-					updateByPrimaryKeySelective(record);
-				}
-			}
-			return flag;
+		}
+		return flag;
 	}
 
 	@Override
@@ -66,10 +71,10 @@ public class BannerCategoryServiceImpl implements BannerCategoryService{
 	@Override
 	@Transactional(readOnly = false)
 	public int updateByPrimaryKeySelective(BannerCategory record) {
-		boolean noPid=false;
-		if(StringUtil.isNullOrEmpty(record.getParentId())||0==record.getParentId()){
+		boolean noPid = false;
+		if (StringUtil.isNullOrEmpty(record.getParentId()) || 0 == record.getParentId()) {
 			record.setParentId(0L);
-			noPid=true;
+			noPid = true;
 		}
 		if (noPid) {
 			record.setParentIds(record.getParentId() + "," + record.getId());

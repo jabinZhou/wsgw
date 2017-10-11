@@ -1,9 +1,15 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class SysUser {
-    private Long id;
+public class SysUser implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3196682398808714643L;
+
+	private Long id;
 
     private String name;
 

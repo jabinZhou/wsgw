@@ -1,9 +1,15 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class OrderDetail {
-    private Long id;
+public class OrderDetail implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1889070825589535611L;
+
+	private Long id;
 
     private Long orderId;
 

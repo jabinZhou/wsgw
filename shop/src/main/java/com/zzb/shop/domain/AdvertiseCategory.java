@@ -1,8 +1,9 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class AdvertiseCategory {
+public class AdvertiseCategory implements Serializable{
     private Long id;
 
     private String name;

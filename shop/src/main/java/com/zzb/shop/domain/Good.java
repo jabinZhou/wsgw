@@ -1,10 +1,16 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class Good {
-    private Long id;
+public class Good implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -9000212773853530389L;
+
+	private Long id;
     
     private Long userId;
 

@@ -1,7 +1,14 @@
 package com.zzb.shop.domain;
 
-public class Follow {
-    private Long userId;
+import java.io.Serializable;
+
+public class Follow implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3913160444925438519L;
+
+	private Long userId;
 
     private Long goodDetailId;
 

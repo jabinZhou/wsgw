@@ -42,7 +42,7 @@ public class BDictController extends BaseController{
 		return "backend/dict/dict";
 	}
 	/**
-	 * 列表数据页
+	 * 获取字典列表
 	 * @param model
 	 * @param page
 	 * @return
@@ -67,6 +67,34 @@ public class BDictController extends BaseController{
 		return json;
 		
 	}
+	
+	/**
+	 * 获取所有字典列表
+	 * @param model
+	 * @param page
+	 * @return
+	 */
+	@RequestMapping(value = "/allList")
+	@ResponseBody
+	public Object allList(Model model,Page page) {
+		PageData pd = new PageData();
+		HashMap result = new HashMap();
+		pd = this.getPageData();
+		String key = pd.getString("key"); // 检索条件 关键词
+		if (null != key && !"".equals(key)) {
+			pd.put("key", key.trim());
+		}
+		//pd.put("sortField","a."+pd.get("sortField"));
+		page.setPd(pd);
+		List<PageData> list = dictService.list(page);// 列出用户列表
+		int total = dictService.listCount(page);
+		result.put("data", list);
+		result.put("total", total);
+		String json = JSON.Encode(result);
+		return json;
+		
+	}
+	
 	@RequestMapping(value = "/delDict")
 	@ResponseBody
 	public Object delSysUser(Page page){

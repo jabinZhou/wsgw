@@ -1,11 +1,17 @@
 package com.zzb.shop.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-public class Order {
-    private Long id;
+public class Order implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6937379766825701591L;
+
+	private Long id;
 
     private Long userId;
 

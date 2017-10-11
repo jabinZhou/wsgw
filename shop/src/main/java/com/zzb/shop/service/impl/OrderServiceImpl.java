@@ -85,7 +85,7 @@ public class OrderServiceImpl implements OrderService{
 	public int addOrder(Order record) {
 		List<ShopCar>list=record.getList();
 		int len=list.size();
-		BigDecimal totalPrice=new BigDecimal(0);
+		BigDecimal totalPrice=new BigDecimal(0);//订单总价格
 		for(int i=0;i<len;i++){
 			ShopCar shopCar=list.get(i);
 			totalPrice=totalPrice.add(shopCar.getTotalPrice());
@@ -100,7 +100,7 @@ public class OrderServiceImpl implements OrderService{
 		record.setDelFlag("0");
 		int ret=orderMapper.insert(record);
 		if(ret>0){
-			orderMapper.batchInsert(record);
+			orderMapper.batchInsert(record);//批量插入订单详情
 		}
 		return ret;
 	}

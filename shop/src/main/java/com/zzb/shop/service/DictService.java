@@ -9,17 +9,17 @@ import com.zzb.shop.util.PageData;
 public interface DictService {
 	int deleteByPrimaryKey(Long id);
 
-    int insert(Dict record);
+	int insert(Dict record);
 
-    int insertSelective(Dict record);
+	int insertSelective(Dict record);
 
-    Dict selectByPrimaryKey(Long id);
+	Dict selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(Dict record);
+	int updateByPrimaryKeySelective(Dict record);
 
-    int updateByPrimaryKey(Dict record);
-    
-List<PageData> list(Page page);
-    
-    int listCount(Page page);
+	int updateByPrimaryKey(Dict record);
+
+	List<PageData> list(Page page);
+
+	int listCount(Page page);
 }
