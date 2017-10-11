@@ -11,7 +11,11 @@ public interface FollowService {
 
     int insertSelective(Follow record);
     
-List<PageData> list(Page page);
+    int delete(Follow record);
+    
+    List<PageData> list(Page page);
     
     int listCount(Page page);
+    
+    int follow(Follow record,Integer isFollow);
 }

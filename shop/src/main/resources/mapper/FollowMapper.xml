@@ -28,4 +28,17 @@
       </if>
     </trim>
   </insert>
+  
+   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    DELETE FROM follow
+     WHERE user_id=#{userId} and good_detail_id=#{goodDetailId}
+  </delete>
+  
+  <select id="selectFollow" resultMap="BaseResultMap" >
+    select 
+    user_id, good_detail_id
+    from follow
+    where user_id = #{userId,jdbcType=BIGINT} and good_detail_id=#{goodDetailId,jdbcType=BIGINT}
+  </select>
+  
 </mapper>

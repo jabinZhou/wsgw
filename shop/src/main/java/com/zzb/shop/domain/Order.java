@@ -1,6 +1,8 @@
 package com.zzb.shop.domain;
 
+import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class Order {
     private Long id;
@@ -9,13 +11,13 @@ public class Order {
 
     private String orderNo;
 
-    private Long goodId;
+    private BigDecimal totalPrice;
 
-    private Long goodDetailId;
+    private BigDecimal truePrice;
 
     private String expressCode;
 
-    private String status;
+    private String orderStatus;
 
     private String remarks;
 
@@ -25,7 +27,23 @@ public class Order {
 
     private String delFlag;
 
-    public Long getId() {
+    private List<ShopCar> list;
+    
+    public static final  String WAIT_PAY_STATUS="0";//状态 0待付款1已付款2待发货3 已发货 4 已收货
+    public static final  String PAY_STATUS="1";
+    public static final  String WAIT_SHIPPING_STATUS="2";
+    public static final  String SHIPPING_STATUS="3";
+    public static final  String FINISH_STATUS="4";
+    
+    public List<ShopCar> getList() {
+		return list;
+	}
+
+	public void setList(List<ShopCar> list) {
+		this.list = list;
+	}
+
+	public Long getId() {
         return id;
     }
 
@@ -49,21 +67,22 @@ public class Order {
         this.orderNo = orderNo == null ? null : orderNo.trim();
     }
 
-    public Long getGoodId() {
-        return goodId;
+    public BigDecimal getTotalPrice() {
+        return totalPrice;
     }
 
-    public void setGoodId(Long goodId) {
-        this.goodId = goodId;
+    public void setTotalPrice(BigDecimal totalPrice) {
+        this.totalPrice = totalPrice;
     }
 
-    public Long getGoodDetailId() {
-        return goodDetailId;
+    public BigDecimal getTruePrice() {
+        return truePrice;
     }
 
-    public void setGoodDetailId(Long goodDetailId) {
-        this.goodDetailId = goodDetailId;
+    public void setTruePrice(BigDecimal truePrice) {
+        this.truePrice = truePrice;
     }
+
 
     public String getExpressCode() {
         return expressCode;
@@ -73,12 +92,12 @@ public class Order {
         this.expressCode = expressCode == null ? null : expressCode.trim();
     }
 
-    public String getStatus() {
-        return status;
+    public String getOrderStatus() {
+        return orderStatus;
     }
 
-    public void setStatus(String status) {
-        this.status = status == null ? null : status.trim();
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus == null ? null : orderStatus.trim();
     }
 
     public String getRemarks() {

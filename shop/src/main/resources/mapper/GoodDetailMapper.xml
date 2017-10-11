@@ -17,11 +17,17 @@
     id, good_id, user_id, good_images, good_activity_id, good_detail, good_tag_price, 
     good_market_price, market_status, market_flag
   </sql>
+  
+  <sql id="Select_Base_Column_List" >
+    a.id, a.good_id, a.user_id, a.good_images, a.good_activity_id, a.good_detail, a.good_tag_price, 
+    a.good_market_price, a.market_status, a.market_flag
+  </sql>
+  
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
-    <include refid="Base_Column_List" />
-    from good_detail
-    where id = #{id,jdbcType=BIGINT}
+    <include refid="Select_Base_Column_List" />,b.activity_price as 'goodActivity.activityPrice'
+    from good_detail a left join good_activity b on a.good_activity_id=b.id
+    where a.id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from good_detail

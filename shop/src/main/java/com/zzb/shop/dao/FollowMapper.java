@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 import com.zzb.shop.domain.Follow;
 import com.zzb.shop.domain.Page;
+import com.zzb.shop.domain.User;
 import com.zzb.shop.util.PageData;
 
 public interface FollowMapper {
@@ -13,7 +14,11 @@ public interface FollowMapper {
 
     int insertSelective(Follow record);
     
-List<PageData> list(@Param("page")Page page);
+    int deleteByPrimaryKey(Follow record);
+    
+    List<PageData> list(@Param("page")Page page);
     
     int listCount(@Param("page")Page page);
+    
+    Follow selectFollow(Follow record);
 }

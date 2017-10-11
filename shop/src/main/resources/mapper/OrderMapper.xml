@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.zzb.shop.dao.OrderMapper" >
-  <resultMap id="BaseResultMap" type="com.zzb.shop.domain.Order" >
+   <resultMap id="BaseResultMap" type="com.zzb.shop.domain.Order" >
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="user_id" property="userId" jdbcType="BIGINT" />
     <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
-    <result column="good_id" property="goodId" jdbcType="BIGINT" />
-    <result column="good_detail_id" property="goodDetailId" jdbcType="BIGINT" />
+    <result column="total_price" property="totalPrice" jdbcType="DECIMAL" />
+    <result column="true_price" property="truePrice" jdbcType="DECIMAL" />
     <result column="express_code" property="expressCode" jdbcType="VARCHAR" />
-    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="order_status" property="orderStatus" jdbcType="VARCHAR" />
     <result column="remarks" property="remarks" jdbcType="VARCHAR" />
     <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
     <result column="update_date" property="updateDate" jdbcType="TIMESTAMP" />
     <result column="del_flag" property="delFlag" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, user_id, order_no, good_id, good_detail_id, express_code, status, remarks, create_date, 
-    update_date, del_flag
+    id, user_id, order_no, total_price, true_price, express_code, order_status, remarks, 
+    create_date, update_date, del_flag
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />
-    from order
+    from `order`
     where id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
-    delete from order
+    delete from `order`
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.zzb.shop.domain.Order" >
-    insert into order (id, user_id, order_no, 
-      good_id, good_detail_id, express_code, 
-      status, remarks, create_date, 
+  <insert id="insert" parameterType="com.zzb.shop.domain.Order" useGeneratedKeys="true" keyProperty="id">
+    insert into `order` (id, user_id, order_no, 
+      total_price, true_price, express_code, 
+      order_status, remarks, create_date, 
       update_date, del_flag)
     values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{orderNo,jdbcType=VARCHAR}, 
-      #{goodId,jdbcType=BIGINT}, #{goodDetailId,jdbcType=BIGINT}, #{expressCode,jdbcType=VARCHAR}, 
-      #{status,jdbcType=VARCHAR}, #{remarks,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{totalPrice,jdbcType=DECIMAL}, #{truePrice,jdbcType=DECIMAL}, #{expressCode,jdbcType=VARCHAR}, 
+      #{orderStatus,jdbcType=VARCHAR}, #{remarks,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
       #{updateDate,jdbcType=TIMESTAMP}, #{delFlag,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.zzb.shop.domain.Order" >
-    insert into order
+    insert into `order`
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
@@ -50,17 +50,17 @@
       <if test="orderNo != null" >
         order_no,
       </if>
-      <if test="goodId != null" >
-        good_id,
+      <if test="totalPrice != null" >
+        total_price,
       </if>
-      <if test="goodDetailId != null" >
-        good_detail_id,
+      <if test="truePrice != null" >
+        true_price,
       </if>
       <if test="expressCode != null" >
         express_code,
       </if>
-      <if test="status != null" >
-        status,
+      <if test="orderStatus != null" >
+        order_status,
       </if>
       <if test="remarks != null" >
         remarks,
@@ -85,17 +85,17 @@
       <if test="orderNo != null" >
         #{orderNo,jdbcType=VARCHAR},
       </if>
-      <if test="goodId != null" >
-        #{goodId,jdbcType=BIGINT},
+      <if test="totalPrice != null" >
+        #{totalPrice,jdbcType=DECIMAL},
       </if>
-      <if test="goodDetailId != null" >
-        #{goodDetailId,jdbcType=BIGINT},
+      <if test="truePrice != null" >
+        #{truePrice,jdbcType=DECIMAL},
       </if>
       <if test="expressCode != null" >
         #{expressCode,jdbcType=VARCHAR},
       </if>
-      <if test="status != null" >
-        #{status,jdbcType=VARCHAR},
+      <if test="orderStatus != null" >
+        #{orderStatus,jdbcType=VARCHAR},
       </if>
       <if test="remarks != null" >
         #{remarks,jdbcType=VARCHAR},
@@ -112,7 +112,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.zzb.shop.domain.Order" >
-    update order
+    update `order`
     <set >
       <if test="userId != null" >
         user_id = #{userId,jdbcType=BIGINT},
@@ -120,17 +120,17 @@
       <if test="orderNo != null" >
         order_no = #{orderNo,jdbcType=VARCHAR},
       </if>
-      <if test="goodId != null" >
-        good_id = #{goodId,jdbcType=BIGINT},
+      <if test="totalPrice != null" >
+        total_price = #{totalPrice,jdbcType=DECIMAL},
       </if>
-      <if test="goodDetailId != null" >
-        good_detail_id = #{goodDetailId,jdbcType=BIGINT},
+      <if test="truePrice != null" >
+        true_price = #{truePrice,jdbcType=DECIMAL},
       </if>
       <if test="expressCode != null" >
         express_code = #{expressCode,jdbcType=VARCHAR},
       </if>
-      <if test="status != null" >
-        status = #{status,jdbcType=VARCHAR},
+      <if test="orderStatus != null" >
+        order_status = #{orderStatus,jdbcType=VARCHAR},
       </if>
       <if test="remarks != null" >
         remarks = #{remarks,jdbcType=VARCHAR},
@@ -148,17 +148,38 @@
     where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zzb.shop.domain.Order" >
-    update order
+    update `order`
     set user_id = #{userId,jdbcType=BIGINT},
       order_no = #{orderNo,jdbcType=VARCHAR},
-      good_id = #{goodId,jdbcType=BIGINT},
-      good_detail_id = #{goodDetailId,jdbcType=BIGINT},
+      total_price = #{totalPrice,jdbcType=DECIMAL},
+      true_price = #{truePrice,jdbcType=DECIMAL},
       express_code = #{expressCode,jdbcType=VARCHAR},
-      status = #{status,jdbcType=VARCHAR},
+      order_status = #{orderStatus,jdbcType=VARCHAR},
       remarks = #{remarks,jdbcType=VARCHAR},
       create_date = #{createDate,jdbcType=TIMESTAMP},
       update_date = #{updateDate,jdbcType=TIMESTAMP},
       del_flag = #{delFlag,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
+  
+  <insert id="batchInsert">
+		INSERT INTO order_detail(
+			order_id,
+			good_id,
+			good_detail_id,
+			good_num,
+			total_price
+		) VALUES 
+		<foreach collection="list" item="item" separator="," >
+		(
+			#{id},
+			#{item.goodId},
+			#{item.goodDetailId},
+			#{item.goodNum},
+			#{item.totalPrice}
+		)
+		</foreach>
+	</insert>
+	
 </mapper>

@@ -61,7 +61,7 @@
                     <td >分类：</td>
                     <td >  
                     	<input name="goodCategoryType" class="mini-combobox" valueField="id" textField="name" 
-                            url="<%=basePath%>/backend/goodCategory/getGoodCategoryList"
+                            url="<%=basePath%>/backend/goodCategory/goodCategoryList"
                              required="false"
                              emptyText="请选择分类"
                             /> 

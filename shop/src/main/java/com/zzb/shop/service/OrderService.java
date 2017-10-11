@@ -22,4 +22,6 @@ public interface OrderService {
 	    List<PageData> list(Page page);
 	    
 	    int listCount(Page page);
+	    
+	    int addOrder(Order record);
 }

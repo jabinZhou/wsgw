@@ -23,14 +23,15 @@ public class GoodDetail {
 
     private String marketFlag;
     
-    private Advertise Advertise;
+    private GoodActivity goodActivity;
 
-    public Advertise getAdvertise() {
-		return Advertise;
+    
+	public GoodActivity getGoodActivity() {
+		return goodActivity;
 	}
 
-	public void setAdvertise(Advertise advertise) {
-		Advertise = advertise;
+	public void setGoodActivity(GoodActivity goodActivity) {
+		this.goodActivity = goodActivity;
 	}
 
 	public Long getId() {

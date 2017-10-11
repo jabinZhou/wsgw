@@ -43,6 +43,14 @@ function cancle(){
 }
 function varifyPhone(){
 	console.log("varifyPhone");
+	/* $.post("${basePath}/frontend/follow/ajaxFollow", $("#followForm").serialize(), function(info) {
+		if (info.status) {
+			alert(info.info);
+		} else {
+			alert(info.info);
+		}
+	}); */
+	
 }
 function varifyPassword(){
 	console.log("varifyPassword");
@@ -71,9 +79,15 @@ $(document).ready(function(){
 	     <button type="button"style="width:50px;height:35px;" onclick="login()">登录</button>
 	     <button type="button"style="width:50px;height:35px;" onclick="cancle()">取消</button>
 	     </form>
-	     </div>-->
+	     </div>
+	    
+	     <form id="followForm" method="post">
+	     <input name="isFollow" value="0">
+	     <input name="userId" value="100">
+	     <input name="goodDetailId" value="100">
+	     </form> -->
 	     
-	     <div class="box">
+	    <div class="box">
 		<ul class="box-ul">
 			<li class="">
 				<img src="<%=basePath%>/img/bg2.png" alt="">

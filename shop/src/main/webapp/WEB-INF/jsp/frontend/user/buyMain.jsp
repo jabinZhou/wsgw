@@ -36,7 +36,24 @@
             <a class="mini-button mini-button-iconTop" iconCls="icon-date" onclick="onClick"  plain="true" >消息</a>        
             <a class="mini-button mini-button-iconTop" iconCls="icon-edit" onclick="onClick"  plain="true" >设置</a> -->       
             <a class="mini-button mini-button-iconTop" iconCls="icon-close" onclick="onClick"  plain="true" >首页</a>        
-            
+             <a class="mini-button mini-button-iconTop" iconCls="icon-close" onclick="test"  plain="true" >操作</a>  
+        
+        	<form id="followForm" method="post">
+		     <!-- <input name="userId" value="2">
+		     <input name="goodId" value="2">
+		      <input name="goodDetailId" value="2">
+		     <input name="goodNum" value="10"> -->
+		     <input name="list[0].userId" value="2">
+		     <input name="list[0].goodId" value="1">
+		     <input name="list[0].goodDetailId" value="1">
+		     <input name="list[0].goodNum" value="10">
+		     <input name="list[0].totalPrice" value="6000">
+		     <input name="list[1].userId" value="2">
+		     <input name="list[1].goodId" value="2">
+		     <input name="list[1].goodDetailId" value="2">
+		     <input name="list[1].goodNum" value="10">
+		     <input name="list[1].totalPrice" value="3500">
+		     </form>
         </div>
         
     </div>
@@ -117,6 +134,17 @@
             //var text = this.getText();
             //alert(text);
         	location.href = "${basePath}/";
+        }
+        
+        function test(e){
+        	//$.post("${basePath}/frontend/shopCar/ajaxAddShopCar", $("#followForm").serialize(), function(info) {
+        		$.post("${basePath}/frontend/order/ajaxAddOrder", $("#followForm").serialize(), function(info) {
+	    		if (info.status) {
+	    			alert(info.info);
+	    		} else {
+	    			alert(info.info);
+	    		}
+    		}); 
         }
         function onQuickClick(e) {
             tree.expandPath("datagrid");

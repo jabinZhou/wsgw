@@ -21,7 +21,9 @@ public interface OrderMapper {
 
     int updateByPrimaryKey(Order record);
     
-List<PageData> list(@Param("page")Page page);
+    List<PageData> list(@Param("page")Page page);
     
     int listCount(@Param("page")Page page);
+    
+    int batchInsert(Order record);
 }

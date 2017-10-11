@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +18,7 @@ import com.zzb.shop.controller.BaseController;
 import com.zzb.shop.domain.Follow;
 import com.zzb.shop.domain.Page;
 import com.zzb.shop.domain.PushMsg;
+import com.zzb.shop.domain.User;
 import com.zzb.shop.service.FollowService;
 import com.zzb.shop.util.JSON;
 import com.zzb.shop.util.PageData;
@@ -77,6 +81,36 @@ public class BFollowController extends BaseController{
 	public String editSysUser(Model model) {
 		return "backend/follow/editFollow";
 	}
-	
-	
+	/**
+	 * 
+	 * @param model
+	 * @param follow 
+	 * @param isFollow 是否关注 0否 1是
+	 * @param request
+	 * @param response
+	 * @return
+	 */
+	@RequestMapping(value = "/ajaxFollow")
+	@ResponseBody
+	public Object ajaxLogin(Model model,Follow follow,Integer isFollow,HttpServletRequest request,HttpServletResponse response) {
+		//登录成功标志
+		PushMsg pushMsg=new PushMsg("操作成功！",true);
+		pushMsg.setCode("1");
+		try{			
+			int ret=followService.follow(follow, isFollow);
+			if(ret>0){
+				
+			}else{
+				pushMsg.setStatus(false);
+				pushMsg.setCode("0");
+				pushMsg.setInfo("操作失败请稍后再试！");
+			}
+		}catch(Exception ex){
+			ex.printStackTrace();
+			pushMsg.setStatus(false);
+			pushMsg.setCode("0");
+			pushMsg.setInfo("操作失败请稍后再试！");
+		}
+		return pushMsg;
+	}
 }

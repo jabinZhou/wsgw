@@ -22,4 +22,6 @@ public interface ShopCarService {
 	    List<PageData> list(Page page);
 	    
 	    int listCount(Page page);
+	    
+	    int addShopCar(ShopCar record);
 }
